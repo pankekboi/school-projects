@@ -1,0 +1,194 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" routerLink="/enterprise">Informacije o preduzecu</a>
+                    <a class="nav-link" routerLink="/enterpriseBuyers">Narucioci</a>
+                    <a class="nav-link" routerLink="/enterpriseItemsServices">Robe i usluge</a>
+                    <a class="nav-link" routerLink="/enterpriseItemCategories">Raspored artikala</a>
+                    <a class="nav-link" routerLink="/enterpriseTables" *ngIf="restoran.kategorija=='Ugostiteljski objekat'">Raspored stolova</a>
+                    <a class="nav-link" routerLink="/enterpriseReceiptPublish">Izdavanje racuna</a>
+                    <a class="nav-link" routerLink="/enterpriseReports">Pregled izvestaja</a>
+                    <a class="nav-link pointer" (click)="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <mat-tab-group>
+        <mat-tab label="Opsti podaci">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Ime i prezime odgovornog lica:</td>
+                        <td>{{restoran.ime}} {{restoran.prezime}}</td>
+                    </tr>
+                    <tr>
+                        <td>Korisnicko ime:</td>
+                        <td>{{restoran.username}}</td>
+                    </tr>
+                    <tr>
+                        <td>Lozinka:</td>
+                        <td>{{restoran.password}}</td>
+                    </tr>
+                    <tr>
+                        <td>Kontakt telefon:</td>
+                        <td>{{restoran.telefon}}</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail adresa:</td>
+                        <td>{{restoran.email}}</td>
+                    </tr>
+                    <tr>
+                        <td>Naziv preduzeca:</td>
+                        <td>{{restoran.nazivPreduzeca}}</td>
+                    </tr>
+                    <tr>
+                        <td>Logo preduzeca:</td>
+                        <td>
+                            <img src="{{logo}}">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Adresa sedista preduzeca:</td>
+                        <td>{{restoran.adresaPreduzeca}}</td>
+                    </tr>
+                    <tr>
+                        <td>PIB:</td>
+                        <td>{{restoran.pib}}</td>
+                    </tr>
+                    <tr>
+                        <td>Maticni broj:</td>
+                        <td>{{restoran.maticniBroj}}</td>
+                    </tr>
+                    <tr>
+                        <td>Kategorija preduzeca:</td>
+                        <td>{{restoran.kategorija}}</td>
+                    </tr>
+                    <tr>
+                        <td>Sifre delatnosti:</td>
+                        <td>{{restoran.sifreDelatnosti}}</td>
+                    </tr>
+                    <tr>
+                        <td>U PDV sistemu:</td>
+                        <td *ngIf="restoran.uPDVsistemu; else nije">Da</td>
+                        <ng-template #nije>
+                            <td>Ne</td>
+                        </ng-template>
+                    </tr>
+                    <tr>
+                        <td>Ziro racuni:</td>
+                        <td>{{restoran.ziroRacuni}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <ng-template #promenaLozinke let-modal>
+                <div class="modal-header headerFooterColor">
+                    <h4 class="modal-title" id="modal-basic-title">Promena lozinke</h4>
+                    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="trenutnaLozinka">Trenutna lozinka:</label>
+                            <input id="trenutnaLozinka" type="password" class="form-control" name="trenutnaLozinka" [ngModel]="trenutnaLozinka" (ngModelChange)="valueChangeTrenutna($event)">
+                            <div *ngIf="errMsg1!=''">
+                                <br/>
+                                <span class="errMsg">{{errMsg1}}</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novaLozinka">Nova lozinka:</label>
+                            <input id="novaLozinka" type="password" class="form-control" name="novaLozinka1" [ngModel]="novaLozinka1" (ngModelChange)="valueChangeNova1($event)">
+                            <div *ngIf="errMsg2!=''">
+                                <br/>
+                                <span class="errMsg">{{errMsg2}}</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ponovljenaNova">Potvrdite novu lozinku:</label>
+                            <input id="ponovljenaNova" type="password" class="form-control" name="novaLozinka2" [ngModel]="novaLozinka2" (ngModelChange)="valueChangeNova2($event)">
+                            <div *ngIf="errMsg3!=''">
+                                <br/>
+                                <span class="errMsg">{{errMsg3}}</span>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal-footer" *ngIf="trenutnaLozinka!='' && errMsg1=='' && novaLozinka1!='' && errMsg2=='' && novaLozinka2!='' && errMsg3==''">
+                        <button class="btn btn-info" (click)="modal.close()">Promeni lozinku</button>
+                    </div>
+                </div>
+            </ng-template>
+
+            <div class="row no-gutters">
+                <div class="col-sm-12">
+                    <span>Zelite da promenite lozinku? Kliknite <a class="pointer" (click)="promeniLozinku(promenaLozinke)"><b>ovde</b></a>.</span>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Ziro racuni">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Redni broj</th>
+                        <th scope="col">Broj racuna</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let racun of racuni; index as i">
+                        <th scope="row">{{i + 1}}</th>
+                        <td>{{racun}}</td>
+                    </tr>
+                </tbody>
+            </table>       
+        </mat-tab>
+        <mat-tab label="Magacini i kase">
+            <h4 class="mt-3">Magacini</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Identifikator</th>
+                        <th scope="col">Naziv</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let magacin of restoran.magacini">
+                        <td>{{magacin.id}}</td>
+                        <td>{{magacin.naziv}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 class="mt-5">Kase</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Lokacija</th>
+                        <th scope="col">Tip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let kasa of restoran.kase">
+                        <td>{{kasa.lokacija}}</td>
+                        <td>{{kasa.tip}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </mat-tab>
+    </mat-tab-group>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <!-- ovde ispod u klasi bilo "p-3" za debljinu futera-->
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>

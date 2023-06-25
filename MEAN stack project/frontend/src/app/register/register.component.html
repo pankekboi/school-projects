@@ -1,0 +1,98 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" routerLink="">Pocetna</a>
+                    <a class="nav-link" routerLink="/login">Login</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/register">Registracija</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row no-gutters mt-6">
+        <div class="col-sm-12">
+            <form>
+                <table class="centerTable">
+                    <tr>
+                        <td>Ime odgovornog lica:</td>
+                        <td><input type="text" name="name" [(ngModel)]="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Prezime odgovornog lica:</td>
+                        <td><input type="text" name="lastname" [(ngModel)]="lastname"></td>
+                    </tr>
+                    <tr>
+                        <td>Korisnicko ime:</td>
+                        <td><input type="text" name="username" [(ngModel)]="username"></td>
+                    </tr>
+                    <tr>
+                        <td>Lozinka:</td>
+                        <td><input type="password" name="password" [(ngModel)]="password"></td>
+                    </tr>
+                    <tr>
+                        <td>Ponovljena lozinka:</td>
+                        <td><input type="password" name="password2" [(ngModel)]="password2"></td>
+                    </tr>
+                    <tr>
+                        <td>Kontakt telefon:</td>
+                        <td><input type="text" name="phone" [(ngModel)]="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail adresa:</td>
+                        <td><input type="text" name="email" [(ngModel)]="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Naziv preduzeca:</td>
+                        <td><input type="text" name="enterpriseName" [(ngModel)]="enterpriseName"></td>
+                    </tr>
+                    <tr>
+                        <td>Adresa sedista:</td>
+                        <td><input type="text" name="hqAddr" [(ngModel)]="hqAddr"></td>
+                    </tr>
+                    <tr>
+                        <td>PIB:</td>
+                        <td><input type="text" name="pib" [(ngModel)]="pib"></td>
+                    </tr>
+                    <tr>
+                        <td>Maticni broj:</td>
+                        <td><input type="text" name="hqNumber" [(ngModel)]="hqNumber"></td>
+                    </tr>
+                    <tr>
+                        <td>Logo:</td>
+                        <td><input type="file" id="logo" name="logo" (change)="onFileChanged($event)"></td>
+                    </tr>
+                </table>
+                <div class="text-center razmak">
+                    <button class="btn btn-info" (click)="register()">Registruj se</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row no-gutters text-center" *ngIf="errMsg!=''">
+        <div class="col-sm-12">
+            <span class="errMsg"><b>{{errMsg}}</b></span>
+        </div>
+    </div>
+
+    <div class="row no-gutters text-center razmak">
+        <div class="col-sm-12">
+            Imate nalog? Prijavite se <a routerLink="/login">ovde</a>.
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <!-- ovde ispod u klasi bilo "p-3" za debljinu futera-->
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>

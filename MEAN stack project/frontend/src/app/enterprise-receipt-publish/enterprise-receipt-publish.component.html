@@ -1,0 +1,581 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" routerLink="/enterprise">Informacije o preduzecu</a>
+                    <a class="nav-link" routerLink="/enterpriseBuyers">Narucioci</a>
+                    <a class="nav-link" routerLink="/enterpriseItemsServices">Robe i usluge</a>
+                    <a class="nav-link" routerLink="/enterpriseItemCategories">Raspored artikala</a>
+                    <a class="nav-link" routerLink="/enterpriseTables" *ngIf="preduzece.kategorija=='Ugostiteljski objekat'">Raspored stolova</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/enterpriseReceiptPublish">Izdavanje racuna</a>
+                    <a class="nav-link" routerLink="/enterpriseReports">Pregled izvestaja</a>
+                    <a class="nav-link pointer" (click)="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row no-gutters" *ngIf="preduzece.kategorija=='Ugostiteljski objekat'">
+        <div class="mt-3" [class.show]="prikaziRaspored">
+            <mat-tab-group (selectedTabChange)="onTabChanged($event);">
+                <mat-tab *ngFor="let link of links; let i = index" [label]="link">
+                    <div>
+                        <canvas [id]="'canvas' + i" class="myCanvas" #prikazStolova width="900" height="500"></canvas>
+                    </div>
+
+                    <div class="mt-3" *ngIf="rasporedStolovaIzabranaLokacijaArtikli.artikli.length>0">
+                        <div *ngIf="slobodniStolovi.length>0">
+                            <span>Izaberite sto:&nbsp;</span>
+                            <select [ngModel]="idIzabranogStola" (ngModelChange)="onChangeIzabraniSto($event)">
+                                <option *ngFor="let sto of slobodniStolovi" [value]="sto">Sto {{sto}}</option>
+                            </select>
+                        </div>
+                        <div *ngIf="slobodniStolovi.length==0">
+                            <span>Svi stolovi su trenutno zauzeti.</span>
+                        </div>
+                        <table class="table table-stripped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Sifra</th>
+                                    <th scope="col">Naziv</th>
+                                    <th scope="col">Stanje na lageru</th>
+                                    <th scope="col">Jedinica mere</th>
+                                    <th scope="col">Prodajna cena</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let artikal of rasporedStolovaIzabranaLokacijaArtikli.artikli | slice: (pageRasporedStolova-1) * pageSize : pageRasporedStolova * pageSize">
+                                    <td>{{artikal.sifra}}</td>
+                                    <td>{{artikal.naziv}}</td>
+                                    <td>{{artikal.stanje}}</td>
+                                    <td>{{artikal.jedinicaMere}}</td>
+                                    <td>{{artikal.prodajnaCena}}</td>
+                                    <td *ngIf="artikal.stanje>0">
+                                        <button class="btn btn-secondary" *ngIf="idIzabranogStola!=''" (click)="prikaziDialogBiranjeArtikla(artikal)">Izaberi artikal</button>
+                                    </td>
+                                    <td *ngIf="artikal.stanje==0">
+                                        Trenutno nije na stanju.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ngb-pagination [(page)]="pageRasporedStolova" [pageSize]="pageSize" [collectionSize]="rasporedStolovaIzabranaLokacijaArtikli.artikli.length"></ngb-pagination>
+                    </div>
+
+                    <div class="mt-3 text-center" *ngIf="rasporedStolovaIzabranaLokacijaArtikli.artikli.length==0">
+                        <span>Trenutno nema artikala na ovoj lokaciji.</span>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+
+        <div class="row no-gutters mt-3" *ngIf="rasporedStolova==null">
+            <div class="col-auto">
+                <span>Trenutno nema ni jedne lokacije sa rasporedjenim stolovima.</span>
+            </div>
+        </div>
+
+        <div class="row no-gutters">
+            <div class="col-auto" *ngIf="racuniTrenutneLokacije[0].racun!=null">
+                <h4>Racun za sto {{racuniTrenutneLokacije[0].idStola}}</h4>
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Naziv artikla</th>
+                            <th>Cena</th>
+                            <th>Kolicina</th>
+                            <th>PDV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let stavka of racuniTrenutneLokacije[0].racun.stavke">
+                            <td>{{stavka.naziv}}</td>
+                            <td>{{stavka.prodajnaCena}}</td>
+                            <td>{{stavka.kolicina}}</td>
+                            <td *ngIf="preduzece.uPDVsistemu">{{stavka.poreskaStopa}}%</td>
+                            <td *ngIf="!preduzece.uPDVsistemu">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt-3">
+                    <span>Ukupno za placanje:&nbsp;</span>{{racuniTrenutneLokacije[0].racun.iznos+racuniTrenutneLokacije[0].racun.pdv}}
+                </div>
+                <div class="mt-3">
+                    <input type="radio" name="nacinPlacanja1" [value]="1" [checked]="nacinPlacanja1==1" (click)="changeNacinPlacanja1(1)">Gotovina&nbsp;
+                    <input type="radio" name="nacinPlacanja1" [value]="2" [checked]="nacinPlacanja1==2" (click)="changeNacinPlacanja1(2)">Cek&nbsp;
+                    <input type="radio" name="nacinPlacanja1" [value]="3" [checked]="nacinPlacanja1==3" (click)="changeNacinPlacanja1(3)">Kartica&nbsp;
+                    <input type="radio" name="nacinPlacanja1" [value]="4" [checked]="nacinPlacanja1==4" (click)="changeNacinPlacanja1(4)">Virman
+                </div>
+                <div class="mt-3 mb-3">
+                    <button class="btn btn-info" (click)="prikaziDialogPlacanjeRacunaStolovi(0)">Zatvori racun</button>
+                </div>
+            </div>
+
+            <div class="col-auto" *ngIf="racuniTrenutneLokacije[1].racun!=null">
+                <h4>Racun za sto {{racuniTrenutneLokacije[1].idStola}}</h4>
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Naziv artikla</th>
+                            <th>Cena</th>
+                            <th>Kolicina</th>
+                            <th>PDV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let stavka of racuniTrenutneLokacije[1].racun.stavke">
+                            <td>{{stavka.naziv}}</td>
+                            <td>{{stavka.prodajnaCena}}</td>
+                            <td>{{stavka.kolicina}}</td>
+                            <td *ngIf="preduzece.uPDVsistemu">{{stavka.poreskaStopa}}%</td>
+                            <td *ngIf="!preduzece.uPDVsistemu">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt-3">
+                    <span>Ukupno za placanje:&nbsp;</span>{{racuniTrenutneLokacije[1].racun.iznos+racuniTrenutneLokacije[1].racun.pdv}}
+                </div>
+                <div class="mt-3">
+                    <input type="radio" name="nacinPlacanja2" [value]="1" [checked]="nacinPlacanja2==1" (click)="changeNacinPlacanja2(1)">Gotovina&nbsp;
+                    <input type="radio" name="nacinPlacanja2" [value]="2" [checked]="nacinPlacanja2==2" (click)="changeNacinPlacanja2(2)">Cek&nbsp;
+                    <input type="radio" name="nacinPlacanja2" [value]="3" [checked]="nacinPlacanja2==3" (click)="changeNacinPlacanja2(3)">Kartica&nbsp;
+                    <input type="radio" name="nacinPlacanja2" [value]="4" [checked]="nacinPlacanja2==4" (click)="changeNacinPlacanja2(4)">Virman
+                </div>
+                <div class="mt-3 mb-3">
+                    <button class="btn btn-info" (click)="prikaziDialogPlacanjeRacunaStolovi(1)">Zatvori racun</button>
+                </div>
+            </div>
+
+            <div class="col-auto" *ngIf="racuniTrenutneLokacije[2].racun!=null">
+                <h4>Racun za sto {{racuniTrenutneLokacije[2].idStola}}</h4>
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Naziv artikla</th>
+                            <th>Cena</th>
+                            <th>Kolicina</th>
+                            <th>PDV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let stavka of racuniTrenutneLokacije[2].racun.stavke">
+                            <td>{{stavka.naziv}}</td>
+                            <td>{{stavka.prodajnaCena}}</td>
+                            <td>{{stavka.kolicina}}</td>
+                            <td *ngIf="preduzece.uPDVsistemu">{{stavka.poreskaStopa}}%</td>
+                            <td *ngIf="!preduzece.uPDVsistemu">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt-3">
+                    <span>Ukupno za placanje:&nbsp;</span>{{racuniTrenutneLokacije[2].racun.iznos+racuniTrenutneLokacije[2].racun.pdv}}
+                </div>
+                <div class="mt-3">
+                    <input type="radio" name="nacinPlacanja3" [value]="1" [checked]="nacinPlacanja3==1" (click)="changeNacinPlacanja3(1)">Gotovina&nbsp;
+                    <input type="radio" name="nacinPlacanja3" [value]="2" [checked]="nacinPlacanja3==2" (click)="changeNacinPlacanja3(2)">Cek&nbsp;
+                    <input type="radio" name="nacinPlacanja3" [value]="3" [checked]="nacinPlacanja3==3" (click)="changeNacinPlacanja3(3)">Kartica&nbsp;
+                    <input type="radio" name="nacinPlacanja3" [value]="4" [checked]="nacinPlacanja3==4" (click)="changeNacinPlacanja3(4)">Virman
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-info" (click)="prikaziDialogPlacanjeRacunaStolovi(2)">Zatvori racun</button>
+                </div>
+            </div>
+
+            <div class="col-auto" *ngIf="racuniTrenutneLokacije[3].racun!=null">
+                <h4>Racun za sto {{racuniTrenutneLokacije[3].idStola}}</h4>
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Naziv artikla</th>
+                            <th>Cena</th>
+                            <th>Kolicina</th>
+                            <th>PDV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let stavka of racuniTrenutneLokacije[3].racun.stavke">
+                            <td>{{stavka.naziv}}</td>
+                            <td>{{stavka.prodajnaCena}}</td>
+                            <td>{{stavka.kolicina}}</td>
+                            <td *ngIf="preduzece.uPDVsistemu">{{stavka.poreskaStopa}}%</td>
+                            <td *ngIf="!preduzece.uPDVsistemu">0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt-3">
+                    <span>Ukupno za placanje:&nbsp;</span>{{racuniTrenutneLokacije[3].racun.iznos+racuniTrenutneLokacije[3].racun.pdv}}
+                </div>
+                <div class="mt-3">
+                    <input type="radio" name="nacinPlacanja4" [value]="1" [checked]="nacinPlacanja4==1" (click)="changeNacinPlacanja4(1)">Gotovina&nbsp;
+                    <input type="radio" name="nacinPlacanja4" [value]="2" [checked]="nacinPlacanja4==2" (click)="changeNacinPlacanja4(2)">Cek&nbsp;
+                    <input type="radio" name="nacinPlacanja4" [value]="3" [checked]="nacinPlacanja4==3" (click)="changeNacinPlacanja4(3)">Kartica&nbsp;
+                    <input type="radio" name="nacinPlacanja4" [value]="4" [checked]="nacinPlacanja4==4" (click)="changeNacinPlacanja4(4)">Virman
+                </div>
+                <div class="mt-3 mb-3">
+                    <button class="btn btn-info" (click)="prikaziDialogPlacanjeRacunaStolovi(3)">Zatvori racun</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters mt-3" *ngIf="preduzece.kategorija=='Prodavnica'">
+        <div class="col-auto">
+            <span>Izaberite magacin:&nbsp;</span>
+            <select [ngModel]="idIzabranogMagacina" (ngModelChange)="onChange($event)">
+                <option *ngFor="let magacin of preduzece.magacini" [value]="magacin.id">{{magacin.naziv}}</option>
+            </select>
+        </div>
+
+        <div class="col-auto">
+            <span>Izaberite objekat:&nbsp;</span>
+            <select [ngModel]="nazivIzabraneLokacije" (ngModelChange)="onChangeLocItems($event)">
+                <option *ngFor="let kasa of preduzece.kase" [value]="kasa.lokacija">{{kasa.lokacija}}</option>
+            </select>
+        </div>
+
+        <div class="col-auto">
+            <span>Izaberite lokaciju objekta:&nbsp;</span>
+            <select [ngModel]="izabranaLokacija" (ngModelChange)="onChangeLocation($event)">
+                <option *ngFor="let kasa of preduzece.kase" [value]="kasa.lokacija">{{kasa.lokacija}}</option>
+            </select>
+        </div>
+
+        <div class="mt-3" *ngIf="errMsgLokacija!=''">
+            <span class="errMsg">{{errMsgLokacija}}</span>
+        </div>
+
+        <div class="mt-3" *ngIf="izabraniMagacin!=null">
+            <h5>Magacin: {{izabraniMagacin.naziv}}</h5>
+            <table class="table table-stripped">
+                <thead>
+                    <tr>
+                        <th scope="col">Sifra</th>
+                        <th scope="col">Naziv</th>
+                        <th scope="col">Stanje na lageru</th>
+                        <th scope="col">Jedinica mere</th>
+                        <th scope="col">Prodajna cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let artikal of izabraniMagacin.artikli | slice: (page-1) * pageSize : page * pageSize">
+                       <td>{{artikal.sifra}}</td>
+                        <td>{{artikal.naziv}}</td>
+                        <td>{{artikal.stanje}}</td>
+                        <td>{{artikal.jedinicaMere}}</td>
+                        <td>{{artikal.prodajnaCena}}</td>
+                        <td *ngIf="artikal.stanje>0 && izabranaLokacija!='' && errMsgLokacija==''">
+                            <button class="btn btn-secondary" (click)="prikaziDialogBiranjeArtikla(artikal)">Izaberi artikal</button>
+                        </td>
+                        <td *ngIf="artikal.stanje==0">
+                            Trenutno nije na stanju.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="izabraniMagacin.artikli.length"></ngb-pagination>
+        </div>
+
+        <div class="mt-3" *ngIf="izabranaLokacijaArtikli!=null">
+            <h5>Lokacija: {{izabranaLokacijaArtikli.lokacija}}</h5>
+            <table class="table table-stripped">
+                <thead>
+                    <tr>
+                        <th scope="col">Sifra</th>
+                        <th scope="col">Naziv</th>
+                        <th scope="col">Stanje na lageru</th>
+                        <th scope="col">Jedinica mere</th>
+                        <th scope="col">Prodajna cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let artikal of izabranaLokacijaArtikli.artikli | slice: (pageObjekat-1) * pageSize : pageObjekat * pageSize">
+                       <td>{{artikal.sifra}}</td>
+                        <td>{{artikal.naziv}}</td>
+                        <td>{{artikal.stanje}}</td>
+                        <td>{{artikal.jedinicaMere}}</td>
+                        <td>{{artikal.prodajnaCena}}</td>
+                        <td *ngIf="artikal.stanje>0 && izabranaLokacija!='' && errMsgLokacija==''">
+                            <button class="btn btn-secondary" (click)="prikaziDialogBiranjeArtikla(artikal)">Izaberi artikal</button>
+                        </td>
+                        <td *ngIf="artikal.stanje==0">
+                            Trenutno nije na stanju.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <ngb-pagination [(page)]="pageObjekat" [pageSize]="pageSize" [collectionSize]="izabranaLokacijaArtikli.artikli.length"></ngb-pagination>
+        </div>
+
+        <div class="mt-3" *ngIf="izabraniMagacin==null || izabranaLokacijaArtikli==null">
+            <span class="mt-3">Nije izabran magacin ili objekat.</span>
+        </div>
+
+        <div class="mt-3" *ngIf="racun!=null">
+            <h4>Racun</h4>
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th>Naziv artikla</th>
+                        <th>Cena</th>
+                        <th>Kolicina</th>
+                        <th>PDV</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let stavka of racun.stavke">
+                        <td>{{stavka.naziv}}</td>
+                        <td>{{stavka.prodajnaCena}}</td>
+                        <td>{{stavka.kolicina}}</td>
+                        <td *ngIf="preduzece.uPDVsistemu">{{stavka.poreskaStopa}}%</td>
+                        <td *ngIf="!preduzece.uPDVsistemu">0%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mt-3">
+                <span>Ukupno za placanje:&nbsp;</span>{{racun.iznos+racun.pdv}}
+            </div>
+            <div class="mt-3">
+                <input type="radio" name="nacinPlacanja" [value]="1" [checked]="nacinPlacanja==1" (click)="changeNacinPlacanja(1)">Gotovina&nbsp;
+                <input type="radio" name="nacinPlacanja" [value]="2" [checked]="nacinPlacanja==2" (click)="changeNacinPlacanja(2)">Cek&nbsp;
+                <input type="radio" name="nacinPlacanja" [value]="3" [checked]="nacinPlacanja==3" (click)="changeNacinPlacanja(3)">Kartica&nbsp;
+                <input type="radio" name="nacinPlacanja" [value]="4" [checked]="nacinPlacanja==4" (click)="changeNacinPlacanja(4)">Virman
+            </div>
+            <div class="mt-3" *ngIf="errMsgLokacija==''">
+                <button class="btn btn-info" (click)="prikaziDialogPlacanjeRacuna()">Zatvori racun</button>
+            </div>
+        </div>
+
+        <div class="mt-3" *ngIf="racun==null || izabranaLokacija==''">
+            <span>Izaberite lokaciju izdavanja racuna, pa dodajte artikal kako bi otvorili novi racun.</span>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <!-- ovde ispod u klasi bilo "p-3" za debljinu futera-->
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>
+
+<ng-template #dialogBiranjeArtikla>
+    <h2 matDialogTitle>Dodavanje artikla na racun</h2>
+    <mat-dialog-content>
+        <label for="kolicinaArtikla">Kolicina</label>
+        <input id="kolicinaArtikla" class="form-control" type="number" name="kolicina" [ngModel]="kolicina" (input)="onChangeKolicina($event)">
+        <div *ngIf="errMsg!=''">
+            <span class="errMsg">{{errMsg}}</span>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <div class="row no-gutters">
+            <div class="col-auto">
+                <button class="btn btn-danger" matDialogClose="cancel">Nazad</button>
+            </div>
+            <div class="col-auto" *ngIf="errMsg==''">
+                <button class="btn btn-success" matDialogClose="add">Dodaj artikal</button>
+            </div>
+        </div>
+    </mat-dialog-actions>
+</ng-template>
+
+<ng-template #dialogPlacanjeRacuna>
+    <h2 matDialogTitle>Zatvaranje racuna</h2>
+    <mat-dialog-content>
+        <div *ngIf="nacinPlacanja==1 && preduzece.kategorija=='Prodavnica'">
+            <label for="placeno">Placeno</label>
+            <input id="placeno" class="form-control" name="placeno" type="number" [ngModel]="placeno" (input)="onChangePlaceno($event)">
+
+            <label for="brojLK">Broj licne karte</label>
+            <input id="brojLK" class="form-control" name="brojLK" type="text" [(ngModel)]="brojLK">
+
+            <div class="mt-3" *ngIf="errMsg!=''">
+                <span class="errMsg">{{errMsg}}</span>
+            </div>
+            <div class="mt-3" *ngIf="errMsg=='' && placeno>0">
+                Kusur: {{placeno-racun.iznos}}
+            </div>
+        </div>
+
+        <div *ngIf="((nacinPlacanja1==1 && stoZaPlacanje==1) || (nacinPlacanja2==1 && stoZaPlacanje==2) || (nacinPlacanja3==1 && stoZaPlacanje==3) || (nacinPlacanja1==1 && stoZaPlacanje==4)) && preduzece.kategorija=='Ugostiteljski objekat'">
+            <label for="placeno">Placeno</label>
+            <input id="placeno" class="form-control" name="placeno" type="number" [ngModel]="placeno" (input)="onChangePlacenoStolovi($event)">
+
+            <label for="brojLK">Broj licne karte</label>
+            <input id="brojLK" class="form-control" name="brojLK" type="text" [(ngModel)]="brojLK">
+
+            <div class="mt-3" *ngIf="errMsg!=''">
+                <span class="errMsg">{{errMsg}}</span>
+            </div>
+            <div class="mt-3" *ngIf="errMsg=='' && placeno>0">
+                Kusur: {{placeno-racunZaPlacanje.iznos}}
+            </div>
+        </div>
+        
+        <div *ngIf="nacinPlacanja==2 && preduzece.kategorija=='Prodavnica'">
+            <label for="ime">Ime kupca</label>
+            <input id="ime" class="form-control" name="imeKupca" [(ngModel)]="imeKupca" type="text">
+        
+            <label for="prezime">Prezime kupca</label>
+            <input id="prezime" class="form-control" name="prezimeKupca" [(ngModel)]="prezimeKupca" type="text">
+        
+            <label for="brojLK">Broj licne karte</label>
+            <input id="brojLK" class="form-control" name="brojLK" [ngModel]="brojLK" (ngModelChange)="changeLicnaKarta($event)" type="text">
+            
+            <div class="mt-3" *ngIf="errMsg=='' && (imeKupca=='' || prezimeKupca=='' || brojLK=='')">
+                <span class="errMsg">Sva polja su obavezna.</span>
+            </div>
+
+            <div class="mt-3" *ngIf="errMsg!=''">
+                <span class="errMsg">{{errMsg}}</span>
+            </div>
+        </div>
+
+        <div *ngIf="((nacinPlacanja1==2 && stoZaPlacanje==1) || (nacinPlacanja2==2 && stoZaPlacanje==2) || (nacinPlacanja3==2 && stoZaPlacanje==3) || (nacinPlacanja2==2 && stoZaPlacanje==4)) && preduzece.kategorija=='Ugostiteljski objekat'">
+            <label for="ime">Ime kupca</label>
+            <input id="ime" class="form-control" name="imeKupca" [(ngModel)]="imeKupca" type="text">
+        
+            <label for="prezime">Prezime kupca</label>
+            <input id="prezime" class="form-control" name="prezimeKupca" [(ngModel)]="prezimeKupca" type="text">
+        
+            <label for="brojLK">Broj licne karte</label>
+            <input id="brojLK" class="form-control" name="brojLK" [ngModel]="brojLK" (ngModelChange)="changeLicnaKarta($event)" type="text">
+            
+            <div class="mt-3" *ngIf="errMsg=='' && (imeKupca=='' || prezimeKupca=='' || brojLK=='')">
+                <span class="errMsg">Sva polja su obavezna.</span>
+            </div>
+
+            <div class="mt-3" *ngIf="errMsg!=''">
+                <span class="errMsg">{{errMsg}}</span>
+            </div>
+        </div>
+
+        <div *ngIf="nacinPlacanja==3 && preduzece.kategorija=='Prodavnica'">
+            <label for="brojLK">Broj licne karte</label>
+            <input id="brojLK" class="form-control" name="brojLK" [ngModel]="brojLK" (ngModelChange)="changeLicnaKarta($event)" type="text">
+
+            <label for="brojSlip">Broj slip racuna</label>
+            <input id="brojSlip" class="form-control" name="brojSlip" [(ngModel)]="brojSlip">
+
+            <div class="mt-3" *ngIf="errMsg=='' && (brojLK=='' || brojSlip=='')">
+                <span class="errMsg">Sva polja su obavezna.</span>
+            </div>
+
+            <div class="mt-3" *ngIf="errMsg!=''">
+                <span class="errMsg">{{errMsg}}</span>
+            </div>
+        </div>
+
+        <div *ngIf="((nacinPlacanja1==3 && stoZaPlacanje==1) || (nacinPlacanja2==3 && stoZaPlacanje==2) || (nacinPlacanja3==3 && stoZaPlacanje==3) || (nacinPlacanja2==3 && stoZaPlacanje==4)) && preduzece.kategorija=='Ugostiteljski objekat'">
+            <label for="brojLK">Broj licne karte</label>
+            <input id="brojLK" class="form-control" name="brojLK" [ngModel]="brojLK" (ngModelChange)="changeLicnaKarta($event)" type="text">
+
+            <label for="brojSlip">Broj slip racuna</label>
+            <input id="brojSlip" class="form-control" name="brojSlip" [(ngModel)]="brojSlip">
+
+            <div class="mt-3" *ngIf="errMsg=='' && (brojLK=='' || brojSlip=='')">
+                <span class="errMsg">Sva polja su obavezna.</span>
+            </div>
+
+            <div class="mt-3" *ngIf="errMsg!=''">
+                <span class="errMsg">{{errMsg}}</span>
+            </div>
+        </div>
+
+        <div *ngIf="nacinPlacanja==4 && preduzece.kategorija=='Prodavnica'">
+            <div *ngIf="narucioci!=null">
+                <table class="centerTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">PIB</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let narucioc of narucioci.narucioci">
+                            <td>{{narucioc.pib}}</td>
+                            <td>
+                                <button class="btn btn-secondary" (click)="izaberiNarucioca(narucioc)">Odaberi</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="mt-3" *ngIf="izabraniNarucioc!=null">
+                    <span>Trenutno je izabran narucilac sa PIB-om:&nbsp;{{izabraniNarucioc.pib}}</span>
+                </div>
+            </div>
+            <ng-template #nemaNarucilaca>
+                <span>Trenutno nema narucilaca u sistemu.</span>
+            </ng-template>
+        </div>
+
+        <div *ngIf="((nacinPlacanja1==4 && stoZaPlacanje==1) || (nacinPlacanja2==4 && stoZaPlacanje==2) || (nacinPlacanja3==4 && stoZaPlacanje==3) || (nacinPlacanja2==4 && stoZaPlacanje==4)) && preduzece.kategorija=='Ugostiteljski objekat'">
+            <div *ngIf="narucioci!=null; else nemaNarucilaca">
+                <table class="centerTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">PIB</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let narucioc of narucioci.narucioci">
+                            <td>{{narucioc.pib}}</td>
+                            <td>
+                                <button class="btn btn-secondary" (click)="izaberiNarucioca(narucioc)">Odaberi</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="mt-3" *ngIf="izabraniNarucioc!=null">
+                    <span>Trenutno je izabran narucilac sa PIB-om:&nbsp;{{izabraniNarucioc.pib}}</span>
+                </div>
+            </div>
+            <ng-template #nemaNarucilaca>
+                <span>Trenutno nema narucilaca u sistemu.</span>
+            </ng-template>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <div class="row no-gutters" *ngIf="(nacinPlacanja==1 && preduzece.kategorija=='Prodavnica') || (((nacinPlacanja1==1 && stoZaPlacanje==1) || (nacinPlacanja2==1 && stoZaPlacanje==2) || (nacinPlacanja3==1 && stoZaPlacanje==3) || (nacinPlacanja4==1 && stoZaPlacanje==4)) && preduzece.kategorija=='Ugostiteljski objekat')">
+            <div class="col-auto">
+                <button class="btn btn-danger" matDialogClose="cancel">Nazad</button>
+            </div>
+            <div class="col-auto" *ngIf="errMsg==''">
+                <button class="btn btn-success" matDialogClose="pay">Zatvori racun</button>
+            </div>
+        </div>
+        <div class="row no-gutters" *ngIf="(nacinPlacanja==2 && preduzece.kategorija=='Prodavnica') || (((nacinPlacanja1==2 && stoZaPlacanje==1) || (nacinPlacanja2==2 && stoZaPlacanje==2) || (nacinPlacanja3==2 && stoZaPlacanje==3) || (nacinPlacanja4==2 && stoZaPlacanje==4)) && preduzece.kategorija=='Ugostiteljski objekat')">
+            <div class="col-auto">
+                <button class="btn btn-danger" matDialogClose="cancel">Nazad</button>
+            </div>
+            <div class="col-auto" *ngIf="errMsg=='' && imeKupca!='' && prezimeKupca!='' && brojLK!=''">
+                <button class="btn btn-success" matDialogClose="pay">Zatvori racun</button>
+            </div>
+        </div>
+        <div class="row no-gutters" *ngIf="(nacinPlacanja==3 && preduzece.kategorija=='Prodavnica') || (((nacinPlacanja1==3 && stoZaPlacanje==1) || (nacinPlacanja2==3 && stoZaPlacanje==2) || (nacinPlacanja3==3 && stoZaPlacanje==3) || (nacinPlacanja4==3 && stoZaPlacanje==4)) && preduzece.kategorija=='Ugostiteljski objekat')">
+            <div class="col-auto">
+                <button class="btn btn-danger" matDialogClose="cancel">Nazad</button>
+            </div>
+            <div class="col-auto" *ngIf="errMsg=='' && brojLK!='' && brojSlip!=''">
+                <button class="btn btn-success" matDialogClose="pay">Zatvori racun</button>
+            </div>
+        </div>
+
+        <div class="row no-gutters" *ngIf="(nacinPlacanja==4 && preduzece.kategorija=='Prodavnica') || (((nacinPlacanja1==4 && stoZaPlacanje==1) || (nacinPlacanja2==4 && stoZaPlacanje==2) || (nacinPlacanja3==4 && stoZaPlacanje==3) || (nacinPlacanja4==4 && stoZaPlacanje==4)) && preduzece.kategorija=='Ugostiteljski objekat')">
+            <div class="col-auto">
+                <button class="btn btn-danger" matDialogClose="cancel">Nazad</button>
+            </div>
+            <div class="col-auto" *ngIf="izabraniNarucioc!=null">
+                <button class="btn btn-success" matDialogClose="pay">Zatvori racun</button>
+            </div>
+        </div>
+    </mat-dialog-actions>
+</ng-template>

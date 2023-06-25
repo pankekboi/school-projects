@@ -1,0 +1,402 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" routerLink="/enterprise">Informacije o preduzecu</a>
+                    <a class="nav-link" routerLink="/enterpriseBuyers">Narucioci</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/enterpriseItemsServices">Robe i usluge</a>
+                    <a class="nav-link" routerLink="/enterpriseItemCategories">Raspored artikala</a>
+                    <a class="nav-link" routerLink="/enterpriseTables" *ngIf="restoran.kategorija=='Ugostiteljski objekat'">Raspored stolova</a>
+                    <a class="nav-link" routerLink="/enterpriseReceiptPublish">Izdavanje racuna</a>
+                    <a class="nav-link" routerLink="/enterpriseReports">Pregled izvestaja</a>
+                    <a class="nav-link pointer" (click)="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row no-gutters" *ngIf="artikliPrikaz.length>0; else nemaArtikala">
+        <div clas="col-auto">
+            <h4 class="mt-3">Broj artikala koje preduzece poseduje: {{artikliPrikaz.length}}</h4>
+            <table class="table table-stripped mt-3">
+                <tr>
+                    <th scope="col">Sifra artikla</th>
+                    <th scope="col">Naziv artikla</th>
+                    <th scope="col">Jedinica mere</th>
+                    <th scope="col" *ngIf="restoran.uPDVsistemu">Stopa poreza</th>
+                    <th scope="col">Proizvodjac</th>
+                </tr>
+                <tr *ngFor="let artikal of artikliPrikaz | slice: (page-1) * pageSize : page * pageSize">
+                    <td>{{artikal.sifra}}</td>
+                    <td>{{artikal.naziv}}</td>
+                    <td>{{artikal.jedinicaMere}}</td>
+                    <td *ngIf="restoran.uPDVsistemu">{{artikal.poreskaStopa}}%</td>
+                    <td>{{artikal.proizvodjac}}</td>
+                    <td>
+                        <input type="radio" name="izabranArtikal" (click)="promeniArtikal(artikal)">
+                    </td>
+                </tr>
+            </table>
+            <ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="artikliPrikaz.length"></ngb-pagination>
+        </div>
+    </div>
+
+    <ng-template #nemaArtikala>
+        <span class="mt-3">Trenutno nema nijednog artikla u sistemu.</span>
+    </ng-template>
+
+    <div class="row no-gutters">
+        <div class="col-auto">
+            <button class="btn btn-success" (click)="prikaziUnos()">UNOS</button>
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-secondary" (click)="prikaziIzmenu()">IZMENA</button>
+        </div>
+        <div class="col-auto">
+            <button class="btn btn-danger" (click)="izbrisiArtikal()">BRISANJE</button>
+        </div>
+    </div>
+    <div class="row no-gutters" *ngIf="unos">
+        <h4 class="mt-5">Unos novog artikla</h4>
+        <mat-tab-group>
+            <mat-tab label="Opsti podaci">
+                <form class="mt-3">
+                    <table class="tableCenter">
+                        <tr>
+                            <td>Sifra:</td>
+                            <td>
+                                <input type="text" name="sifraUnos" [(ngModel)]="sifraUnos">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Naziv:</td>
+                            <td>
+                                <input type="text" name="nazivUnos" [(ngModel)]="nazivUnos">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jedinica mere:</td>
+                            <td>
+                                <input type="text" name="jedinicaMereUnos" [(ngModel)]="jedinicaMereUnos">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Poreska stopa:</td>
+                            <td *ngIf="restoran.uPDVsistemu==true">
+                                <input type="radio" name="stopaPorezaUnos" [(ngModel)]="stopaPorezaUnos" value="20">Opsta
+                                <input type="radio" name="stopaPorezaUnos" [(ngModel)]="stopaPorezaUnos" value="10">Posebna
+                            </td>
+                            <td *ngIf="restoran.uPDVsistemu==false">
+                                <span>Preduzece nije u PDV sistemu.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Proizvodjac:</td>
+                            <td>
+                                <input type="text" name="proizvodjacUnos" [(ngModel)]="proizvodjacUnos">
+                            </td>
+                        </tr>
+                        <tr *ngIf="restoran.kategorija=='Ugostiteljski objekat'">
+                            <td>Tip artikla:</td>
+                            <td>
+                                <input type="radio" name="tipUnos" [(ngModel)]="tipUnos" value="hrana">Hrana
+                                <input type="radio" name="tipUnos" [(ngModel)]="tipUnos" value="pice">Pice
+                                <input type="radio" name="tipUnos" [(ngModel)]="tipUnos" value="sirovina">Sirovina
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="mt-3">
+                    <span><b>Predjite na sledeci jezicak.</b></span>
+                </div>
+            </mat-tab>
+            <mat-tab label="Cene i stanje robe">
+                <div *ngIf="sviObjekti.length>0">
+                    <table class="table table-stripped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Naziv objekta</th>
+                                <th scope="col">Sifra artikla</th>
+                                <th scope="col">Nabavna cena(RSD)</th>
+                                <th scope="col">Prodajna cena(RSD)</th>
+                                <th scope="col">Tekuce stanje lagera</th>
+                                <th scope="col">Min zeljena kolicina</th>
+                                <th scope="col">Maks zeljena kolicina</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let objekat of sviObjekti">
+                              <td>{{objekat.naziv}}</td>
+                              <td>{{objekat.sifra}}</td>
+                              <td>{{objekat.nabavnaCena}}</td>
+                              <td>{{objekat.prodajnaCena}}</td>
+                              <td>{{objekat.stanje}}</td>
+                              <td>{{objekat.minKolicina}}</td>
+                              <td>{{objekat.maxKolicina}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <form class="mt-4">
+                    <table class="tableCenter">
+                        <tr>
+                            <td>Nabavna cena(RSD):</td>
+                            <td>
+                                <input type="number" name="nabavnaUnos" [(ngModel)]="nabavnaUnos">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Prodajna cena(RSD):</td>
+                            <td>
+                                <input type="number" name="prodajnaUnos" [(ngModel)]="prodajnaUnos">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kolicina koja se unosi u magacin:</td>
+                            <td>
+                                <input type="number" name="stanjeUnos" [(ngModel)]="stanjeUnos">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Min zeljena kolicina:</td>
+                            <td>
+                                <input type="number" name="minKolicinaUnos" [(ngModel)]="minKolicinaUnos">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Maks zeljena kolicina:</td>
+                            <td>
+                                <input type="number" name="maxKolicinaUnos" [(ngModel)]="maxKolicinaUnos">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Magacin u koji se smesta artikal:</td>
+                            <td>
+                                <!--<select name="magacinUnos" [(ngModel)]="magacinUnos">
+                                    <option *ngFor="let magacin of restoran.magacini" [value]="magacin.id">
+                                        {{magacin.naziv}}
+                                    </option>
+                                </select>-->
+                                <ng-multiselect-dropdown [settings]="dropdownSettingsMagacini" [data]="magaciniDropdown" formControlName="dropdownMagacini" 
+                                (onSelect)="onItemSelect($event)" (onDeSelect)="onItemDeSelect($event)" name="magaciniDropdown"></ng-multiselect-dropdown>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lokacija u kojoj se smesta artikal:</td>
+                            <td>
+                                <ng-multiselect-dropdown [settings]="dropdownSettingsLokacije" [data]="lokacijeDropdown" formControlName="dropdownLokacije" 
+                                (onSelect)="onItemSelectLokacije($event)" (onDeSelect)="onItemDeSelectLokacije($event)" name="lokacijeDropdown"></ng-multiselect-dropdown>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Logo:</td>
+                            <td><input type="file" id="logo" name="logo" (change)="onFileChanged($event)"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="text-center mt-3">
+                                    <button class="btn btn-info" (click)="unesiArtikal()">
+                                        Dodaj artikal
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="mt-3 errMsg" *ngIf="errMsg1!=''">
+                    <span><b>{{errMsg1}}</b></span>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+    <div class="row no-gutters" *ngIf="izmena">
+        <h4 class="mt-5">Izmena postojeceg artikla</h4>
+
+        <div *ngIf="izabranArtikal!=null; else nijeIzabranArtikal">
+            <mat-tab-group>
+                <mat-tab label="Opsti podaci">
+                    <form class="mt-3">
+                        <table class="tableCenter">
+                            <tr>
+                                <td>Sifra:</td>
+                                <td>
+                                    <input type="text" name="sifraIzmena" [(ngModel)]="sifraIzmena">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Naziv:</td>
+                                <td>
+                                    <input type="text" name="nazivIzmena" [(ngModel)]="nazivIzmena">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jedinica mere:</td>
+                                <td>
+                                    <input type="text" name="jedinicaMereIzmena" [(ngModel)]="jedinicaMereIzmena">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Poreska stopa:</td>
+                                <td *ngIf="restoran.uPDVsistemu==true">
+                                    <input type="radio" name="stopaPorezaIzmena" [value]="opsta" [checked]="stopaPorezaIzmena.toString() == opsta" (click)="izmeniStopuPoreza(1)">Opsta
+                                    <input type="radio" name="stopaPorezaIzmena" [value]="posebna" [checked]="stopaPorezaIzmena.toString() == posebna" (click)="izmeniStopuPoreza(2)">Posebna
+                                </td>
+                                <td *ngIf="restoran.uPDVsistemu==false">
+                                    <span>Preduzece nije u PDV sistemu.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Proizvodjac:</td>
+                                <td>
+                                    <input type="text" name="proizvodjacIzmena" [(ngModel)]="proizvodjacIzmena">
+                                </td>
+                            </tr>
+                            <tr *ngIf="restoran.kategorija=='Ugostiteljski objekat'">
+                                <td>Tip artikla:</td>
+                                <td>
+                                    <input type="radio" name="tipIzmena" value="hrana" [checked]="tipIzmena.toString() == 'hrana'" (click)="izmeniTipArtikla(1)">Hrana
+                                    <input type="radio" name="tipIzmena" value="pice" [checked]="tipIzmena.toString() == 'pice'" (click)="izmeniTipArtikla(2)">Pice
+                                    <input type="radio" name="tipIzmena" value="sirovina" [checked]="tipIzmena.toString() == 'sirovina'" (click)="izmeniTipArtikla(3)">Sirovina
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div class="mt-3">
+                        <span><b>Predjite na sledeci jezicak.</b></span>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Cene i stanje robe">
+                    <div *ngIf="sviObjekti.length>0">
+                        <table class="table table-stripped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Naziv objekta</th>
+                                    <th scope="col">Sifra artikla</th>
+                                    <th scope="col">Nabavna cena(RSD)</th>
+                                    <th scope="col">Prodajna cena(RSD)</th>
+                                    <th scope="col">Tekuce stanje lagera</th>
+                                    <th scope="col">Min zeljena kolicina</th>
+                                    <th scope="col">Maks zeljena kolicina</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let objekat of sviObjekti">
+                                  <td>{{objekat.naziv}}</td>
+                                  <td>{{objekat.sifra}}</td>
+                                  <td>{{objekat.nabavnaCena}}</td>
+                                  <td>{{objekat.prodajnaCena}}</td>
+                                  <td>{{objekat.stanje}}</td>
+                                  <td>{{objekat.minKolicina}}</td>
+                                  <td>{{objekat.maxKolicina}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                    <form class="mt-4">
+                        <table class="tableCenter">
+                            <tr>
+                                <td>Nabavna cena(RSD):</td>
+                                <td>
+                                    <input type="number" name="nabavnaIzmena" [(ngModel)]="nabavnaIzmena">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Prodajna cena(RSD):</td>
+                                <td>
+                                    <input type="number" name="prodajnaIzmena" [(ngModel)]="prodajnaIzmena">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kolicina koja se unosi u magacin:</td>
+                                <td>
+                                    <input type="number" name="stanjeIzmena" [(ngModel)]="stanjeIzmena">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Min zeljena kolicina:</td>
+                                <td>
+                                    <input type="number" name="minKolicinaIzmena" [(ngModel)]="minKolicinaIzmena">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Maks zeljena kolicina:</td>
+                                <td>
+                                    <input type="number" name="maxKolicinaIzmena" [(ngModel)]="maxKolicinaIzmena">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Logo:</td>
+                                <td><input type="file" id="logo" name="logo" (change)="onFileChanged($event)"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <div class="text-center mt-3">
+                                        <button class="btn btn-info" (click)="izmeniArtikal()">
+                                            Izmeni artikal
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div class="mt-3 errMsg" *ngIf="errMsg2!=''">
+                        <span><b>{{errMsg2}}</b></span>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+
+        <ng-template #nijeIzabranArtikal>
+            <div>
+                <span>Nije izabran nijedan artikal za izmenu.</span>
+            </div>
+        </ng-template>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <!-- ovde ispod u klasi bilo "p-3" za debljinu futera-->
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>
+
+<ng-template #dialogArtikalNijeIzabran>
+    <h2 matDialogTitle>Greska!</h2>
+    <mat-dialog-content>
+        <div>
+            <span>Nije izabran artikal za brisanje! Izaberite artikal i pokusajte opet.</span>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button class="btn btn-info" matDialogClose="ok">OK</button>
+    </mat-dialog-actions>
+</ng-template>
+
+<ng-template #dialogPotvrdaBrisanjaArtikla>
+    <h2 matDialogTitle>Poruka</h2>
+    <mat-dialog-content>
+        <div>
+            <span>Da li stvarno zelite da izbrisete izabrani artikal?</span>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <div class="row no-gutters">
+            <div class="col-auto">
+                <button class="btn btn-danger" matDialogClose="ne">Ne</button>
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-success" matDialogClose="da">Da</button>
+            </div>
+        </div>
+    </mat-dialog-actions>
+</ng-template>

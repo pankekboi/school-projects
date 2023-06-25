@@ -1,0 +1,51 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" routerLink="/enterprise">Informacije o preduzecu</a>
+                    <a class="nav-link" routerLink="/enterpriseBuyers">Narucioci</a>
+                    <a class="nav-link" routerLink="/enterpriseItemsServices">Robe i usluge</a>
+                    <a class="nav-link" routerLink="/enterpriseItemCategories">Raspored artikala</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/enterpriseTables" *ngIf="preduzece.kategorija=='Ugostiteljski objekat'">Raspored stolova</a>
+                    <a class="nav-link" routerLink="/enterpriseReceiptPublish">Izdavanje racuna</a>
+                    <a class="nav-link" routerLink="/enterpriseReports">Pregled izvestaja</a>
+                    <a class="nav-link pointer" (click)="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row no-gutters mt-3" *ngIf="links.length<preduzece.kase.length">
+        <div class="col-auto">
+            <button class="btn btn-info" (click)="addLink()">Dodaj odeljenje</button>
+        </div>
+    </div>
+
+    <div class="row no-gutters mt-3" [class.show]="prikaziRaspored">
+        <mat-tab-group (selectedTabChange)="onTabChanged($event);">
+            <mat-tab *ngFor="let link of links; let i = index" [label]="link">
+                <ng-template matTabContent>
+                    <canvas [id]="'canvas'+i" class="myCanvas" #prikazStolova width="900" height="500"></canvas>
+                </ng-template>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+
+    <div class="row no-gutters mt-3" *ngIf="rasporedStolova==null">
+        <span>Trenutno nema ni jedno dodato odeljenje.</span>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <!-- ovde ispod u klasi bilo "p-3" za debljinu futera-->
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>

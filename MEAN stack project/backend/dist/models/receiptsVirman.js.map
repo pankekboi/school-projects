@@ -1,0 +1,1 @@
+{"version":3,"file":"receiptsVirman.js","sourceRoot":"","sources":["../../src/models/receiptsVirman.ts"],"names":[],"mappings":";;;;;AAAA,wDAAgC;AAEhC,MAAM,MAAM,GAAG,kBAAQ,CAAC,MAAM,CAAC;AAE/B,IAAI,aAAa,GAAG,IAAI,MAAM,CAAC;IAC3B,QAAQ,EAAE;QACN,IAAI,EAAE,MAAM;KACf;CACJ,CAAC,CAAA;AAEF,kBAAe,kBAAQ,CAAC,KAAK,CAAC,eAAe,EAAE,aAAa,EAAE,gBAAgB,CAAC,CAAC"}

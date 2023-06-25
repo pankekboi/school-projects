@@ -1,0 +1,188 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" routerLink="/customer">Lista preduzeca</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/customerReceipts">Moji racuni</a>
+                    <a class="nav-link pointer" (click)="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row no-gutters mt-3" *ngIf="racuni.length>0">
+        <h4>Moji racuni</h4>
+        <div class="col-sm-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Naziv preduzeca</th>
+                        <th scope="col">Lokacija izdavanja racuna</th>
+                        <th scope="col">Iznos racuna</th>
+                        <th scope="col">Nacin placanja</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let racun of racuni | slice: (page-1) * pageSize : page * pageSize">
+                        <td>{{racun.naziv}}</td>
+                        <td>{{racun.lokacija}}</td>
+                        <td>{{racun.iznos}}</td>
+                        <td>{{racun.nacinPlacanja}}</td>
+                        <td>
+                            <button class="btn btn-secondary" (click)="prikaziDialogDetaljiRacuna(racun)">Detalji</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="racuni.length"></ngb-pagination>
+        </div>
+    </div>
+
+    <div class="row no-gutters mt-3" *ngIf="racuni.length==0">
+        <span>Trenutno nemate ni jedan racun.</span>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <!-- ovde ispod u klasi bilo "p-3" za debljinu futera-->
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>
+
+<ng-template #dialogDetaljiRacuna>
+    <h2 matDialogTitle>Detalji racuna</h2>
+    <mat-dialog-content>
+        <div class="row no-gutters mt-3" *ngIf="racun.nacinPlacanja=='Gotovina'">
+            <h4>Opsti detalji</h4>
+            <table>
+                <tr>
+                    <td>Broj licne karte:&nbsp;</td>
+                    <td>{{racunKes.brojLK}}</td>
+                </tr>
+                <tr>
+                    <td>Placeno:&nbsp;</td>
+                    <td>{{racunKes.placeno}} RSD</td>
+                </tr>
+                <tr>
+                    <td>Kusur:&nbsp;</td>
+                    <td>{{racunKes.kusur}}</td>
+                </tr>
+                <tr>
+                    <td>Datum i vreme izdavanja:&nbsp;</td>
+                    <td>{{racun.datum.getFullYear()}}-{{racun.datum.getMonth()+1}}-{{racun.datum.getDate()}} {{racun.datum.getHours()}}:{{racun.datum.getMinutes()}}:{{racun.datum.getSeconds()}}</td>
+                </tr>
+            </table>
+
+            <h4>Stavke</h4>
+            <table>
+                <tr>
+                    <th>Sifra artikla</th>
+                    <th>Naziv artikla</th>
+                    <th>Jedinica mere</th>
+                    <th>Cena</th>
+                    <th>Poreska stopa</th>
+                    <th>Kolicina</th>
+                </tr>
+                <tr *ngFor="let stavka of racun.stavke">
+                    <td>{{stavka.sifra}}</td>
+                    <td>{{stavka.naziv}}</td>
+                    <td>{{stavka.jedinicaMere}}</td>
+                    <td>{{stavka.prodajnaCena}}</td>
+                    <td>{{stavka.poreskaStopa}}</td>
+                    <td>{{stavka.kolicina}}</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="row no-gutters mt-3" *ngIf="racun.nacinPlacanja=='Cek'">
+            <h4>Opsti detalji</h4>
+            <table>
+                <tr>
+                    <td>Ime i prezime kupca:&nbsp;</td>
+                    <td>{{racunCek.imeKupca}} {{racunCek.prezimeKupca}}</td>
+                </tr>
+                <tr>
+                    <td>Broj licne karte:&nbsp;</td>
+                    <td>{{racunCek.brojLK}}</td>
+                </tr>
+                <tr>
+                    <td>Datum i vreme izdavanja:&nbsp;</td>
+                    <td>{{racun.datum.getFullYear()}}-{{racun.datum.getMonth()+1}}-{{racun.datum.getDate()}} {{racun.datum.getHours()}}:{{racun.datum.getMinutes()}}:{{racun.datum.getSeconds()}}</td>
+                </tr>
+            </table>
+
+            <h4>Stavke</h4>
+            <table>
+                <tr>
+                    <th>Sifra artikla</th>
+                    <th>Naziv artikla</th>
+                    <th>Jedinica mere</th>
+                    <th>Cena</th>
+                    <th>Poreska stopa</th>
+                    <th>Kolicina</th>
+                </tr>
+                <tr *ngFor="let stavka of racun.stavke">
+                    <td>{{stavka.sifra}}</td>
+                    <td>{{stavka.naziv}}</td>
+                    <td>{{stavka.jedinicaMere}}</td>
+                    <td>{{stavka.prodajnaCena}}</td>
+                    <td>{{stavka.poreskaStopa}}</td>
+                    <td>{{stavka.kolicina}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row no-gutters mt-3" *ngIf="racun.nacinPlacanja=='Kartica'">
+            <h4>Opsti detalji</h4>
+            <table>
+                <tr>
+                    <td>Broj licne karte:&nbsp;</td>
+                    <td>{{racunKartica.brojLK}}</td>
+                </tr>
+                <tr>
+                    <td>Broj slipa:&nbsp;</td>
+                    <td>{{racunKartica.brojSlip}}</td>
+                </tr>
+                <tr>
+                    <td>Datum i vreme izdavanja:&nbsp;</td>
+                    <td>{{racun.datum.getFullYear()}}-{{racun.datum.getMonth()+1}}-{{racun.datum.getDate()}} {{racun.datum.getHours()}}:{{racun.datum.getMinutes()}}:{{racun.datum.getSeconds()}}</td>
+                </tr>
+            </table>
+
+            <h4>Stavke</h4>
+            <table>
+                <tr>
+                    <th>Sifra artikla</th>
+                    <th>Naziv artikla</th>
+                    <th>Jedinica mere</th>
+                    <th>Cena</th>
+                    <th>Poreska stopa</th>
+                    <th>Kolicina</th>
+                </tr>
+                <tr *ngFor="let stavka of racun.stavke">
+                    <td>{{stavka.sifra}}</td>
+                    <td>{{stavka.naziv}}</td>
+                    <td>{{stavka.jedinicaMere}}</td>
+                    <td>{{stavka.prodajnaCena}}</td>
+                    <td>{{stavka.poreskaStopa}}</td>
+                    <td>{{stavka.kolicina}}</td>
+                </tr>
+            </table>
+        </div>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <div class="row no-gutters">
+            <div class="col-auto">
+                <button class="btn btn-danger" matDialogClose="back">Nazad</button>
+            </div>
+        </div>
+    </mat-dialog-actions>
+</ng-template>

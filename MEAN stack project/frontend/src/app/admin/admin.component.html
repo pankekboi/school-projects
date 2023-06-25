@@ -1,0 +1,252 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link pointer" (click)="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <mat-tab-group>
+        <mat-tab label="Zahtevi za registraciju">
+            <div class="mt-3" *ngIf="zahtevi.length>0">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Odgovorno lice</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Telefon</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Naziv preduzeca</th>
+                            <th scope="col">Adresa preduzeca</th>
+                            <th scope="col">PIB</th>
+                            <th scope="col">Maticni broj</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let zahtev of zahtevi">
+                            <td>{{zahtev.ime}} {{zahtev.prezime}}</td>
+                            <td>{{zahtev.username}}</td>
+                            <td>{{zahtev.password}}</td>
+                            <td>{{zahtev.telefon}}</td>
+                            <td>{{zahtev.email}}</td>
+                            <td>{{zahtev.nazivPreduzeca}}</td>
+                            <td>{{zahtev.adresaPreduzeca}}</td>
+                            <td>{{zahtev.pib}}</td>
+                            <td>{{zahtev.maticniBroj}}</td>
+                            <td>
+                                <button class="btn btn-success" (click)="odobriZahtev(zahtev._id)">Odobri</button>&nbsp;
+                                <button class="btn btn-danger" (click)="izbrisiZahtev(zahtev._id)">Izbrisi</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-3" *ngIf="zahtevi.length==0">
+                <span>Trenutno nema zahteva za registraciju.</span>
+            </div>
+        </mat-tab>
+
+        <mat-tab label="Dodavanje novog korisnika">
+            <div class="row no-gutters mt-3">
+                <div class="col-auto">
+                    <button class="btn btn-secondary" (click)="prikaziDodavanjeKupca()">Dodavanje kupca</button>
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-secondary" (click)="prikaziDodavanjePreduzeca()">Dodavanje preduzeca</button>
+                </div>
+            </div>
+
+            <div class="row no-gutters mt-9" *ngIf="dodavanjeKupca">
+                <div class="col-sm-12">
+                    <form>
+                        <table class="centerTable">
+                            <tr>
+                                <td>Ime:</td>
+                                <td><input type="text" name="imeKupac" [(ngModel)]="imeKupac"></td>
+                            </tr>
+                            <tr>
+                                <td>Prezime:</td>
+                                <td><input type="text" name="prezimeKupac" [(ngModel)]="prezimeKupac"></td>
+                            </tr>
+                            <tr>
+                                <td>Username:</td>
+                                <td><input type="text" name="usernameKupac" [(ngModel)]="usernameKupac"></td>
+                            </tr>
+                            <tr>
+                                <td>Password:</td>
+                                <td><input type="password" name="passwordKupac" [(ngModel)]="passwordKupac"></td>
+                            </tr>
+                            <tr>
+                                <td>Kontakt telefon:</td>
+                                <td><input type="text" name="telefonKupac" [(ngModel)]="telefonKupac"></td>
+                            </tr>
+                            <tr>
+                                <td>Broj licne karte:</td>
+                                <td><input type="text" name="brojLK" [(ngModel)]="brojLK"></td>
+                            </tr>
+                        </table>
+                        <div class="text-center mt-3">
+                            <button class="btn btn-info" (click)="dodajKupca()">Dodaj kupca</button>
+                        </div>
+                    </form>
+
+                    <div class="mt-3 text-center" *ngIf="errMsgKupac!=''">
+                        <span class="errMsg">{{errMsgKupac}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters mt-6" *ngIf="dodavanjePreduzeca">
+                <div class="col-sm-12">
+                    <form>
+                        <table class="centerTable">
+                            <tr>
+                                <td>Ime odgovornog lica:</td>
+                                <td><input type="text" name="imePred" [(ngModel)]="imePred"></td>
+                            </tr>
+                            <tr>
+                                <td>Prezime odgovornog lica:</td>
+                                <td><input type="text" name="prezimePred" [(ngModel)]="prezimePred"></td>
+                            </tr>
+                            <tr>
+                                <td>Korisnicko ime:</td>
+                                <td><input type="text" name="usernamePred" [(ngModel)]="usernamePred"></td>
+                            </tr>
+                            <tr>
+                                <td>Lozinka:</td>
+                                <td><input type="password" name="passwordPred" [(ngModel)]="passwordPred"></td>
+                            </tr>
+                            <tr>
+                                <td>Kontakt telefon:</td>
+                                <td><input type="text" name="telefonPred" [(ngModel)]="telefonPred"></td>
+                            </tr>
+                            <tr>
+                                <td>E-mail adresa:</td>
+                                <td><input type="text" name="emailPred" [(ngModel)]="emailPred"></td>
+                            </tr>
+                            <tr>
+                                <td>Naziv preduzeca:</td>
+                                <td><input type="text" name="nazivPred" [(ngModel)]="nazivPred"></td>
+                            </tr>
+                            <tr>
+                                <td>Adresa sedista:</td>
+                                <td><input type="text" name="adresaPred" [(ngModel)]="adresaPred"></td>
+                            </tr>
+                            <tr>
+                                <td>PIB:</td>
+                                <td><input type="text" name="pibPred" [(ngModel)]="pibPred"></td>
+                            </tr>
+                            <tr>
+                                <td>Maticni broj:</td>
+                                <td><input type="text" name="maticniBrojPred" [(ngModel)]="maticniBrojPred"></td>
+                            </tr>
+                            <tr>
+                                <td>Logo:</td>
+                                <td><input type="file" id="logo" name="logoPred" (change)="onFileChanged($event)"></td>
+                            </tr>
+                        </table>
+
+                        <div class="text-center mt-3">
+                            <button class="btn btn-info" (click)="dodajPreduzece()">Dodaj preduzece</button>
+                        </div>
+                    </form>
+
+                    <div class="mt-3 text-center" *ngIf="errMsgPred!=''">
+                        <span class="errMsg">{{errMsgPred}}</span>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+
+        <mat-tab label="Pregled dnevnih izvestaja">
+            <div class="row no-gutters mt-3">
+                <div class="col-sm-12">
+                    <form>
+                        <table class="centerTable">
+                            <tr>
+                                <td>Naziv preduzeca</td>
+                                <td><input type="text" name="nazivPredParam" [(ngModel)]="nazivPredParam"></td>
+                            </tr>
+                            <tr>
+                                <td>PIB</td>
+                                <td><input type="text" name="pibPredParam" [(ngModel)]="pibPredParam"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <mat-form-field>
+                                        <mat-label>Izaberite pocetni opseg</mat-label>
+                                        <input matInput [matDatepicker]="pickerStart" name="datumPocetka" [(ngModel)]="datumPocetka">
+                                        <mat-hint>MM/DD/YYYY</mat-hint>
+                                        <mat-datepicker-toggle matSuffix [for]="pickerStart"></mat-datepicker-toggle>
+                                        <mat-datepicker #pickerStart></mat-datepicker>
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <mat-form-field>
+                                        <mat-label>Izaberite krajnji opseg</mat-label>
+                                        <input matInput [matDatepicker]="pickerEnd" name="datumKraja" [(ngModel)]="datumKraja">
+                                        <mat-hint>MM/DD/YYYY</mat-hint>
+                                        <mat-datepicker-toggle matSuffix [for]="pickerEnd"></mat-datepicker-toggle>
+                                        <mat-datepicker #pickerEnd></mat-datepicker>
+                                    </mat-form-field>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="text-center mt-3">
+                            <button class="btn btn-info" (click)="pretraziIznose()">Pretraga</button>
+                        </div>
+                    </form>
+
+                    <div class="mt-3 text-center" *ngIf="errMsgPretraga!=''">
+                        <span class="errMsg">{{errMsgPretraga}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters mt-3" *ngIf="izvestaji.length>0">
+                <table class="table table-stripped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Naziv preduzeca</th>
+                            <th scope="col">PIB</th>
+                            <th scope="col">Datum izvestaja</th>
+                            <th scope="col">Iznos</th>
+                            <th scope="col">PDV</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let izvestaj of izvestaji | slice: (page-1) * pageSize : page * pageSize">
+                            <td>{{izvestaj.naziv}}</td>
+                            <td>{{izvestaj.pib}}</td>
+                            <td>{{izvestaj.datum.getFullYear()}}-{{izvestaj.datum.getMonth()+1}}-{{izvestaj.datum.getDate()}}</td>
+                            <td>{{izvestaj.iznos}}</td>
+                            <td>{{izvestaj.pdv}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ngb-pagination [(page)]="page" [pageSize]="pageSize" [collectionSize]="izvestaji.length"></ngb-pagination>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <!-- ovde ispod u klasi bilo "p-3" za debljinu futera-->
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>

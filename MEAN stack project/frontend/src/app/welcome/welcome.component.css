@@ -1,0 +1,21 @@
+.headerFooterColor{
+    background-color: rgb(86, 187, 255);
+}
+
+.no-gutters{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.rightAlign{
+    text-align: right;
+}
+
+.alignList{
+    display: table;
+    margin: 0 auto;
+}
+
+.razmak{
+    margin-top: 2%;
+}

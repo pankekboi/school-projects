@@ -1,0 +1,135 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" routerLink="/enterprise">Informacije o preduzecu</a>
+                    <a class="nav-link" routerLink="/enterpriseBuyers">Narucioci</a>
+                    <a class="nav-link" routerLink="/enterpriseItemsServices">Robe i usluge</a>
+                    <a class="nav-link active" aria-cuttent="page" routerLink="/enterpriseItemCategories">Raspored artikala</a>
+                    <a class="nav-link" routerLink="/enterpriseTables" *ngIf="preduzece.kategorija=='Ugostiteljski objekat'">Raspored stolova</a>
+                    <a class="nav-link" routerLink="/enterpriseReceiptPublish">Izdavanje racuna</a>
+                    <a class="nav-link" routerLink="/enterpriseReports">Pregled izvestaja</a>
+                    <a class="nav-link pointer" (click)="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mt-7">
+        <table class="centerTable">
+            <tr>
+                <td>Ime kategorije:</td>
+                <td>
+                    <input type="text" name="novaKategorija" [(ngModel)]="novaKategorija">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="text-center">
+                        <button class="btn btn-info mt-3 mb-7" (click)="dodajKategoriju()">Dodaj kategoriju</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <hr/>
+
+        <div class="text-center" *ngIf="errMsg!=''">
+            <span class="errMsg">{{errMsg}}</span>
+        </div>
+    </div>
+
+    <div class="text-center mt-5" *ngIf="kategorije.length>0; else nemaKategorija">
+        <table class="centerTable">
+            <thead>
+                <tr>
+                    <th scope="col">Naziv kategorije</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let kategorija of kategorije" class="mb-3">
+                    <td>
+                        {{kategorija.naziv}}
+                    </td>
+                    <td>
+                        <button class="btn btn-info" (click)="birajArtikal(biranjeArtikla, kategorija.naziv)">Dodeli artikal</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <ng-template #nemaKategorija>
+        <div class="text-center">
+            <span>Preduzece nema ni jednu kategoriju.</span>
+        </div>
+    </ng-template>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>
+
+<ng-template #biranjeArtikla let-modal>
+    <div class="modal-header headerFooterColor">
+        <h4 class="modal-title" id="modal-basic-title">Izaberite artikal</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <table>
+                <tr>
+                    <td>Pretrazite po nazivu artikla:</td>
+                    <td>
+                        <input type="text" class="form-control" name="paramPretrage" [ngModel]="paramPretrage" (ngModelChange)="valueChangeParamPretrage($event)">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <div class="mt-3" *ngIf="artikliPretraga.length>0; else nemaRezultata">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Sifra</th>
+                        <th scope="col">Naziv</th>
+                        <th scope="col">Jedinica mere</th>
+                        <th scope="col">Stopa poreza</th>
+                        <th scope="col">Proizvodjac</th>
+                        <th scope="col">Izbor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let artikal of artikliPretraga">
+                        <td>{{artikal.sifra}}</td>
+                        <td>{{artikal.naziv}}</td>
+                        <td>{{artikal.jedinicaMere}}</td>
+                        <td>{{artikal.poreskaStopa}}</td>
+                        <td>{{artikal.proizvodjac}}</td>
+                        <td>
+                            <input type="radio" name="izabranArtikal" (click)="promeniArtikal(artikal)">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <ng-template #nemaRezultata>
+            <div class="text-center">
+                <span>Nema rezultata pretrage.</span>
+            </div>
+        </ng-template>
+    </div>
+    <div class="modal-footer" *ngIf="izabraniArtikal!=null">
+        <button class="btn btn-info" (click)="modal.close()">Dodaj artikal</button>
+    </div>
+</ng-template>

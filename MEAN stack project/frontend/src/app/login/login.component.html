@@ -1,0 +1,138 @@
+<ng-template #forma let-modal>
+    <div class="modal-header headerFooterColor">
+        <h4 class="modal-title" id="modal-basic-title">Dopunite profil</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <form>
+            <div class="mb-3">
+                <label for="kategorija">Kategorija</label>
+                <div class="input-group">
+                    <input id="kategorija" class="form-control" type="text" name="kategorija" [(ngModel)]="kategorija">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="sifreDelatnosti">Sifre delatnosti (format: sifra delatnosti[, sifra delatnosti])</label>
+                <div class="input-group">
+                    <input id="sifreDelatnosti" class="form-control" type="text" name="sifreDelatnosti" [(ngModel)]="sifreDelatnosti">
+                </div>
+            </div>
+            <div class="mb-3">
+                <span>Da li je preduzece u PDV sistemu? </span><input type="checkbox" name="uPDVsistemu" [(ngModel)]="uPDVsistemu">
+            </div>
+            <div class="mb-3">
+                <label for="ziroRacuni">Ziro racuni (format: ziro racun[, ziro racun])</label>
+                <input id="ziroRacuni" type="text" class="form-control" name="ziroRacuni" [(ngModel)]="ziroRacuni">
+            </div>
+            <div class="mb-3">
+                <label for="brojMagacina">Broj magacina</label>
+                <input id="brojMagacina" type="number" class="form-control" name="brojMagacina" [ngModel]="brojMagacina" (ngModelChange)="valueChangeStorage($event)">
+                <div *ngIf="magacini.length>0">
+                    <table class="mt-2" *ngFor="let storage of magacini; index as i">
+                        <tr>
+                            <td>Identifikator: </td>
+                            <td>
+                                <input class="form-control" type="text" name="id" [(ngModel)]="magacini[i].id">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Naziv: </td>
+                            <td>
+                                <input class="form-control" type="text" name="naziv" [(ngModel)]="magacini[i].naziv">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="brojKasa">Broj fiskalnih kasa</label>
+                <input id="brojKasa" type="number" class="form-control" name="brojKasa" [ngModel]="brojKasa" (ngModelChange)="valueChangeRegisters($event)">
+                <div *ngIf="kase.length>0">
+                    <table class="mt-2" *ngFor='let register of kase; index as i'>
+                        <tr>
+                            <td>Lokacija objekta: </td>
+                            <td>
+                                <input class="form-control" type="text" name="lokacija" [(ngModel)]="kase[i].lokacija">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tip kase: </td>
+                            <td>
+                                <mat-form-field appearance="fill">
+                                    <mat-label>Izaberite tip kase</mat-label>
+                                    <mat-select  name="tip" [(ngModel)]="kase[i].tip">
+                                        <mat-option *ngFor="let tip of tipoviKasa" [value]="tip">
+                                            {{tip}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </form>
+        <div class="modal-footer">
+            <button class="btn btn-info" (click)="modal.close()">Sacuvaj podatke</button>
+        </div>
+    </div>
+</ng-template>
+
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" routerLink="">Pocetna</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/login">Login</a>
+                    <a class="nav-link" routerLink="/register">Registracija</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row no-gutters text-center mt-13">
+        <div class="col-sm-12">
+            <form>
+                <table class="centerTable">
+                    <tr>
+                        <td>Username:</td>
+                        <td><input type="text" name="username" [(ngModel)]="username"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="password" [(ngModel)]="password"></td>
+                    </tr>
+                </table>
+                <div class="text-center razmak">
+                    <button class="btn btn-info" (click)="login(forma)">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row no-gutters text-center" *ngIf="errorMsg!=''">
+        <div class="col-sm-12">
+            <span class="errMsg"><b>{{errorMsg}}</b></span>
+        </div>
+    </div>
+
+    <div class="row no-gutters text-center razmak">
+        <div class="col-sm-12">
+            Nemate nalog? Registrujte se <a routerLink="/register">ovde</a>.
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <!-- ovde ispod u klasi bilo "p-3" za debljinu futera-->
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>

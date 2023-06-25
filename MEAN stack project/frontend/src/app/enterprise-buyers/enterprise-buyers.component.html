@@ -1,0 +1,179 @@
+<div class="container-fluid d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light headerFooterColor">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../../assets/logo.PNG" alt="" width="200" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link" routerLink="/enterprise">Informacije o preduzecu</a>
+                    <a class="nav-link active" aria-current="page" routerLink="/enterpriseBuyers">Narucioci</a>
+                    <a class="nav-link" routerLink="/enterpriseItemsServices">Robe i usluge</a>
+                    <a class="nav-link" routerLink="/enterpriseItemCategories">Raspored artikala</a>
+                    <a class="nav-link" routerLink="/enterpriseTables" *ngIf="restoran.kategorija=='Ugostiteljski objekat'">Raspored stolova</a>
+                    <a class="nav-link" routerLink="/enterpriseReceiptPublish">Izdavanje racuna</a>
+                    <a class="nav-link" routerLink="/enterpriseReports">Pregled izvestaja</a>
+                    <a class="nav-link pointer" (click)="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h4 class="mt-3">Moji narucioci</h4>
+    <div class="row no-gutters" *ngIf="buyers!=null; else nemaNarucilaca">
+        <div class="col-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">PIB narucioca</th>
+                        <th scope="col">Broj dana za placanje</th>
+                        <th scope="col">Rabat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let narucioc of buyers.narucioci; index as i">
+                        <th scope="row">{{i + 1}}</th>
+                        <td>{{narucioc.pib}}</td>
+                        <td>{{narucioc.brojDanaZaPlacanje}}</td>
+                        <td>{{narucioc.rabat}}%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <ng-template #nemaNarucilaca>
+        <span>Trenutno nema evidentiranih narucilaca.</span>
+    </ng-template>
+
+    <hr/>
+    <h4 class="mt-1">Dodavanje novog narucioca</h4>
+    <form class="mt-3">
+        <table class="centerTable">
+            <tr>
+                <td>Ime odgovornog lica:</td>
+                <td>
+                    <input type="text" name="ime" [(ngModel)]="ime">
+                </td>
+            </tr>
+            <tr>
+                <td>Prezime odgovornog lica:</td>
+                <td>
+                    <input type="text" name="prezime" [(ngModel)]="prezime">
+                </td>
+            </tr>
+            <tr>
+                <td>Korisnicko ime:</td>
+                <td>
+                    <input type="text" name="username" [(ngModel)]="username">
+                </td>
+            </tr>
+            <tr>
+                <td>Kontakt telefon:</td>
+                <td>
+                    <input type="text" name="telefon" [(ngModel)]="telefon">
+                </td>
+            </tr>
+            <tr>
+                <td>E-mail adresa:</td>
+                <td>
+                    <input type="text" name="email" [(ngModel)]="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Naziv preduzeca:</td>
+                <td>
+                    <input type="text" name="naziv" [(ngModel)]="nazivPreduzeca">
+                </td>
+            </tr>
+            <tr>
+                <td>Adresa sedista preduzeca:</td>
+                <td>
+                    <input type="text" name="adresa" [(ngModel)]="adresaPreduzeca">
+                </td>
+            </tr>
+            <tr>
+                <td>PIB:</td>
+                <td>
+                    <input type="text" name="pib" [(ngModel)]="pib">
+                </td>
+            </tr>
+            <tr>
+                <td>Maticni broj preduzeca:</td>
+                <td>
+                    <input type="text" name="maticniBroj" [(ngModel)]="maticniBroj">
+                </td>
+            </tr>
+            <tr>
+                <td>Broj dana za placanje:</td>
+                <td>
+                    <input type="number" name="brojDanaZaPlacanje" [(ngModel)]="brojDanaZaPlacanje">
+                </td>
+            </tr>
+            <tr>
+                <td>Rabat(u %):</td>
+                <td>
+                    <input type="number" name="rabat" [(ngModel)]="rabat">
+                </td>
+            </tr>
+        </table>
+
+        <div class="row no-gutters text-center" *ngIf="errMsg!=''">
+            <div class="col-sm-12">
+                <span class="errMsg"><b>{{errMsg}}</b></span>
+            </div>
+        </div>
+
+        <div class="text-center mt-3">
+            <button class="btn btn-info" (click)="dodajNaruciocaForma()">Dodaj narucioca</button>
+        </div>
+    </form>
+
+    <div class="text-center mt-3">
+        <span>ili</span>
+    </div>
+
+    <form class="mt-3">
+        <table class="centerTable">
+            <tr>
+                <td>PIB:</td>
+                <td>
+                    <input type="text" name="pib2" [(ngModel)]="pib2">
+                </td>
+            </tr>
+            <tr>
+                <td>Broj dana za placanje:</td>
+                <td>
+                    <input type="number" name="brojDanaZaPlacanje2" [(ngModel)]="brojDanaZaPlacanje2">
+                </td>
+            </tr>
+            <tr>
+                <td>Rabat(u %):</td>
+                <td>
+                    <input type="number" name="rabat2" [(ngModel)]="rabat2">
+                </td>
+            </tr>
+        </table>
+
+        <div class="row no-gutters text-center" *ngIf="errMsg2!=''">
+            <div class="col-sm-12">
+                <span class="errMsg"><b>{{errMsg2}}</b></span>
+            </div>
+        </div>
+
+        <div class="text-center mt-3 mb-3">
+            <button class="btn btn-info" (click)="dodajNaruciocaPIB()">Dodaj narucioca</button>
+        </div>
+    </form>
+
+    <footer class="bg-light text-center text-lg-start mt-auto">
+        <!-- ovde ispod u klasi bilo "p-3" za debljinu futera-->
+        <div class="text-center headerFooterColor">
+            © 2022 Copyright: Uros Petrovic
+        </div>
+    </footer>
+</div>
