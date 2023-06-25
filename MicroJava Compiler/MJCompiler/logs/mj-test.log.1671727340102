@@ -1,0 +1,95 @@
+INFO  17:40:17,717 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\analyzerTest.mj
+INFO  17:40:17,738 - #2 program
+INFO  17:40:17,739 - #47 analyzerTest
+INFO  17:40:17,739 - #7 const
+INFO  17:40:17,739 - #47 int
+INFO  17:40:17,739 - #47 test
+INFO  17:40:17,740 - #32 =
+INFO  17:40:17,740 - #48 5
+INFO  17:40:17,740 - #35 ;
+INFO  17:40:17,740 - #7 const
+INFO  17:40:17,741 - #47 char
+INFO  17:40:17,741 - #47 test2
+INFO  17:40:17,741 - #32 =
+INFO  17:40:17,741 - #49 c
+INFO  17:40:17,741 - #35 ;
+INFO  17:40:17,741 - #7 const
+INFO  17:40:17,741 - #47 bool
+INFO  17:40:17,741 - #47 test3
+INFO  17:40:17,741 - #32 =
+INFO  17:40:17,741 - #50 false
+INFO  17:40:17,741 - #35 ;
+INFO  17:40:17,741 - #43 {
+INFO  17:40:17,743 - #44 }
+INFO  17:40:17,746 - Program(
+  ProgName(
+   analyzerTest
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived1(
+        GlobalDeclListDerived2(
+        ) [GlobalDeclListDerived2]
+        DeclDerived1(
+          ConstDeclDerived1(
+            ConstType(
+              Type(
+               int
+              ) [Type]
+            ) [ConstType]
+            Const(
+             test
+              ConstNum(
+               5
+              ) [ConstNum]
+            ) [Const]
+            ConstDeclListDerived2(
+            ) [ConstDeclListDerived2]
+          ) [ConstDeclDerived1]
+        ) [DeclDerived1]
+      ) [GlobalDeclListDerived1]
+      DeclDerived1(
+        ConstDeclDerived1(
+          ConstType(
+            Type(
+             char
+            ) [Type]
+          ) [ConstType]
+          Const(
+           test2
+            ConstChar(
+             c
+            ) [ConstChar]
+          ) [Const]
+          ConstDeclListDerived2(
+          ) [ConstDeclListDerived2]
+        ) [ConstDeclDerived1]
+      ) [DeclDerived1]
+    ) [GlobalDeclListDerived1]
+    DeclDerived1(
+      ConstDeclDerived1(
+        ConstType(
+          Type(
+           bool
+          ) [Type]
+        ) [ConstType]
+        Const(
+         test3
+          ConstBool(
+           false
+          ) [ConstBool]
+        ) [Const]
+        ConstDeclListDerived2(
+        ) [ConstDeclListDerived2]
+      ) [ConstDeclDerived1]
+    ) [DeclDerived1]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  17:40:17,746 - ===================================
+INFO  17:40:17,747 - Deklarisana simbolicka konstanta 'test' na liniji 2
+ERROR 17:40:17,747 - Nekompatibilan tip se dodeljuje simbolickoj konstanti test2! 
+INFO  17:40:17,747 - Deklarisana simbolicka konstanta 'test2' na liniji 3
+ERROR 17:40:17,747 - Nekompatibilan tip se dodeljuje simbolickoj konstanti test3! 
+INFO  17:40:17,747 - Deklarisana simbolicka konstanta 'test3' na liniji 4

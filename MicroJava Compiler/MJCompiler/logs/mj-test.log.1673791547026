@@ -1,0 +1,77 @@
+INFO  14:57:22,644 - #2 program
+INFO  14:57:22,644 - #47 Test3
+INFO  14:57:22,644 - #47 int
+INFO  14:57:22,645 - #47 x
+INFO  14:57:22,645 - #35 ;
+INFO  14:57:22,645 - #47 int
+INFO  14:57:22,646 - #47 x
+INFO  14:57:22,646 - #35 ;
+INFO  14:57:22,646 - #43 {
+INFO  14:57:22,646 - #46 void
+INFO  14:57:22,646 - #47 main
+INFO  14:57:22,646 - #39 (
+INFO  14:57:22,647 - #40 )
+INFO  14:57:22,647 - #43 {
+INFO  14:57:22,647 - #44 }
+INFO  14:57:22,648 - #44 }
+INFO  14:57:22,654 - Program(
+  ProgName(
+   Test3
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived2(
+      ) [GlobalDeclListDerived2]
+      DeclDerived2(
+        VarDeclType(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          SingleVarDecl(
+            RegVar(
+             x
+            ) [RegVar]
+          ) [SingleVarDecl]
+        ) [VarDeclType]
+      ) [DeclDerived2]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        SingleVarDecl(
+          RegVar(
+           x
+          ) [RegVar]
+        ) [SingleVarDecl]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:57:22,654 - ===================================
+INFO  14:57:22,656 - Deklarisana globalna promenljiva 'x' na liniji 2
+ERROR 14:57:22,656 - Globalna promenljiva x je vec deklarisana!
+INFO  14:57:22,656 - ===================================
+INFO  14:57:22,656 - KOMPAJLIRANJE NIJE USPESNO ZAVRSENO!

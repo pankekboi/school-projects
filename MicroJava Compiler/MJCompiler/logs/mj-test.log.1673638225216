@@ -1,0 +1,84 @@
+INFO  17:46:07,332 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  17:46:07,353 - #2 program
+INFO  17:46:07,353 - #47 errorRecovery
+INFO  17:46:07,354 - #47 int
+INFO  17:46:07,354 - #47 x
+INFO  17:46:07,354 - #37 ,
+INFO  17:46:07,355 - #37 ,
+ERROR 17:46:07,355 - 
+Sintaksna greska na liniji 2
+INFO  17:46:07,355 - #47 y
+INFO  17:46:07,355 - #35 ;
+INFO  17:46:07,355 - #43 {
+INFO  17:46:07,355 - #46 void
+INFO  17:46:07,355 - #47 main
+ERROR 17:46:07,355 - Izvrsen oporavak do ; na liniji 2
+INFO  17:46:07,356 - #39 (
+INFO  17:46:07,356 - #40 )
+INFO  17:46:07,357 - #43 {
+INFO  17:46:07,357 - #47 x
+INFO  17:46:07,357 - #32 =
+INFO  17:46:07,357 - #19 +
+ERROR 17:46:07,357 - 
+Sintaksna greska na liniji 6
+INFO  17:46:07,359 - #47 x
+INFO  17:46:07,359 - #35 ;
+INFO  17:46:07,359 - #47 x
+INFO  17:46:07,359 - #32 =
+INFO  17:46:07,359 - #47 x
+ERROR 17:46:07,359 - Izvrsen oporavak do ; prilikom dodele na liniji 2
+INFO  17:46:07,360 - #19 +
+INFO  17:46:07,360 - #37 ,
+ERROR 17:46:07,360 - 
+Sintaksna greska na liniji 7
+INFO  17:46:07,360 - #21 *
+INFO  17:46:07,360 - #48 1
+INFO  17:46:07,360 - #35 ;
+INFO  17:46:07,360 - #44 }
+INFO  17:46:07,360 - #44 }
+ERROR 17:46:07,360 - Izvrsen oporavak do ; prilikom dodele na liniji 2
+INFO  17:46:07,363 - Program(
+  ProgName(
+   errorRecovery
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclDerived1(
+      ) [VarDeclDerived1]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          StatementDerived1(
+            DesignatorStatementDerived1(
+            ) [DesignatorStatementDerived1]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          DesignatorStatementDerived1(
+          ) [DesignatorStatementDerived1]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  17:46:07,363 - ===================================
+INFO  17:46:07,365 - ===================================
+INFO  17:46:07,367 - PARSIRANJE JE USPESNO ZAVRSENO!

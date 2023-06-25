@@ -1,0 +1,13 @@
+INFO  17:40:40,320 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  17:40:40,339 - #2 program
+INFO  17:40:40,339 - #19 errorRecovery
+INFO  17:40:40,339 - #19 int
+INFO  17:40:40,339 - #19 x
+INFO  17:40:40,339 - #41 ,
+INFO  17:40:40,340 - #19 y
+INFO  17:40:40,340 - #41 ,
+INFO  17:40:40,340 - #39 ;
+ERROR 17:40:40,340 - 
+Sintaksna greska kod simbola ';' na liniji 2
+INFO  17:40:40,340 - #47 {
+INFO  17:40:40,340 - #48 }

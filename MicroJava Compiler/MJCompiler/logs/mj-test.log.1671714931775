@@ -1,0 +1,110 @@
+INFO  14:15:10,067 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  14:15:10,088 - #2 program
+INFO  14:15:10,089 - #47 errorRecovery
+INFO  14:15:10,089 - #7 const
+INFO  14:15:10,089 - #37 ,
+ERROR 14:15:10,089 - 
+Sintaksna greska na liniji 2
+INFO  14:15:10,089 - #37 ,
+INFO  14:15:10,089 - #37 ,
+INFO  14:15:10,089 - #47 y
+INFO  14:15:10,089 - #35 ;
+INFO  14:15:10,089 - #47 int
+INFO  14:15:10,089 - #47 x
+INFO  14:15:10,089 - #37 ,
+ERROR 14:15:10,089 - Izvrsen oporavak na liniji 2
+INFO  14:15:10,090 - #41 [
+ERROR 14:15:10,090 - 
+Sintaksna greska na liniji 3
+INFO  14:15:10,090 - #42 ]
+INFO  14:15:10,090 - #47 y
+INFO  14:15:10,090 - #37 ,
+INFO  14:15:10,090 - #47 z
+INFO  14:15:10,090 - #35 ;
+INFO  14:15:10,090 - #47 int
+INFO  14:15:10,090 - #47 x
+INFO  14:15:10,090 - #37 ,
+ERROR 14:15:10,090 - Izvrsen oporavak na liniji 3
+INFO  14:15:10,091 - #47 z
+INFO  14:15:10,091 - #35 ;
+INFO  14:15:10,091 - #47 int
+INFO  14:15:10,091 - #35 ;
+ERROR 14:15:10,091 - 
+Sintaksna greska na liniji 5
+INFO  14:15:10,091 - #43 {
+INFO  14:15:10,091 - #46 void
+INFO  14:15:10,091 - #47 main
+ERROR 14:15:10,091 - Izvrsen oporavak na liniji 5
+INFO  14:15:10,092 - #39 (
+INFO  14:15:10,092 - #40 )
+INFO  14:15:10,092 - #43 {
+INFO  14:15:10,092 - #47 x
+INFO  14:15:10,092 - #32 =
+INFO  14:15:10,093 - #48 1
+INFO  14:15:10,093 - #19 +
+INFO  14:15:10,093 - #35 ;
+ERROR 14:15:10,093 - 
+Sintaksna greska na liniji 8
+INFO  14:15:10,093 - #44 }
+INFO  14:15:10,093 - #44 }
+ERROR 14:15:10,094 - Izvrsen oporavak do ; u liniji 8
+INFO  14:15:10,094 - Program(
+ errorRecovery
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived1(
+        GlobalDeclListDerived1(
+          GlobalDeclListDerived2(
+          ) [GlobalDeclListDerived2]
+          DeclDerived1(
+            ConstDeclDerived2(
+            ) [ConstDeclDerived2]
+          ) [DeclDerived1]
+        ) [GlobalDeclListDerived1]
+        DeclDerived2(
+          VarDeclDerived2(
+          ) [VarDeclDerived2]
+        ) [DeclDerived2]
+      ) [GlobalDeclListDerived1]
+      DeclDerived2(
+        VarDeclDerived1(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          VarDeclListDerived1(
+            VarDeclListDerived2(
+              VarDerived1(
+               x
+              ) [VarDerived1]
+            ) [VarDeclListDerived2]
+            VarDerived1(
+             z
+            ) [VarDerived1]
+          ) [VarDeclListDerived1]
+        ) [VarDeclDerived1]
+      ) [DeclDerived2]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclDerived2(
+      ) [VarDeclDerived2]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodRetTypeDerived2(
+    ) [MethodRetTypeDerived2]
+   main
+    FormParsListDerived2(
+    ) [FormParsListDerived2]
+    VarMethDeclListDerived2(
+    ) [VarMethDeclListDerived2]
+    StatementListDerived1(
+      StatementListDerived2(
+      ) [StatementListDerived2]
+      StatementDerived2(
+      ) [StatementDerived2]
+    ) [StatementListDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:15:10,094 - ===================================

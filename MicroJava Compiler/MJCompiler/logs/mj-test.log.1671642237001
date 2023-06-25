@@ -1,0 +1,25 @@
+INFO  18:01:58,393 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  18:01:58,413 - #2 program
+INFO  18:01:58,413 - #19 errorRecovery
+INFO  18:01:58,413 - #19 int
+INFO  18:01:58,413 - #19 x
+INFO  18:01:58,413 - #41 ,
+INFO  18:01:58,414 - #45 [
+ERROR 18:01:58,414 - 
+Sintaksna greska kod simbola '[' na liniji 2
+INFO  18:01:58,414 - #46 ]
+INFO  18:01:58,414 - #19 y
+INFO  18:01:58,414 - #41 ,
+INFO  18:01:58,414 - #19 z
+INFO  18:01:58,414 - #39 ;
+INFO  18:01:58,414 - #47 {
+INFO  18:01:58,414 - #19 x
+INFO  18:01:58,415 - #36 =
+ERROR 18:01:58,415 - Izvrsen oporavak na liniji 2
+ERROR 18:01:58,415 - 
+Sintaksna greska kod simbola '=' na liniji 4
+INFO  18:01:58,415 - #23 +
+INFO  18:01:58,417 - #19 z
+INFO  18:01:58,417 - #39 ;
+INFO  18:01:58,417 - #48 }
+ERROR 18:01:58,417 - Fatalna greska, parsiranje se ne moze nastaviti kod simbola 'null' na liniji 5

@@ -1,0 +1,72 @@
+INFO  16:52:48,168 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  16:52:48,198 - #2 program
+INFO  16:52:48,198 - #47 mojProgram
+INFO  16:52:48,198 - #47 int
+INFO  16:52:48,198 - #47 x
+INFO  16:52:48,199 - #35 ;
+INFO  16:52:48,199 - #43 {
+INFO  16:52:48,199 - #46 void
+INFO  16:52:48,199 - #47 main
+INFO  16:52:48,200 - #39 (
+INFO  16:52:48,200 - #40 )
+INFO  16:52:48,200 - #43 {
+INFO  16:52:48,201 - #47 x
+INFO  16:52:48,201 - #33 ++
+INFO  16:52:48,201 - #35 ;
+INFO  16:52:48,202 - #44 }
+INFO  16:52:48,202 - #44 }
+INFO  16:52:48,206 - Program(
+  ProgName(
+   mojProgram
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDeclListDerived2(
+          RegVar(
+           x
+          ) [RegVar]
+        ) [VarDeclListDerived2]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived1(
+          DesignatorStmtInc(
+            DesignatorName(
+             x
+            ) [DesignatorName]
+          ) [DesignatorStmtInc]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  16:52:48,206 - ===================================
+INFO  16:52:48,208 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  16:52:48,208 - Detektovano koriscenje promenljive x na liniji 5
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  16:52:48,209 - ===================================
+INFO  16:52:48,212 - PARSIRANJE JE USPESNO ZAVRSENO!

@@ -1,0 +1,12 @@
+INFO  15:50:18,711 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  15:50:18,733 - #2 program
+INFO  15:50:18,733 - #47 errorRecovery
+INFO  15:50:18,733 - #47 int
+INFO  15:50:18,734 - #47 x
+INFO  15:50:18,734 - #37 ,
+INFO  15:50:18,734 - #35 ;
+ERROR 15:50:18,735 - 
+Sintaksna greska na liniji 2
+INFO  15:50:18,735 - #43 {
+INFO  15:50:18,735 - #46 void
+INFO  15:50:18,735 - #47 main

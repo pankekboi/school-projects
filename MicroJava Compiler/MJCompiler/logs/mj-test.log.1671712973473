@@ -1,0 +1,24 @@
+INFO  13:37:09,307 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  13:37:09,329 - #2 program
+INFO  13:37:09,329 - #47 errorRecovery
+INFO  13:37:09,329 - #47 int
+INFO  13:37:09,329 - #35 ;
+ERROR 13:37:09,330 - 
+Sintaksna greska kod simbola ';' na liniji 5
+INFO  13:37:09,330 - #43 {
+INFO  13:37:09,330 - #44 }
+ERROR 13:37:09,330 - Izvrsen oporavak na liniji 5
+INFO  13:37:09,331 - Program(
+ errorRecovery
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclDerived2(
+      ) [VarDeclDerived2]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  13:37:09,331 - ===================================

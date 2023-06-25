@@ -1,0 +1,80 @@
+INFO  17:34:12,793 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  17:34:12,814 - #2 program
+INFO  17:34:12,814 - #47 errorRecovery
+INFO  17:34:12,814 - #47 int
+INFO  17:34:12,815 - #47 x
+INFO  17:34:12,815 - #37 ,
+INFO  17:34:12,815 - #47 y
+INFO  17:34:12,815 - #35 ;
+INFO  17:34:12,815 - #43 {
+INFO  17:34:12,816 - #46 void
+INFO  17:34:12,816 - #47 main
+INFO  17:34:12,816 - #39 (
+INFO  17:34:12,816 - #40 )
+INFO  17:34:12,817 - #43 {
+INFO  17:34:12,817 - #47 x
+INFO  17:34:12,817 - #32 =
+INFO  17:34:12,817 - #19 +
+ERROR 17:34:12,817 - 
+Sintaksna greska na liniji 6
+INFO  17:34:12,817 - #47 x
+INFO  17:34:12,817 - #35 ;
+INFO  17:34:12,817 - #44 }
+INFO  17:34:12,818 - #44 }
+ERROR 17:34:12,819 - Izvrsen oporavak do ; prilikom dodele na liniji 2
+INFO  17:34:12,823 - Program(
+  ProgName(
+   errorRecovery
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        MultiVarDecl(
+          RegVar(
+           x
+          ) [RegVar]
+          SingleVarDecl(
+            RegVar(
+             y
+            ) [RegVar]
+          ) [SingleVarDecl]
+        ) [MultiVarDecl]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived1(
+          DesignatorStatementDerived1(
+          ) [DesignatorStatementDerived1]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  17:34:12,823 - ===================================
+INFO  17:34:12,825 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  17:34:12,825 - Deklarisana globalna promenljiva 'y' na liniji 2
+INFO  17:34:12,825 - ===================================
+INFO  17:34:12,827 - PARSIRANJE JE USPESNO ZAVRSENO!

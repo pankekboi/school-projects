@@ -1,0 +1,89 @@
+INFO  15:10:44,278 - #2 program
+INFO  15:10:44,278 - #47 Test5
+INFO  15:10:44,278 - #7 const
+INFO  15:10:44,279 - #47 int
+INFO  15:10:44,279 - #47 greska
+INFO  15:10:44,280 - #32 =
+INFO  15:10:44,281 - #49 c
+INFO  15:10:44,281 - #35 ;
+INFO  15:10:44,281 - #7 const
+INFO  15:10:44,282 - #47 char
+INFO  15:10:44,282 - #47 greska2
+INFO  15:10:44,282 - #32 =
+INFO  15:10:44,282 - #48 50
+INFO  15:10:44,282 - #35 ;
+INFO  15:10:44,282 - #43 {
+INFO  15:10:44,283 - #46 void
+INFO  15:10:44,284 - #47 main
+INFO  15:10:44,284 - #39 (
+INFO  15:10:44,284 - #40 )
+INFO  15:10:44,285 - #43 {
+INFO  15:10:44,285 - #44 }
+INFO  15:10:44,286 - #44 }
+INFO  15:10:44,297 - Program(
+  ProgName(
+   Test5
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived2(
+      ) [GlobalDeclListDerived2]
+      DeclDerived1(
+        ConstDeclDerived1(
+          ConstType(
+            Type(
+             int
+            ) [Type]
+          ) [ConstType]
+          Const(
+           greska
+            ConstChar(
+             c
+            ) [ConstChar]
+          ) [Const]
+          NoConstDeclList(
+          ) [NoConstDeclList]
+        ) [ConstDeclDerived1]
+      ) [DeclDerived1]
+    ) [GlobalDeclListDerived1]
+    DeclDerived1(
+      ConstDeclDerived1(
+        ConstType(
+          Type(
+           char
+          ) [Type]
+        ) [ConstType]
+        Const(
+         greska2
+          ConstNum(
+           50
+          ) [ConstNum]
+        ) [Const]
+        NoConstDeclList(
+        ) [NoConstDeclList]
+      ) [ConstDeclDerived1]
+    ) [DeclDerived1]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  15:10:44,298 - ===================================
+ERROR 15:11:50,562 - Nekompatibilan tip se dodeljuje simbolickoj konstanti 'greska' na liniji 2
+INFO  15:12:44,691 - Deklarisana simbolicka konstanta 'greska2' na liniji 3
+INFO  15:12:44,692 - ===================================
+INFO  15:12:44,692 - KOMPAJLIRANJE NIJE USPESNO ZAVRSENO!

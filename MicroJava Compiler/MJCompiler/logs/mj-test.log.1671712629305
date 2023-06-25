@@ -1,0 +1,81 @@
+INFO  13:36:37,306 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  13:36:37,328 - #2 program
+INFO  13:36:37,328 - #47 errorRecovery
+INFO  13:36:37,328 - #7 const
+INFO  13:36:37,328 - #37 ,
+ERROR 13:36:37,328 - 
+Sintaksna greska kod simbola ',' na liniji 2
+INFO  13:36:37,328 - #37 ,
+INFO  13:36:37,328 - #37 ,
+INFO  13:36:37,328 - #47 y
+INFO  13:36:37,328 - #35 ;
+INFO  13:36:37,329 - #47 int
+INFO  13:36:37,329 - #47 x
+INFO  13:36:37,329 - #37 ,
+ERROR 13:36:37,329 - Izvrsen oporavak na liniji 2
+INFO  13:36:37,329 - #41 [
+ERROR 13:36:37,329 - 
+Sintaksna greska kod simbola '[' na liniji 3
+INFO  13:36:37,329 - #42 ]
+INFO  13:36:37,329 - #47 y
+INFO  13:36:37,329 - #37 ,
+INFO  13:36:37,331 - #47 z
+INFO  13:36:37,331 - #35 ;
+INFO  13:36:37,331 - #47 int
+INFO  13:36:37,331 - #47 x
+INFO  13:36:37,331 - #37 ,
+ERROR 13:36:37,331 - Izvrsen oporavak na liniji 3
+INFO  13:36:37,331 - #47 z
+INFO  13:36:37,331 - #35 ;
+INFO  13:36:37,332 - #47 int
+INFO  13:36:37,332 - #35 ;
+ERROR 13:36:37,332 - 
+Sintaksna greska kod simbola ';' na liniji 5
+INFO  13:36:37,332 - #43 {
+INFO  13:36:37,332 - #44 }
+ERROR 13:36:37,332 - Izvrsen oporavak na liniji 5
+INFO  13:36:37,333 - Program(
+ errorRecovery
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived1(
+        GlobalDeclListDerived1(
+          GlobalDeclListDerived2(
+          ) [GlobalDeclListDerived2]
+          DeclDerived1(
+            ConstDeclDerived2(
+            ) [ConstDeclDerived2]
+          ) [DeclDerived1]
+        ) [GlobalDeclListDerived1]
+        DeclDerived2(
+          VarDeclDerived2(
+          ) [VarDeclDerived2]
+        ) [DeclDerived2]
+      ) [GlobalDeclListDerived1]
+      DeclDerived2(
+        VarDeclDerived1(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          VarDeclListDerived1(
+            VarDeclListDerived2(
+              VarDerived1(
+               x
+              ) [VarDerived1]
+            ) [VarDeclListDerived2]
+            VarDerived1(
+             z
+            ) [VarDerived1]
+          ) [VarDeclListDerived1]
+        ) [VarDeclDerived1]
+      ) [DeclDerived2]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclDerived2(
+      ) [VarDeclDerived2]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  13:36:37,333 - ===================================

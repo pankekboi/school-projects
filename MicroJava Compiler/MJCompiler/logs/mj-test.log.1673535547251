@@ -1,0 +1,18 @@
+INFO  15:56:10,966 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  15:56:10,989 - #2 program
+INFO  15:56:10,989 - #47 errorRecovery
+INFO  15:56:10,989 - #47 int
+INFO  15:56:10,990 - #47 x
+INFO  15:56:10,990 - #37 ,
+INFO  15:56:10,990 - #35 ;
+ERROR 15:56:10,990 - 
+Sintaksna greska na liniji 2
+INFO  15:56:10,990 - #43 {
+INFO  15:56:10,990 - #46 void
+INFO  15:56:10,990 - #47 main
+INFO  15:56:10,991 - #39 (
+INFO  15:56:10,991 - #40 )
+INFO  15:56:10,991 - #43 {
+INFO  15:56:10,991 - #44 }
+INFO  15:56:10,991 - #44 }
+ERROR 15:56:10,991 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

@@ -1,0 +1,127 @@
+INFO  17:58:56,090 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  17:58:56,120 - #2 program
+INFO  17:58:56,120 - #47 mojProgram
+INFO  17:58:56,120 - #47 int
+INFO  17:58:56,120 - #47 x
+INFO  17:58:56,121 - #35 ;
+INFO  17:58:56,121 - #43 {
+INFO  17:58:56,122 - #46 void
+INFO  17:58:56,122 - #47 main
+INFO  17:58:56,122 - #39 (
+INFO  17:58:56,122 - #40 )
+INFO  17:58:56,123 - #47 int
+INFO  17:58:56,123 - #47 dummy1
+INFO  17:58:56,124 - #37 ,
+INFO  17:58:56,124 - #47 dummy2
+INFO  17:58:56,124 - #37 ,
+INFO  17:58:56,124 - #47 dummy3
+INFO  17:58:56,124 - #35 ;
+INFO  17:58:56,124 - #43 {
+INFO  17:58:56,125 - #47 x
+INFO  17:58:56,125 - #33 ++
+INFO  17:58:56,125 - #35 ;
+INFO  17:58:56,126 - #12 print
+INFO  17:58:56,127 - #39 (
+INFO  17:58:56,127 - #47 x
+INFO  17:58:56,127 - #40 )
+INFO  17:58:56,127 - #35 ;
+INFO  17:58:56,127 - #44 }
+INFO  17:58:56,127 - #44 }
+INFO  17:58:56,132 - Program(
+  ProgName(
+   mojProgram
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDeclListDerived2(
+          RegVar(
+           x
+          ) [RegVar]
+        ) [VarDeclListDerived2]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived1(
+        VarMethDeclListDerived2(
+        ) [VarMethDeclListDerived2]
+        VarDeclMeth(
+          VarTypeMeth(
+            Type(
+             int
+            ) [Type]
+          ) [VarTypeMeth]
+          VarDeclListMethDerived1(
+            VarDeclListMethDerived1(
+              VarDeclListMethDerived2(
+                RegVarMeth(
+                 dummy1
+                ) [RegVarMeth]
+              ) [VarDeclListMethDerived2]
+              RegVarMeth(
+               dummy2
+              ) [RegVarMeth]
+            ) [VarDeclListMethDerived1]
+            RegVarMeth(
+             dummy3
+            ) [RegVarMeth]
+          ) [VarDeclListMethDerived1]
+        ) [VarDeclMeth]
+      ) [VarMethDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          StatementDerived1(
+            DesignatorStmtInc(
+              DesignatorName(
+               x
+              ) [DesignatorName]
+            ) [DesignatorStmtInc]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        PrintStmt(
+          TermExpr(
+            TermFactor(
+              DesignatorFactor(
+                DesignatorName(
+                 x
+                ) [DesignatorName]
+              ) [DesignatorFactor]
+            ) [TermFactor]
+          ) [TermExpr]
+          PrintParamDerived2(
+          ) [PrintParamDerived2]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  17:58:56,132 - ===================================
+INFO  17:58:56,134 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  17:58:56,134 - Deklarisana lokalna promenljiva 'dummy1' na liniji 5
+INFO  17:58:56,134 - Deklarisana lokalna promenljiva 'dummy2' na liniji 5
+INFO  17:58:56,134 - Deklarisana lokalna promenljiva 'dummy3' na liniji 5
+INFO  17:58:56,134 - Detektovano koriscenje promenljive x na liniji 7
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  17:58:56,134 - Detektovano koriscenje promenljive x na liniji 9
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  17:58:56,135 - ===================================

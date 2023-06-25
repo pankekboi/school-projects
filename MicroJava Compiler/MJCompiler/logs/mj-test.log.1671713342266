@@ -1,0 +1,45 @@
+INFO  13:48:03,010 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  13:48:03,031 - #2 program
+INFO  13:48:03,031 - #47 errorRecovery
+INFO  13:48:03,031 - #7 const
+INFO  13:48:03,031 - #37 ,
+ERROR 13:48:03,031 - 
+Sintaksna greska kod simbola ',' na liniji 2
+INFO  13:48:03,031 - #37 ,
+INFO  13:48:03,031 - #37 ,
+INFO  13:48:03,032 - #47 y
+INFO  13:48:03,032 - #35 ;
+INFO  13:48:03,032 - #47 int
+INFO  13:48:03,032 - #47 x
+INFO  13:48:03,032 - #37 ,
+ERROR 13:48:03,032 - Izvrsen oporavak na liniji 2
+INFO  13:48:03,033 - #41 [
+ERROR 13:48:03,033 - 
+Sintaksna greska kod simbola '[' na liniji 3
+INFO  13:48:03,033 - #42 ]
+INFO  13:48:03,033 - #47 y
+INFO  13:48:03,033 - #37 ,
+INFO  13:48:03,033 - #47 z
+INFO  13:48:03,033 - #35 ;
+INFO  13:48:03,033 - #47 int
+INFO  13:48:03,033 - #47 x
+INFO  13:48:03,033 - #37 ,
+ERROR 13:48:03,033 - Izvrsen oporavak na liniji 3
+INFO  13:48:03,034 - #47 z
+INFO  13:48:03,034 - #35 ;
+INFO  13:48:03,034 - #47 int
+INFO  13:48:03,034 - #35 ;
+ERROR 13:48:03,034 - 
+Sintaksna greska kod simbola ';' na liniji 5
+INFO  13:48:03,034 - #43 {
+INFO  13:48:03,034 - #47 x
+INFO  13:48:03,034 - #32 =
+ERROR 13:48:03,034 - Izvrsen oporavak na liniji 5
+ERROR 13:48:03,034 - 
+Sintaksna greska kod simbola '=' na liniji 7
+INFO  13:48:03,035 - #48 1
+INFO  13:48:03,035 - #19 +
+INFO  13:48:03,035 - #48 2
+INFO  13:48:03,035 - #35 ;
+INFO  13:48:03,035 - #44 }
+ERROR 13:48:03,035 - Fatalna greska, parsiranje se ne moze nastaviti kod simbola 'null' na liniji 8

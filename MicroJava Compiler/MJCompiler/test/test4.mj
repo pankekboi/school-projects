@@ -1,0 +1,6 @@
+program Test4
+{
+	void main(){
+		y = x[0] + 1;
+	}
+}

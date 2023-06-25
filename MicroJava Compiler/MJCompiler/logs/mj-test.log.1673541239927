@@ -1,0 +1,49 @@
+INFO  17:30:30,031 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  17:30:30,052 - #2 program
+INFO  17:30:30,052 - #47 errorRecovery
+INFO  17:30:30,052 - #47 int
+INFO  17:30:30,053 - #35 ;
+ERROR 17:30:30,053 - 
+Sintaksna greska na liniji 2
+INFO  17:30:30,053 - #43 {
+INFO  17:30:30,053 - #46 void
+INFO  17:30:30,053 - #47 main
+ERROR 17:30:30,053 - Izvrsen oporavak do ; na liniji 2
+INFO  17:30:30,054 - #39 (
+INFO  17:30:30,054 - #40 )
+INFO  17:30:30,055 - #43 {
+INFO  17:30:30,055 - #44 }
+INFO  17:30:30,055 - #44 }
+INFO  17:30:30,059 - Program(
+  ProgName(
+   errorRecovery
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclDerived1(
+      ) [VarDeclDerived1]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  17:30:30,060 - ===================================
+INFO  17:30:30,062 - ===================================
+INFO  17:30:30,064 - PARSIRANJE JE USPESNO ZAVRSENO!

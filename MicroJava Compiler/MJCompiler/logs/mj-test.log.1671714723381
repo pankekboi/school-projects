@@ -1,0 +1,135 @@
+INFO  14:11:38,041 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  14:11:38,062 - #2 program
+INFO  14:11:38,063 - #47 errorRecovery
+INFO  14:11:38,063 - #7 const
+INFO  14:11:38,063 - #37 ,
+ERROR 14:11:38,063 - 
+Sintaksna greska na liniji 2
+INFO  14:11:38,063 - #37 ,
+INFO  14:11:38,063 - #37 ,
+INFO  14:11:38,063 - #47 y
+INFO  14:11:38,063 - #35 ;
+INFO  14:11:38,063 - #47 int
+INFO  14:11:38,064 - #47 x
+INFO  14:11:38,064 - #37 ,
+ERROR 14:11:38,064 - Izvrsen oporavak na liniji 2
+INFO  14:11:38,064 - #41 [
+ERROR 14:11:38,064 - 
+Sintaksna greska na liniji 3
+INFO  14:11:38,064 - #42 ]
+INFO  14:11:38,064 - #47 y
+INFO  14:11:38,064 - #37 ,
+INFO  14:11:38,064 - #47 z
+INFO  14:11:38,067 - #35 ;
+INFO  14:11:38,067 - #47 int
+INFO  14:11:38,067 - #47 x
+INFO  14:11:38,067 - #37 ,
+ERROR 14:11:38,067 - Izvrsen oporavak na liniji 3
+INFO  14:11:38,067 - #47 z
+INFO  14:11:38,067 - #35 ;
+INFO  14:11:38,067 - #47 int
+INFO  14:11:38,067 - #35 ;
+ERROR 14:11:38,068 - 
+Sintaksna greska na liniji 5
+INFO  14:11:38,068 - #43 {
+INFO  14:11:38,068 - #46 void
+INFO  14:11:38,068 - #47 main
+ERROR 14:11:38,068 - Izvrsen oporavak na liniji 5
+INFO  14:11:38,068 - #39 (
+INFO  14:11:38,068 - #40 )
+INFO  14:11:38,068 - #43 {
+INFO  14:11:38,069 - #47 x
+INFO  14:11:38,069 - #32 =
+INFO  14:11:38,069 - #48 1
+INFO  14:11:38,070 - #19 +
+INFO  14:11:38,070 - #48 2
+INFO  14:11:38,070 - #35 ;
+INFO  14:11:38,070 - #44 }
+INFO  14:11:38,071 - #44 }
+INFO  14:11:38,071 - Program(
+ errorRecovery
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived1(
+        GlobalDeclListDerived1(
+          GlobalDeclListDerived2(
+          ) [GlobalDeclListDerived2]
+          DeclDerived1(
+            ConstDeclDerived2(
+            ) [ConstDeclDerived2]
+          ) [DeclDerived1]
+        ) [GlobalDeclListDerived1]
+        DeclDerived2(
+          VarDeclDerived2(
+          ) [VarDeclDerived2]
+        ) [DeclDerived2]
+      ) [GlobalDeclListDerived1]
+      DeclDerived2(
+        VarDeclDerived1(
+          TypeDerived1(
+           int
+          ) [TypeDerived1]
+          VarDeclListDerived1(
+            VarDeclListDerived2(
+              VarDerived1(
+               x
+              ) [VarDerived1]
+            ) [VarDeclListDerived2]
+            VarDerived1(
+             z
+            ) [VarDerived1]
+          ) [VarDeclListDerived1]
+        ) [VarDeclDerived1]
+      ) [DeclDerived2]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclDerived2(
+      ) [VarDeclDerived2]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodRetTypeDerived2(
+    ) [MethodRetTypeDerived2]
+   main
+    FormParsListDerived2(
+    ) [FormParsListDerived2]
+    VarMethDeclListDerived2(
+    ) [VarMethDeclListDerived2]
+    StatementListDerived1(
+      StatementListDerived2(
+      ) [StatementListDerived2]
+      StatementDerived1(
+        DesignatorStatementDerived1(
+          DesignatorDerived1(
+           x
+            DesignatorOptListDerived3(
+            ) [DesignatorOptListDerived3]
+          ) [DesignatorDerived1]
+          DesignatorActionDerived1(
+            AssignopDerived1(
+            ) [AssignopDerived1]
+            ExprDerived3(
+              ExprDerived1(
+                TermDerived1(
+                  FactorDerived2(
+                   1
+                  ) [FactorDerived2]
+                ) [TermDerived1]
+              ) [ExprDerived1]
+              AddopDerived1(
+              ) [AddopDerived1]
+              TermDerived1(
+                FactorDerived2(
+                 2
+                ) [FactorDerived2]
+              ) [TermDerived1]
+            ) [ExprDerived3]
+          ) [DesignatorActionDerived1]
+        ) [DesignatorStatementDerived1]
+      ) [StatementDerived1]
+    ) [StatementListDerived1]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:11:38,071 - ===================================

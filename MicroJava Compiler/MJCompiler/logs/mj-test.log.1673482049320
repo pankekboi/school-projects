@@ -1,0 +1,69 @@
+INFO  01:06:22,142 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  01:06:22,164 - #2 program
+INFO  01:06:22,164 - #47 errorRecovery
+INFO  01:06:22,164 - #7 const
+INFO  01:06:22,164 - #47 y
+INFO  01:06:22,165 - #35 ;
+ERROR 01:06:22,165 - 
+Sintaksna greska na liniji 2
+INFO  01:06:22,165 - #47 int
+INFO  01:06:22,165 - #47 x
+INFO  01:06:22,165 - #37 ,
+ERROR 01:06:22,165 - Izvrsen oporavak na liniji 2
+INFO  01:06:22,166 - #37 ,
+ERROR 01:06:22,166 - 
+Sintaksna greska na liniji 3
+INFO  01:06:22,166 - #41 [
+INFO  01:06:22,166 - #42 ]
+INFO  01:06:22,166 - #47 y
+INFO  01:06:22,166 - #37 ,
+INFO  01:06:22,166 - #47 z
+INFO  01:06:22,166 - #35 ;
+INFO  01:06:22,166 - #43 {
+INFO  01:06:22,168 - #46 void
+INFO  01:06:22,168 - #47 main
+ERROR 01:06:22,168 - Izvrsen oporavak na liniji 3
+INFO  01:06:22,168 - #39 (
+INFO  01:06:22,169 - #40 )
+INFO  01:06:22,169 - #43 {
+INFO  01:06:22,169 - #44 }
+INFO  01:06:22,169 - #44 }
+INFO  01:06:22,172 - Program(
+  ProgName(
+   errorRecovery
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived2(
+      ) [GlobalDeclListDerived2]
+      DeclDerived2(
+        VarDeclDerived1(
+        ) [VarDeclDerived1]
+      ) [DeclDerived2]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclDerived1(
+      ) [VarDeclDerived1]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  01:06:22,172 - ===================================
+INFO  01:06:22,174 - ===================================
+INFO  01:06:22,176 - PARSIRANJE JE USPESNO ZAVRSENO!

@@ -1,0 +1,214 @@
+INFO  12:31:03,218 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  12:31:03,248 - #2 program
+INFO  12:31:03,248 - #47 mojProgram
+INFO  12:31:03,248 - #47 int
+INFO  12:31:03,248 - #47 x
+INFO  12:31:03,249 - #35 ;
+INFO  12:31:03,249 - #43 {
+INFO  12:31:03,249 - #46 void
+INFO  12:31:03,250 - #47 main
+INFO  12:31:03,250 - #39 (
+INFO  12:31:03,250 - #40 )
+INFO  12:31:03,250 - #47 int
+INFO  12:31:03,251 - #47 dummy1
+INFO  12:31:03,251 - #37 ,
+INFO  12:31:03,251 - #47 dummy2
+INFO  12:31:03,251 - #37 ,
+INFO  12:31:03,252 - #47 dummy3
+INFO  12:31:03,252 - #35 ;
+INFO  12:31:03,252 - #47 int
+INFO  12:31:03,252 - #47 y
+INFO  12:31:03,252 - #41 [
+INFO  12:31:03,252 - #42 ]
+INFO  12:31:03,252 - #35 ;
+INFO  12:31:03,253 - #43 {
+INFO  12:31:03,253 - #47 y
+INFO  12:31:03,253 - #32 =
+INFO  12:31:03,253 - #11 new
+INFO  12:31:03,253 - #47 int
+INFO  12:31:03,253 - #41 [
+INFO  12:31:03,253 - #48 3
+INFO  12:31:03,254 - #42 ]
+INFO  12:31:03,254 - #35 ;
+INFO  12:31:03,254 - #47 x
+INFO  12:31:03,254 - #33 ++
+INFO  12:31:03,254 - #35 ;
+INFO  12:31:03,254 - #47 x
+INFO  12:31:03,254 - #33 ++
+INFO  12:31:03,254 - #35 ;
+INFO  12:31:03,254 - #47 x
+INFO  12:31:03,254 - #33 ++
+INFO  12:31:03,254 - #35 ;
+INFO  12:31:03,254 - #12 print
+INFO  12:31:03,255 - #39 (
+INFO  12:31:03,255 - #47 x
+INFO  12:31:03,255 - #40 )
+INFO  12:31:03,255 - #35 ;
+INFO  12:31:03,255 - #44 }
+INFO  12:31:03,255 - #44 }
+INFO  12:31:03,260 - Program(
+  ProgName(
+   mojProgram
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDeclListDerived2(
+          RegVar(
+           x
+          ) [RegVar]
+        ) [VarDeclListDerived2]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived1(
+        VarMethDeclListDerived1(
+          VarMethDeclListDerived2(
+          ) [VarMethDeclListDerived2]
+          VarDeclMeth(
+            VarTypeMeth(
+              Type(
+               int
+              ) [Type]
+            ) [VarTypeMeth]
+            VarDeclListMethDerived1(
+              VarDeclListMethDerived1(
+                VarDeclListMethDerived2(
+                  RegVarMeth(
+                   dummy1
+                  ) [RegVarMeth]
+                ) [VarDeclListMethDerived2]
+                RegVarMeth(
+                 dummy2
+                ) [RegVarMeth]
+              ) [VarDeclListMethDerived1]
+              RegVarMeth(
+               dummy3
+              ) [RegVarMeth]
+            ) [VarDeclListMethDerived1]
+          ) [VarDeclMeth]
+        ) [VarMethDeclListDerived1]
+        VarDeclMeth(
+          VarTypeMeth(
+            Type(
+             int
+            ) [Type]
+          ) [VarTypeMeth]
+          VarDeclListMethDerived2(
+            ArrVarMeth(
+             y
+            ) [ArrVarMeth]
+          ) [VarDeclListMethDerived2]
+        ) [VarDeclMeth]
+      ) [VarMethDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived2(
+                ) [StatementListDerived2]
+                StatementDerived1(
+                  AssignStmt(
+                    DesignatorName(
+                     y
+                    ) [DesignatorName]
+                    AssignopDerived1(
+                    ) [AssignopDerived1]
+                    OkExpr(
+                      TermExpr(
+                        TermFactor(
+                          NewArrayFactor(
+                            Type(
+                             int
+                            ) [Type]
+                            TermExpr(
+                              TermFactor(
+                                NumFactor(
+                                 3
+                                ) [NumFactor]
+                              ) [TermFactor]
+                            ) [TermExpr]
+                          ) [NewArrayFactor]
+                        ) [TermFactor]
+                      ) [TermExpr]
+                    ) [OkExpr]
+                  ) [AssignStmt]
+                ) [StatementDerived1]
+              ) [StatementListDerived1]
+              StatementDerived1(
+                DesignatorStmtInc(
+                  DesignatorName(
+                   x
+                  ) [DesignatorName]
+                ) [DesignatorStmtInc]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+            StatementDerived1(
+              DesignatorStmtInc(
+                DesignatorName(
+                 x
+                ) [DesignatorName]
+              ) [DesignatorStmtInc]
+            ) [StatementDerived1]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            DesignatorStmtInc(
+              DesignatorName(
+               x
+              ) [DesignatorName]
+            ) [DesignatorStmtInc]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        PrintStmt(
+          TermExpr(
+            TermFactor(
+              DesignatorFactor(
+                DesignatorName(
+                 x
+                ) [DesignatorName]
+              ) [DesignatorFactor]
+            ) [TermFactor]
+          ) [TermExpr]
+          PrintParamDerived2(
+          ) [PrintParamDerived2]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  12:31:03,260 - ===================================
+INFO  12:31:03,262 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  12:31:03,262 - Deklarisana lokalna promenljiva 'dummy1' na liniji 5
+INFO  12:31:03,262 - Deklarisana lokalna promenljiva 'dummy2' na liniji 5
+INFO  12:31:03,262 - Deklarisana lokalna promenljiva 'dummy3' na liniji 5
+INFO  12:31:03,262 - Deklarisana lokalna promenljiva 'y' na liniji 6
+INFO  12:31:03,262 - Detektovano koriscenje promenljive y na liniji 8
+Izgled objektnog cvora: Var y: Arr of int, 3, 1 
+INFO  12:31:03,262 - Detektovano koriscenje promenljive x na liniji 10
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  12:31:03,263 - Detektovano koriscenje promenljive x na liniji 11
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  12:31:03,263 - Detektovano koriscenje promenljive x na liniji 12
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  12:31:03,263 - Detektovano koriscenje promenljive x na liniji 14
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  12:31:03,263 - ===================================

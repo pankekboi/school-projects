@@ -1,0 +1,101 @@
+INFO  15:14:39,664 - #2 program
+INFO  15:14:39,665 - #47 Test6
+INFO  15:14:39,665 - #47 MojTipPodatka
+INFO  15:14:39,665 - #47 x
+INFO  15:14:39,666 - #37 ,
+INFO  15:14:39,666 - #47 y
+INFO  15:14:39,666 - #37 ,
+INFO  15:14:39,666 - #47 z
+INFO  15:14:39,666 - #35 ;
+INFO  15:14:39,667 - #43 {
+INFO  15:14:39,667 - #46 void
+INFO  15:14:39,667 - #47 main
+INFO  15:14:39,668 - #39 (
+INFO  15:14:39,668 - #40 )
+INFO  15:14:39,668 - #47 vector
+INFO  15:14:39,669 - #47 w1
+INFO  15:14:39,669 - #37 ,
+INFO  15:14:39,670 - #47 w2
+INFO  15:14:39,670 - #35 ;
+INFO  15:14:39,670 - #43 {
+INFO  15:14:39,670 - #44 }
+INFO  15:14:39,670 - #44 }
+INFO  15:14:39,676 - Program(
+  ProgName(
+   Test6
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           MojTipPodatka
+          ) [Type]
+        ) [VarType]
+        MultiVarDecl(
+          RegVar(
+           x
+          ) [RegVar]
+          MultiVarDecl(
+            RegVar(
+             y
+            ) [RegVar]
+            SingleVarDecl(
+              RegVar(
+               z
+              ) [RegVar]
+            ) [SingleVarDecl]
+          ) [MultiVarDecl]
+        ) [MultiVarDecl]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived1(
+        VarMethDeclListDerived2(
+        ) [VarMethDeclListDerived2]
+        VarDeclMeth(
+          VarTypeMeth(
+            Type(
+             vector
+            ) [Type]
+          ) [VarTypeMeth]
+          VarDeclListMethDerived1(
+            VarDeclListMethDerived2(
+              RegVarMeth(
+               w1
+              ) [RegVarMeth]
+            ) [VarDeclListMethDerived2]
+            RegVarMeth(
+             w2
+            ) [RegVarMeth]
+          ) [VarDeclListMethDerived1]
+        ) [VarDeclMeth]
+      ) [VarMethDeclListDerived1]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  15:14:39,677 - ===================================
+ERROR 15:14:39,678 - Tip podatka 'MojTipPodatka' ne postoji u specifikaciji. Greska na liniji 2
+ERROR 15:14:39,678 - Tip podatka MojTipPodatka ne postoji!
+ERROR 15:14:39,678 - Tip podatka MojTipPodatka ne postoji!
+ERROR 15:14:39,678 - Tip podatka MojTipPodatka ne postoji!
+ERROR 15:14:39,678 - Tip podatka 'vector' ne postoji u specifikaciji. Greska na liniji 5
+ERROR 15:14:39,678 - Tip podatka vector ne postoji!
+ERROR 15:14:39,679 - Tip podatka vector ne postoji!
+INFO  15:14:39,679 - ===================================
+INFO  15:14:39,679 - KOMPAJLIRANJE NIJE USPESNO ZAVRSENO!

@@ -1,0 +1,88 @@
+INFO  14:54:24,966 - #2 program
+INFO  14:54:24,966 - #47 Test2
+INFO  14:54:24,966 - #43 {
+INFO  14:54:24,967 - #46 void
+INFO  14:54:24,967 - #47 main
+INFO  14:54:24,968 - #39 (
+INFO  14:54:24,968 - #40 )
+INFO  14:54:24,968 - #47 int
+INFO  14:54:24,968 - #47 x
+INFO  14:54:24,969 - #35 ;
+INFO  14:54:24,969 - #43 {
+INFO  14:54:24,969 - #47 x
+INFO  14:54:24,970 - #32 =
+INFO  14:54:24,970 - #19 +
+ERROR 14:54:24,970 - 
+Sintaksna greska na liniji 6
+INFO  14:54:24,971 - #47 x
+INFO  14:54:24,971 - #35 ;
+INFO  14:54:24,971 - #47 x
+INFO  14:54:24,971 - #32 =
+INFO  14:54:24,971 - #47 x
+ERROR 14:54:24,972 - Izvrsen oporavak do ; prilikom dodele na liniji 1
+INFO  14:54:24,972 - #19 +
+INFO  14:54:24,972 - #37 ,
+ERROR 14:54:24,973 - 
+Sintaksna greska na liniji 7
+INFO  14:54:24,973 - #21 *
+INFO  14:54:24,973 - #48 1
+INFO  14:54:24,973 - #35 ;
+INFO  14:54:24,973 - #44 }
+INFO  14:54:24,973 - #44 }
+ERROR 14:54:24,973 - Izvrsen oporavak do ; prilikom dodele na liniji 1
+INFO  14:54:24,979 - Program(
+  ProgName(
+   Test2
+  ) [ProgName]
+  GlobalDeclListDerived2(
+  ) [GlobalDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived1(
+        VarMethDeclListDerived2(
+        ) [VarMethDeclListDerived2]
+        VarDeclMeth(
+          VarTypeMeth(
+            Type(
+             int
+            ) [Type]
+          ) [VarTypeMeth]
+          VarDeclListMethDerived2(
+            RegVarMeth(
+             x
+            ) [RegVarMeth]
+          ) [VarDeclListMethDerived2]
+        ) [VarDeclMeth]
+      ) [VarMethDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          StatementDerived1(
+            DesignatorStatementDerived1(
+            ) [DesignatorStatementDerived1]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          DesignatorStatementDerived1(
+          ) [DesignatorStatementDerived1]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:54:24,979 - ===================================
+INFO  14:54:24,981 - Deklarisana lokalna promenljiva 'x' na liniji 4
+INFO  14:54:24,981 - ===================================
+INFO  14:54:24,981 - Generisanje bajtkoda za fajl: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\test2.obj
+INFO  14:54:24,983 - ===================================
+INFO  14:54:24,983 - KOMPAJLIRANJE JE USPESNO ZAVRSENO!

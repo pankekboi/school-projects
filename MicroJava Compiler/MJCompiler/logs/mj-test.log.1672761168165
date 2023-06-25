@@ -1,0 +1,89 @@
+INFO  16:43:20,451 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  16:43:20,481 - #2 program
+INFO  16:43:20,481 - #47 mojProgram
+INFO  16:43:20,481 - #7 const
+INFO  16:43:20,482 - #47 int
+INFO  16:43:20,482 - #47 x
+INFO  16:43:20,482 - #32 =
+INFO  16:43:20,482 - #48 1
+INFO  16:43:20,483 - #37 ,
+INFO  16:43:20,483 - #47 y
+INFO  16:43:20,483 - #32 =
+INFO  16:43:20,483 - #48 2
+INFO  16:43:20,483 - #37 ,
+INFO  16:43:20,484 - #47 z
+INFO  16:43:20,484 - #32 =
+INFO  16:43:20,484 - #48 3
+INFO  16:43:20,484 - #35 ;
+INFO  16:43:20,484 - #43 {
+INFO  16:43:20,484 - #46 void
+INFO  16:43:20,485 - #47 main
+INFO  16:43:20,485 - #39 (
+INFO  16:43:20,485 - #40 )
+INFO  16:43:20,486 - #43 {
+INFO  16:43:20,487 - #44 }
+INFO  16:43:20,488 - #44 }
+INFO  16:43:20,492 - Program(
+  ProgName(
+   mojProgram
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived1(
+      ConstDeclDerived1(
+        ConstType(
+          Type(
+           int
+          ) [Type]
+        ) [ConstType]
+        Const(
+         x
+          ConstNum(
+           1
+          ) [ConstNum]
+        ) [Const]
+        ConstDeclListDerived1(
+          ConstDeclListDerived1(
+            NoConstDeclList(
+            ) [NoConstDeclList]
+            Const(
+             y
+              ConstNum(
+               2
+              ) [ConstNum]
+            ) [Const]
+          ) [ConstDeclListDerived1]
+          Const(
+           z
+            ConstNum(
+             3
+            ) [ConstNum]
+          ) [Const]
+        ) [ConstDeclListDerived1]
+      ) [ConstDeclDerived1]
+    ) [DeclDerived1]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  16:43:20,492 - ===================================
+INFO  16:43:20,494 - Deklarisana simbolicka konstanta 'x' na liniji 2
+INFO  16:43:20,494 - Deklarisana simbolicka konstanta 'y' na liniji 2
+INFO  16:43:20,494 - Deklarisana simbolicka konstanta 'z' na liniji 2
+INFO  16:43:20,494 - ===================================

@@ -1,0 +1,94 @@
+INFO  17:03:06,818 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  17:03:06,840 - #2 program
+INFO  17:03:06,840 - #47 mojProgram
+INFO  17:03:06,840 - #47 int
+INFO  17:03:06,840 - #47 x
+INFO  17:03:06,841 - #35 ;
+INFO  17:03:06,841 - #43 {
+INFO  17:03:06,841 - #46 void
+INFO  17:03:06,842 - #47 main
+INFO  17:03:06,842 - #39 (
+INFO  17:03:06,842 - #40 )
+INFO  17:03:06,842 - #43 {
+INFO  17:03:06,843 - #47 x
+INFO  17:03:06,843 - #33 ++
+INFO  17:03:06,843 - #35 ;
+INFO  17:03:06,843 - #12 print
+INFO  17:03:06,843 - #39 (
+INFO  17:03:06,843 - #47 x
+INFO  17:03:06,843 - #40 )
+INFO  17:03:06,844 - #35 ;
+INFO  17:03:06,844 - #44 }
+INFO  17:03:06,844 - #44 }
+INFO  17:03:06,847 - Program(
+  ProgName(
+   mojProgram
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDeclListDerived2(
+          RegVar(
+           x
+          ) [RegVar]
+        ) [VarDeclListDerived2]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          StatementDerived1(
+            DesignatorStmtInc(
+              DesignatorName(
+               x
+              ) [DesignatorName]
+            ) [DesignatorStmtInc]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        PrintStmt(
+          TermExpr(
+            TermFactor(
+              DesignatorFactor(
+                DesignatorName(
+                 x
+                ) [DesignatorName]
+              ) [DesignatorFactor]
+            ) [TermFactor]
+          ) [TermExpr]
+          PrintParamDerived2(
+          ) [PrintParamDerived2]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  17:03:06,848 - ===================================
+INFO  17:03:06,849 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  17:03:06,849 - Detektovano koriscenje promenljive x na liniji 5
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  17:03:06,849 - Detektovano koriscenje promenljive x na liniji 7
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  17:03:06,850 - ===================================
+INFO  17:03:06,851 - PARSIRANJE JE USPESNO ZAVRSENO!

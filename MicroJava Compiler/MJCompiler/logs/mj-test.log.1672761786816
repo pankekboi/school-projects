@@ -1,0 +1,71 @@
+INFO  16:56:01,126 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  16:56:01,156 - #2 program
+INFO  16:56:01,156 - #47 mojProgram
+INFO  16:56:01,156 - #47 int
+INFO  16:56:01,157 - #47 x
+INFO  16:56:01,157 - #35 ;
+INFO  16:56:01,157 - #43 {
+INFO  16:56:01,158 - #46 void
+INFO  16:56:01,158 - #47 main
+INFO  16:56:01,158 - #39 (
+INFO  16:56:01,158 - #40 )
+INFO  16:56:01,159 - #43 {
+INFO  16:56:01,159 - #47 x
+INFO  16:56:01,159 - #33 ++
+INFO  16:56:01,160 - #35 ;
+INFO  16:56:01,160 - #44 }
+INFO  16:56:01,160 - #44 }
+INFO  16:56:01,164 - Program(
+  ProgName(
+   mojProgram
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarDeclListDerived2(
+          RegVar(
+           x
+          ) [RegVar]
+        ) [VarDeclListDerived2]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived1(
+          DesignatorStmtInc(
+            DesignatorName(
+             x
+            ) [DesignatorName]
+          ) [DesignatorStmtInc]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  16:56:01,165 - ===================================
+INFO  16:56:01,167 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  16:56:01,168 - Detektovano koriscenje promenljive x na liniji 5
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  16:56:01,168 - ===================================

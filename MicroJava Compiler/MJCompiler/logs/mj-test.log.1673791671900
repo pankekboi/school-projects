@@ -1,0 +1,90 @@
+INFO  15:05:47,055 - #2 program
+INFO  15:05:47,055 - #47 Test4
+INFO  15:05:47,055 - #43 {
+INFO  15:05:47,056 - #46 void
+INFO  15:05:47,056 - #47 main
+INFO  15:05:47,057 - #39 (
+INFO  15:05:47,057 - #40 )
+INFO  15:05:47,057 - #43 {
+INFO  15:05:47,057 - #47 y
+INFO  15:05:47,058 - #32 =
+INFO  15:05:47,058 - #47 x
+INFO  15:05:47,058 - #41 [
+INFO  15:05:47,059 - #48 0
+INFO  15:05:47,059 - #42 ]
+INFO  15:05:47,059 - #19 +
+INFO  15:05:47,060 - #48 1
+INFO  15:05:47,060 - #35 ;
+INFO  15:05:47,060 - #44 }
+INFO  15:05:47,061 - #44 }
+INFO  15:05:47,066 - Program(
+  ProgName(
+   Test4
+  ) [ProgName]
+  GlobalDeclListDerived2(
+  ) [GlobalDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived1(
+          AssignStmt(
+            DesignatorName(
+             y
+            ) [DesignatorName]
+            AssignopDerived1(
+            ) [AssignopDerived1]
+            OkExpr(
+              AddExpr(
+                TermExpr(
+                  TermFactor(
+                    DesignatorFactor(
+                      DesignatorArray(
+                        DesignatorName(
+                         x
+                        ) [DesignatorName]
+                        TermExpr(
+                          TermFactor(
+                            NumFactor(
+                             0
+                            ) [NumFactor]
+                          ) [TermFactor]
+                        ) [TermExpr]
+                      ) [DesignatorArray]
+                    ) [DesignatorFactor]
+                  ) [TermFactor]
+                ) [TermExpr]
+                OpPlus(
+                ) [OpPlus]
+                TermFactor(
+                  NumFactor(
+                   1
+                  ) [NumFactor]
+                ) [TermFactor]
+              ) [AddExpr]
+            ) [OkExpr]
+          ) [AssignStmt]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  15:05:47,067 - ===================================
+ERROR 15:05:47,068 - Promenljiva y nije deklarisana na liniji 4
+ERROR 15:05:47,068 - Promenljiva x nije deklarisana na liniji 4
+ERROR 15:05:47,068 - Promenljiva nije niz. Greska na liniji 4
+ERROR 15:05:47,069 - Promenljive u aritmetickom izrazu moraju biti tipa 'int'! Greska na liniji 4
+INFO  15:05:47,069 - ===================================
+INFO  15:05:47,069 - KOMPAJLIRANJE NIJE USPESNO ZAVRSENO!

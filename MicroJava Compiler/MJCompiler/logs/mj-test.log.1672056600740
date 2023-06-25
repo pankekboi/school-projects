@@ -1,0 +1,1841 @@
+INFO  13:08:23,485 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\test301.mj
+INFO  13:08:23,507 - #2 program
+INFO  13:08:23,507 - #47 test301
+INFO  13:08:23,507 - #7 const
+INFO  13:08:23,508 - #47 int
+INFO  13:08:23,508 - #47 nula
+INFO  13:08:23,508 - #32 =
+INFO  13:08:23,508 - #48 0
+INFO  13:08:23,508 - #35 ;
+INFO  13:08:23,509 - #7 const
+INFO  13:08:23,509 - #47 int
+INFO  13:08:23,509 - #47 jedan
+INFO  13:08:23,509 - #32 =
+INFO  13:08:23,509 - #48 1
+INFO  13:08:23,509 - #35 ;
+INFO  13:08:23,509 - #7 const
+INFO  13:08:23,509 - #47 int
+INFO  13:08:23,510 - #47 pet
+INFO  13:08:23,510 - #32 =
+INFO  13:08:23,510 - #48 5
+INFO  13:08:23,510 - #35 ;
+INFO  13:08:23,510 - #47 int
+INFO  13:08:23,511 - #47 niz
+INFO  13:08:23,512 - #41 [
+INFO  13:08:23,512 - #42 ]
+INFO  13:08:23,512 - #37 ,
+INFO  13:08:23,512 - #47 niz2
+INFO  13:08:23,512 - #41 [
+INFO  13:08:23,512 - #42 ]
+INFO  13:08:23,512 - #37 ,
+INFO  13:08:23,512 - #47 a
+INFO  13:08:23,512 - #37 ,
+INFO  13:08:23,512 - #47 b
+INFO  13:08:23,512 - #35 ;
+INFO  13:08:23,512 - #47 char
+INFO  13:08:23,513 - #47 nizch
+INFO  13:08:23,513 - #41 [
+INFO  13:08:23,513 - #42 ]
+INFO  13:08:23,513 - #35 ;
+INFO  13:08:23,513 - #43 {
+INFO  13:08:23,513 - #46 void
+INFO  13:08:23,513 - #47 main
+INFO  13:08:23,513 - #39 (
+INFO  13:08:23,514 - #40 )
+INFO  13:08:23,514 - #47 int
+INFO  13:08:23,514 - #47 bodovi
+INFO  13:08:23,515 - #35 ;
+INFO  13:08:23,515 - #47 bool
+INFO  13:08:23,515 - #47 bt
+INFO  13:08:23,515 - #35 ;
+INFO  13:08:23,515 - #43 {
+INFO  13:08:23,515 - #47 bodovi
+INFO  13:08:23,515 - #32 =
+INFO  13:08:23,516 - #48 0
+INFO  13:08:23,516 - #35 ;
+INFO  13:08:23,517 - #47 bodovi
+INFO  13:08:23,517 - #33 ++
+INFO  13:08:23,517 - #35 ;
+INFO  13:08:23,517 - #47 bodovi
+INFO  13:08:23,517 - #32 =
+INFO  13:08:23,517 - #47 bodovi
+INFO  13:08:23,517 - #19 +
+INFO  13:08:23,518 - #47 jedan
+INFO  13:08:23,518 - #35 ;
+INFO  13:08:23,518 - #47 bodovi
+INFO  13:08:23,518 - #32 =
+INFO  13:08:23,518 - #47 bodovi
+INFO  13:08:23,518 - #21 *
+INFO  13:08:23,518 - #47 pet
+INFO  13:08:23,519 - #35 ;
+INFO  13:08:23,519 - #47 bodovi
+INFO  13:08:23,519 - #34 --
+INFO  13:08:23,519 - #35 ;
+INFO  13:08:23,519 - #12 print
+INFO  13:08:23,519 - #39 (
+INFO  13:08:23,519 - #47 bodovi
+INFO  13:08:23,519 - #40 )
+INFO  13:08:23,519 - #35 ;
+INFO  13:08:23,519 - #47 niz
+INFO  13:08:23,520 - #32 =
+INFO  13:08:23,520 - #11 new
+INFO  13:08:23,520 - #47 int
+INFO  13:08:23,520 - #41 [
+INFO  13:08:23,520 - #48 3
+INFO  13:08:23,520 - #42 ]
+INFO  13:08:23,520 - #35 ;
+INFO  13:08:23,520 - #47 niz
+INFO  13:08:23,520 - #41 [
+INFO  13:08:23,520 - #47 nula
+INFO  13:08:23,520 - #42 ]
+INFO  13:08:23,520 - #32 =
+INFO  13:08:23,520 - #47 jedan
+INFO  13:08:23,520 - #35 ;
+INFO  13:08:23,520 - #47 niz
+INFO  13:08:23,520 - #41 [
+INFO  13:08:23,520 - #48 1
+INFO  13:08:23,520 - #42 ]
+INFO  13:08:23,521 - #32 =
+INFO  13:08:23,521 - #48 2
+INFO  13:08:23,521 - #35 ;
+INFO  13:08:23,521 - #47 niz
+INFO  13:08:23,521 - #41 [
+INFO  13:08:23,521 - #47 niz
+INFO  13:08:23,521 - #41 [
+INFO  13:08:23,521 - #47 jedan
+INFO  13:08:23,521 - #42 ]
+INFO  13:08:23,521 - #42 ]
+INFO  13:08:23,521 - #32 =
+INFO  13:08:23,521 - #47 niz
+INFO  13:08:23,521 - #41 [
+INFO  13:08:23,521 - #47 niz
+INFO  13:08:23,521 - #41 [
+INFO  13:08:23,521 - #48 0
+INFO  13:08:23,521 - #42 ]
+INFO  13:08:23,521 - #42 ]
+INFO  13:08:23,521 - #21 *
+INFO  13:08:23,521 - #48 3
+INFO  13:08:23,522 - #35 ;
+INFO  13:08:23,522 - #47 bodovi
+INFO  13:08:23,522 - #32 =
+INFO  13:08:23,522 - #47 niz
+INFO  13:08:23,522 - #41 [
+INFO  13:08:23,522 - #48 2
+INFO  13:08:23,522 - #42 ]
+INFO  13:08:23,522 - #22 /
+INFO  13:08:23,522 - #47 niz
+INFO  13:08:23,522 - #41 [
+INFO  13:08:23,522 - #48 0
+INFO  13:08:23,522 - #42 ]
+INFO  13:08:23,522 - #35 ;
+INFO  13:08:23,522 - #12 print
+INFO  13:08:23,522 - #39 (
+INFO  13:08:23,522 - #47 bodovi
+INFO  13:08:23,522 - #40 )
+INFO  13:08:23,522 - #35 ;
+INFO  13:08:23,522 - #12 print
+INFO  13:08:23,522 - #39 (
+INFO  13:08:23,523 - #47 niz
+INFO  13:08:23,523 - #41 [
+INFO  13:08:23,523 - #48 2
+INFO  13:08:23,523 - #42 ]
+INFO  13:08:23,523 - #40 )
+INFO  13:08:23,523 - #35 ;
+INFO  13:08:23,523 - #41 [
+INFO  13:08:23,523 - #47 a
+INFO  13:08:23,523 - #37 ,
+INFO  13:08:23,523 - #47 b
+INFO  13:08:23,523 - #42 ]
+INFO  13:08:23,523 - #32 =
+INFO  13:08:23,523 - #47 niz
+INFO  13:08:23,524 - #35 ;
+INFO  13:08:23,524 - #12 print
+INFO  13:08:23,524 - #39 (
+INFO  13:08:23,524 - #47 a
+INFO  13:08:23,524 - #40 )
+INFO  13:08:23,524 - #35 ;
+INFO  13:08:23,524 - #12 print
+INFO  13:08:23,524 - #39 (
+INFO  13:08:23,524 - #47 b
+INFO  13:08:23,524 - #40 )
+INFO  13:08:23,524 - #35 ;
+INFO  13:08:23,524 - #41 [
+INFO  13:08:23,524 - #37 ,
+INFO  13:08:23,524 - #47 a
+INFO  13:08:23,524 - #37 ,
+INFO  13:08:23,524 - #42 ]
+INFO  13:08:23,524 - #32 =
+INFO  13:08:23,524 - #47 niz
+INFO  13:08:23,524 - #35 ;
+INFO  13:08:23,524 - #12 print
+INFO  13:08:23,524 - #39 (
+INFO  13:08:23,524 - #47 a
+INFO  13:08:23,524 - #40 )
+INFO  13:08:23,524 - #35 ;
+INFO  13:08:23,524 - #47 niz2
+INFO  13:08:23,524 - #32 =
+INFO  13:08:23,524 - #11 new
+INFO  13:08:23,525 - #47 int
+INFO  13:08:23,525 - #41 [
+INFO  13:08:23,525 - #48 2
+INFO  13:08:23,525 - #42 ]
+INFO  13:08:23,525 - #35 ;
+INFO  13:08:23,525 - #41 [
+INFO  13:08:23,525 - #47 niz2
+INFO  13:08:23,525 - #41 [
+INFO  13:08:23,525 - #48 0
+INFO  13:08:23,525 - #42 ]
+INFO  13:08:23,525 - #37 ,
+INFO  13:08:23,525 - #37 ,
+INFO  13:08:23,525 - #47 niz2
+INFO  13:08:23,525 - #41 [
+INFO  13:08:23,525 - #47 niz
+INFO  13:08:23,525 - #41 [
+INFO  13:08:23,525 - #47 nula
+INFO  13:08:23,525 - #42 ]
+INFO  13:08:23,525 - #42 ]
+INFO  13:08:23,525 - #42 ]
+INFO  13:08:23,525 - #32 =
+INFO  13:08:23,525 - #47 niz
+INFO  13:08:23,525 - #35 ;
+INFO  13:08:23,525 - #12 print
+INFO  13:08:23,525 - #39 (
+INFO  13:08:23,525 - #47 niz2
+INFO  13:08:23,525 - #41 [
+INFO  13:08:23,525 - #48 0
+INFO  13:08:23,525 - #42 ]
+INFO  13:08:23,525 - #40 )
+INFO  13:08:23,526 - #35 ;
+INFO  13:08:23,526 - #12 print
+INFO  13:08:23,526 - #39 (
+INFO  13:08:23,526 - #47 niz2
+INFO  13:08:23,526 - #41 [
+INFO  13:08:23,526 - #48 1
+INFO  13:08:23,526 - #42 ]
+INFO  13:08:23,526 - #40 )
+INFO  13:08:23,526 - #35 ;
+INFO  13:08:23,526 - #47 nizch
+INFO  13:08:23,526 - #32 =
+INFO  13:08:23,526 - #11 new
+INFO  13:08:23,526 - #47 char
+INFO  13:08:23,526 - #41 [
+INFO  13:08:23,526 - #48 3
+INFO  13:08:23,526 - #42 ]
+INFO  13:08:23,526 - #35 ;
+INFO  13:08:23,526 - #47 nizch
+INFO  13:08:23,526 - #41 [
+INFO  13:08:23,526 - #48 0
+INFO  13:08:23,526 - #42 ]
+INFO  13:08:23,526 - #32 =
+INFO  13:08:23,526 - #49 a
+INFO  13:08:23,526 - #35 ;
+INFO  13:08:23,526 - #47 nizch
+INFO  13:08:23,526 - #41 [
+INFO  13:08:23,526 - #47 jedan
+INFO  13:08:23,526 - #42 ]
+INFO  13:08:23,526 - #32 =
+INFO  13:08:23,526 - #49 b
+INFO  13:08:23,526 - #35 ;
+INFO  13:08:23,526 - #47 nizch
+INFO  13:08:23,526 - #41 [
+INFO  13:08:23,526 - #47 pet
+INFO  13:08:23,526 - #20 -
+INFO  13:08:23,527 - #48 3
+INFO  13:08:23,527 - #42 ]
+INFO  13:08:23,527 - #32 =
+INFO  13:08:23,527 - #49 c
+INFO  13:08:23,527 - #35 ;
+INFO  13:08:23,527 - #12 print
+INFO  13:08:23,527 - #39 (
+INFO  13:08:23,527 - #47 nizch
+INFO  13:08:23,527 - #41 [
+INFO  13:08:23,527 - #48 1
+INFO  13:08:23,527 - #42 ]
+INFO  13:08:23,527 - #40 )
+INFO  13:08:23,527 - #35 ;
+INFO  13:08:23,527 - #12 print
+INFO  13:08:23,527 - #39 (
+INFO  13:08:23,527 - #47 nizch
+INFO  13:08:23,527 - #41 [
+INFO  13:08:23,527 - #47 jedan
+INFO  13:08:23,527 - #21 *
+INFO  13:08:23,527 - #48 2
+INFO  13:08:23,527 - #42 ]
+INFO  13:08:23,527 - #40 )
+INFO  13:08:23,527 - #35 ;
+INFO  13:08:23,527 - #13 read
+INFO  13:08:23,527 - #39 (
+INFO  13:08:23,527 - #47 bodovi
+INFO  13:08:23,528 - #40 )
+INFO  13:08:23,528 - #35 ;
+INFO  13:08:23,528 - #47 bodovi
+INFO  13:08:23,528 - #32 =
+INFO  13:08:23,528 - #20 -
+INFO  13:08:23,528 - #47 bodovi
+INFO  13:08:23,528 - #19 +
+INFO  13:08:23,528 - #39 (
+INFO  13:08:23,528 - #47 pet
+INFO  13:08:23,528 - #21 *
+INFO  13:08:23,528 - #47 a
+INFO  13:08:23,528 - #22 /
+INFO  13:08:23,528 - #48 2
+INFO  13:08:23,528 - #20 -
+INFO  13:08:23,528 - #47 jedan
+INFO  13:08:23,528 - #40 )
+INFO  13:08:23,528 - #21 *
+INFO  13:08:23,528 - #47 bodovi
+INFO  13:08:23,528 - #20 -
+INFO  13:08:23,528 - #39 (
+INFO  13:08:23,528 - #48 3
+INFO  13:08:23,528 - #23 %
+INFO  13:08:23,528 - #48 2
+INFO  13:08:23,529 - #19 +
+INFO  13:08:23,529 - #48 3
+INFO  13:08:23,529 - #21 *
+INFO  13:08:23,529 - #48 2
+INFO  13:08:23,529 - #20 -
+INFO  13:08:23,529 - #48 3
+INFO  13:08:23,529 - #40 )
+INFO  13:08:23,529 - #35 ;
+INFO  13:08:23,529 - #12 print
+INFO  13:08:23,529 - #39 (
+INFO  13:08:23,529 - #47 bodovi
+INFO  13:08:23,529 - #40 )
+INFO  13:08:23,529 - #35 ;
+INFO  13:08:23,529 - #44 }
+INFO  13:08:23,529 - #44 }
+INFO  13:08:23,535 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived1(
+        GlobalDeclListDerived1(
+          GlobalDeclListDerived1(
+            GlobalDeclListDerived2(
+            ) [GlobalDeclListDerived2]
+            DeclDerived1(
+              ConstDeclDerived1(
+                ConstType(
+                  Type(
+                   int
+                  ) [Type]
+                ) [ConstType]
+                Const(
+                 nula
+                  ConstNum(
+                   0
+                  ) [ConstNum]
+                ) [Const]
+                NoConstDeclList(
+                ) [NoConstDeclList]
+              ) [ConstDeclDerived1]
+            ) [DeclDerived1]
+          ) [GlobalDeclListDerived1]
+          DeclDerived1(
+            ConstDeclDerived1(
+              ConstType(
+                Type(
+                 int
+                ) [Type]
+              ) [ConstType]
+              Const(
+               jedan
+                ConstNum(
+                 1
+                ) [ConstNum]
+              ) [Const]
+              NoConstDeclList(
+              ) [NoConstDeclList]
+            ) [ConstDeclDerived1]
+          ) [DeclDerived1]
+        ) [GlobalDeclListDerived1]
+        DeclDerived1(
+          ConstDeclDerived1(
+            ConstType(
+              Type(
+               int
+              ) [Type]
+            ) [ConstType]
+            Const(
+             pet
+              ConstNum(
+               5
+              ) [ConstNum]
+            ) [Const]
+            NoConstDeclList(
+            ) [NoConstDeclList]
+          ) [ConstDeclDerived1]
+        ) [DeclDerived1]
+      ) [GlobalDeclListDerived1]
+      DeclDerived2(
+        VarDeclType(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarDeclListDerived1(
+            VarDeclListDerived1(
+              VarDeclListDerived1(
+                VarDeclListDerived2(
+                  ArrVar(
+                   niz
+                  ) [ArrVar]
+                ) [VarDeclListDerived2]
+                ArrVar(
+                 niz2
+                ) [ArrVar]
+              ) [VarDeclListDerived1]
+              RegVar(
+               a
+              ) [RegVar]
+            ) [VarDeclListDerived1]
+            RegVar(
+             b
+            ) [RegVar]
+          ) [VarDeclListDerived1]
+        ) [VarDeclType]
+      ) [DeclDerived2]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           char
+          ) [Type]
+        ) [VarType]
+        VarDeclListDerived2(
+          ArrVar(
+           nizch
+          ) [ArrVar]
+        ) [VarDeclListDerived2]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      MethodRetTypeDerived1(
+      ) [MethodRetTypeDerived1]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived1(
+        VarMethDeclListDerived1(
+          VarMethDeclListDerived2(
+          ) [VarMethDeclListDerived2]
+          VarDeclMeth(
+            VarTypeMeth(
+              Type(
+               int
+              ) [Type]
+            ) [VarTypeMeth]
+            VarDeclListMethDerived2(
+              RegVarMeth(
+               bodovi
+              ) [RegVarMeth]
+            ) [VarDeclListMethDerived2]
+          ) [VarDeclMeth]
+        ) [VarMethDeclListDerived1]
+        VarDeclMeth(
+          VarTypeMeth(
+            Type(
+             bool
+            ) [Type]
+          ) [VarTypeMeth]
+          VarDeclListMethDerived2(
+            RegVarMeth(
+             bt
+            ) [RegVarMeth]
+          ) [VarDeclListMethDerived2]
+        ) [VarDeclMeth]
+      ) [VarMethDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived1(
+                    StatementListDerived1(
+                      StatementListDerived1(
+                        StatementListDerived1(
+                          StatementListDerived1(
+                            StatementListDerived1(
+                              StatementListDerived1(
+                                StatementListDerived1(
+                                  StatementListDerived1(
+                                    StatementListDerived1(
+                                      StatementListDerived1(
+                                        StatementListDerived1(
+                                          StatementListDerived1(
+                                            StatementListDerived1(
+                                              StatementListDerived1(
+                                                StatementListDerived1(
+                                                  StatementListDerived1(
+                                                    StatementListDerived1(
+                                                      StatementListDerived1(
+                                                        StatementListDerived1(
+                                                          StatementListDerived1(
+                                                            StatementListDerived1(
+                                                              StatementListDerived1(
+                                                                StatementListDerived1(
+                                                                  StatementListDerived1(
+                                                                    StatementListDerived2(
+                                                                    ) [StatementListDerived2]
+                                                                    StatementDerived1(
+                                                                      DesignatorStatementDerived1(
+                                                                        Designator(
+                                                                          DesignatorName(
+                                                                           bodovi
+                                                                          ) [DesignatorName]
+                                                                          DesignatorOptListDerived3(
+                                                                          ) [DesignatorOptListDerived3]
+                                                                        ) [Designator]
+                                                                        DesignatorActionDerived1(
+                                                                          AssignopDerived1(
+                                                                          ) [AssignopDerived1]
+                                                                          ExprDerived1(
+                                                                            TermDerived1(
+                                                                              FactorDerived2(
+                                                                               0
+                                                                              ) [FactorDerived2]
+                                                                            ) [TermDerived1]
+                                                                          ) [ExprDerived1]
+                                                                        ) [DesignatorActionDerived1]
+                                                                      ) [DesignatorStatementDerived1]
+                                                                    ) [StatementDerived1]
+                                                                  ) [StatementListDerived1]
+                                                                  StatementDerived1(
+                                                                    DesignatorStatementDerived1(
+                                                                      Designator(
+                                                                        DesignatorName(
+                                                                         bodovi
+                                                                        ) [DesignatorName]
+                                                                        DesignatorOptListDerived3(
+                                                                        ) [DesignatorOptListDerived3]
+                                                                      ) [Designator]
+                                                                      DesignatorActionDerived3(
+                                                                      ) [DesignatorActionDerived3]
+                                                                    ) [DesignatorStatementDerived1]
+                                                                  ) [StatementDerived1]
+                                                                ) [StatementListDerived1]
+                                                                StatementDerived1(
+                                                                  DesignatorStatementDerived1(
+                                                                    Designator(
+                                                                      DesignatorName(
+                                                                       bodovi
+                                                                      ) [DesignatorName]
+                                                                      DesignatorOptListDerived3(
+                                                                      ) [DesignatorOptListDerived3]
+                                                                    ) [Designator]
+                                                                    DesignatorActionDerived1(
+                                                                      AssignopDerived1(
+                                                                      ) [AssignopDerived1]
+                                                                      ExprDerived3(
+                                                                        ExprDerived1(
+                                                                          TermDerived1(
+                                                                            FactorDerived1(
+                                                                              Designator(
+                                                                                DesignatorName(
+                                                                                 bodovi
+                                                                                ) [DesignatorName]
+                                                                                DesignatorOptListDerived3(
+                                                                                ) [DesignatorOptListDerived3]
+                                                                              ) [Designator]
+                                                                              DesignatorParsDerived2(
+                                                                              ) [DesignatorParsDerived2]
+                                                                            ) [FactorDerived1]
+                                                                          ) [TermDerived1]
+                                                                        ) [ExprDerived1]
+                                                                        AddopDerived1(
+                                                                        ) [AddopDerived1]
+                                                                        TermDerived1(
+                                                                          FactorDerived1(
+                                                                            Designator(
+                                                                              DesignatorName(
+                                                                               jedan
+                                                                              ) [DesignatorName]
+                                                                              DesignatorOptListDerived3(
+                                                                              ) [DesignatorOptListDerived3]
+                                                                            ) [Designator]
+                                                                            DesignatorParsDerived2(
+                                                                            ) [DesignatorParsDerived2]
+                                                                          ) [FactorDerived1]
+                                                                        ) [TermDerived1]
+                                                                      ) [ExprDerived3]
+                                                                    ) [DesignatorActionDerived1]
+                                                                  ) [DesignatorStatementDerived1]
+                                                                ) [StatementDerived1]
+                                                              ) [StatementListDerived1]
+                                                              StatementDerived1(
+                                                                DesignatorStatementDerived1(
+                                                                  Designator(
+                                                                    DesignatorName(
+                                                                     bodovi
+                                                                    ) [DesignatorName]
+                                                                    DesignatorOptListDerived3(
+                                                                    ) [DesignatorOptListDerived3]
+                                                                  ) [Designator]
+                                                                  DesignatorActionDerived1(
+                                                                    AssignopDerived1(
+                                                                    ) [AssignopDerived1]
+                                                                    ExprDerived1(
+                                                                      TermDerived2(
+                                                                        TermDerived1(
+                                                                          FactorDerived1(
+                                                                            Designator(
+                                                                              DesignatorName(
+                                                                               bodovi
+                                                                              ) [DesignatorName]
+                                                                              DesignatorOptListDerived3(
+                                                                              ) [DesignatorOptListDerived3]
+                                                                            ) [Designator]
+                                                                            DesignatorParsDerived2(
+                                                                            ) [DesignatorParsDerived2]
+                                                                          ) [FactorDerived1]
+                                                                        ) [TermDerived1]
+                                                                        MulopDerived1(
+                                                                        ) [MulopDerived1]
+                                                                        FactorDerived1(
+                                                                          Designator(
+                                                                            DesignatorName(
+                                                                             pet
+                                                                            ) [DesignatorName]
+                                                                            DesignatorOptListDerived3(
+                                                                            ) [DesignatorOptListDerived3]
+                                                                          ) [Designator]
+                                                                          DesignatorParsDerived2(
+                                                                          ) [DesignatorParsDerived2]
+                                                                        ) [FactorDerived1]
+                                                                      ) [TermDerived2]
+                                                                    ) [ExprDerived1]
+                                                                  ) [DesignatorActionDerived1]
+                                                                ) [DesignatorStatementDerived1]
+                                                              ) [StatementDerived1]
+                                                            ) [StatementListDerived1]
+                                                            StatementDerived1(
+                                                              DesignatorStatementDerived1(
+                                                                Designator(
+                                                                  DesignatorName(
+                                                                   bodovi
+                                                                  ) [DesignatorName]
+                                                                  DesignatorOptListDerived3(
+                                                                  ) [DesignatorOptListDerived3]
+                                                                ) [Designator]
+                                                                DesignatorActionDerived4(
+                                                                ) [DesignatorActionDerived4]
+                                                              ) [DesignatorStatementDerived1]
+                                                            ) [StatementDerived1]
+                                                          ) [StatementListDerived1]
+                                                          StatementDerived9(
+                                                            ExprDerived1(
+                                                              TermDerived1(
+                                                                FactorDerived1(
+                                                                  Designator(
+                                                                    DesignatorName(
+                                                                     bodovi
+                                                                    ) [DesignatorName]
+                                                                    DesignatorOptListDerived3(
+                                                                    ) [DesignatorOptListDerived3]
+                                                                  ) [Designator]
+                                                                  DesignatorParsDerived2(
+                                                                  ) [DesignatorParsDerived2]
+                                                                ) [FactorDerived1]
+                                                              ) [TermDerived1]
+                                                            ) [ExprDerived1]
+                                                            PrintParamDerived2(
+                                                            ) [PrintParamDerived2]
+                                                          ) [StatementDerived9]
+                                                        ) [StatementListDerived1]
+                                                        StatementDerived1(
+                                                          DesignatorStatementDerived1(
+                                                            Designator(
+                                                              DesignatorName(
+                                                               niz
+                                                              ) [DesignatorName]
+                                                              DesignatorOptListDerived3(
+                                                              ) [DesignatorOptListDerived3]
+                                                            ) [Designator]
+                                                            DesignatorActionDerived1(
+                                                              AssignopDerived1(
+                                                              ) [AssignopDerived1]
+                                                              ExprDerived1(
+                                                                TermDerived1(
+                                                                  FactorDerived5(
+                                                                    Type(
+                                                                     int
+                                                                    ) [Type]
+                                                                    NewTypeOptDerived1(
+                                                                      ExprDerived1(
+                                                                        TermDerived1(
+                                                                          FactorDerived2(
+                                                                           3
+                                                                          ) [FactorDerived2]
+                                                                        ) [TermDerived1]
+                                                                      ) [ExprDerived1]
+                                                                    ) [NewTypeOptDerived1]
+                                                                  ) [FactorDerived5]
+                                                                ) [TermDerived1]
+                                                              ) [ExprDerived1]
+                                                            ) [DesignatorActionDerived1]
+                                                          ) [DesignatorStatementDerived1]
+                                                        ) [StatementDerived1]
+                                                      ) [StatementListDerived1]
+                                                      StatementDerived1(
+                                                        DesignatorStatementDerived1(
+                                                          Designator(
+                                                            DesignatorName(
+                                                             niz
+                                                            ) [DesignatorName]
+                                                            DesignatorOptListDerived2(
+                                                              ExprDerived1(
+                                                                TermDerived1(
+                                                                  FactorDerived1(
+                                                                    Designator(
+                                                                      DesignatorName(
+                                                                       nula
+                                                                      ) [DesignatorName]
+                                                                      DesignatorOptListDerived3(
+                                                                      ) [DesignatorOptListDerived3]
+                                                                    ) [Designator]
+                                                                    DesignatorParsDerived2(
+                                                                    ) [DesignatorParsDerived2]
+                                                                  ) [FactorDerived1]
+                                                                ) [TermDerived1]
+                                                              ) [ExprDerived1]
+                                                            ) [DesignatorOptListDerived2]
+                                                          ) [Designator]
+                                                          DesignatorActionDerived1(
+                                                            AssignopDerived1(
+                                                            ) [AssignopDerived1]
+                                                            ExprDerived1(
+                                                              TermDerived1(
+                                                                FactorDerived1(
+                                                                  Designator(
+                                                                    DesignatorName(
+                                                                     jedan
+                                                                    ) [DesignatorName]
+                                                                    DesignatorOptListDerived3(
+                                                                    ) [DesignatorOptListDerived3]
+                                                                  ) [Designator]
+                                                                  DesignatorParsDerived2(
+                                                                  ) [DesignatorParsDerived2]
+                                                                ) [FactorDerived1]
+                                                              ) [TermDerived1]
+                                                            ) [ExprDerived1]
+                                                          ) [DesignatorActionDerived1]
+                                                        ) [DesignatorStatementDerived1]
+                                                      ) [StatementDerived1]
+                                                    ) [StatementListDerived1]
+                                                    StatementDerived1(
+                                                      DesignatorStatementDerived1(
+                                                        Designator(
+                                                          DesignatorName(
+                                                           niz
+                                                          ) [DesignatorName]
+                                                          DesignatorOptListDerived2(
+                                                            ExprDerived1(
+                                                              TermDerived1(
+                                                                FactorDerived2(
+                                                                 1
+                                                                ) [FactorDerived2]
+                                                              ) [TermDerived1]
+                                                            ) [ExprDerived1]
+                                                          ) [DesignatorOptListDerived2]
+                                                        ) [Designator]
+                                                        DesignatorActionDerived1(
+                                                          AssignopDerived1(
+                                                          ) [AssignopDerived1]
+                                                          ExprDerived1(
+                                                            TermDerived1(
+                                                              FactorDerived2(
+                                                               2
+                                                              ) [FactorDerived2]
+                                                            ) [TermDerived1]
+                                                          ) [ExprDerived1]
+                                                        ) [DesignatorActionDerived1]
+                                                      ) [DesignatorStatementDerived1]
+                                                    ) [StatementDerived1]
+                                                  ) [StatementListDerived1]
+                                                  StatementDerived1(
+                                                    DesignatorStatementDerived1(
+                                                      Designator(
+                                                        DesignatorName(
+                                                         niz
+                                                        ) [DesignatorName]
+                                                        DesignatorOptListDerived2(
+                                                          ExprDerived1(
+                                                            TermDerived1(
+                                                              FactorDerived1(
+                                                                Designator(
+                                                                  DesignatorName(
+                                                                   niz
+                                                                  ) [DesignatorName]
+                                                                  DesignatorOptListDerived2(
+                                                                    ExprDerived1(
+                                                                      TermDerived1(
+                                                                        FactorDerived1(
+                                                                          Designator(
+                                                                            DesignatorName(
+                                                                             jedan
+                                                                            ) [DesignatorName]
+                                                                            DesignatorOptListDerived3(
+                                                                            ) [DesignatorOptListDerived3]
+                                                                          ) [Designator]
+                                                                          DesignatorParsDerived2(
+                                                                          ) [DesignatorParsDerived2]
+                                                                        ) [FactorDerived1]
+                                                                      ) [TermDerived1]
+                                                                    ) [ExprDerived1]
+                                                                  ) [DesignatorOptListDerived2]
+                                                                ) [Designator]
+                                                                DesignatorParsDerived2(
+                                                                ) [DesignatorParsDerived2]
+                                                              ) [FactorDerived1]
+                                                            ) [TermDerived1]
+                                                          ) [ExprDerived1]
+                                                        ) [DesignatorOptListDerived2]
+                                                      ) [Designator]
+                                                      DesignatorActionDerived1(
+                                                        AssignopDerived1(
+                                                        ) [AssignopDerived1]
+                                                        ExprDerived1(
+                                                          TermDerived2(
+                                                            TermDerived1(
+                                                              FactorDerived1(
+                                                                Designator(
+                                                                  DesignatorName(
+                                                                   niz
+                                                                  ) [DesignatorName]
+                                                                  DesignatorOptListDerived2(
+                                                                    ExprDerived1(
+                                                                      TermDerived1(
+                                                                        FactorDerived1(
+                                                                          Designator(
+                                                                            DesignatorName(
+                                                                             niz
+                                                                            ) [DesignatorName]
+                                                                            DesignatorOptListDerived2(
+                                                                              ExprDerived1(
+                                                                                TermDerived1(
+                                                                                  FactorDerived2(
+                                                                                   0
+                                                                                  ) [FactorDerived2]
+                                                                                ) [TermDerived1]
+                                                                              ) [ExprDerived1]
+                                                                            ) [DesignatorOptListDerived2]
+                                                                          ) [Designator]
+                                                                          DesignatorParsDerived2(
+                                                                          ) [DesignatorParsDerived2]
+                                                                        ) [FactorDerived1]
+                                                                      ) [TermDerived1]
+                                                                    ) [ExprDerived1]
+                                                                  ) [DesignatorOptListDerived2]
+                                                                ) [Designator]
+                                                                DesignatorParsDerived2(
+                                                                ) [DesignatorParsDerived2]
+                                                              ) [FactorDerived1]
+                                                            ) [TermDerived1]
+                                                            MulopDerived1(
+                                                            ) [MulopDerived1]
+                                                            FactorDerived2(
+                                                             3
+                                                            ) [FactorDerived2]
+                                                          ) [TermDerived2]
+                                                        ) [ExprDerived1]
+                                                      ) [DesignatorActionDerived1]
+                                                    ) [DesignatorStatementDerived1]
+                                                  ) [StatementDerived1]
+                                                ) [StatementListDerived1]
+                                                StatementDerived1(
+                                                  DesignatorStatementDerived1(
+                                                    Designator(
+                                                      DesignatorName(
+                                                       bodovi
+                                                      ) [DesignatorName]
+                                                      DesignatorOptListDerived3(
+                                                      ) [DesignatorOptListDerived3]
+                                                    ) [Designator]
+                                                    DesignatorActionDerived1(
+                                                      AssignopDerived1(
+                                                      ) [AssignopDerived1]
+                                                      ExprDerived1(
+                                                        TermDerived2(
+                                                          TermDerived1(
+                                                            FactorDerived1(
+                                                              Designator(
+                                                                DesignatorName(
+                                                                 niz
+                                                                ) [DesignatorName]
+                                                                DesignatorOptListDerived2(
+                                                                  ExprDerived1(
+                                                                    TermDerived1(
+                                                                      FactorDerived2(
+                                                                       2
+                                                                      ) [FactorDerived2]
+                                                                    ) [TermDerived1]
+                                                                  ) [ExprDerived1]
+                                                                ) [DesignatorOptListDerived2]
+                                                              ) [Designator]
+                                                              DesignatorParsDerived2(
+                                                              ) [DesignatorParsDerived2]
+                                                            ) [FactorDerived1]
+                                                          ) [TermDerived1]
+                                                          MulopDerived2(
+                                                          ) [MulopDerived2]
+                                                          FactorDerived1(
+                                                            Designator(
+                                                              DesignatorName(
+                                                               niz
+                                                              ) [DesignatorName]
+                                                              DesignatorOptListDerived2(
+                                                                ExprDerived1(
+                                                                  TermDerived1(
+                                                                    FactorDerived2(
+                                                                     0
+                                                                    ) [FactorDerived2]
+                                                                  ) [TermDerived1]
+                                                                ) [ExprDerived1]
+                                                              ) [DesignatorOptListDerived2]
+                                                            ) [Designator]
+                                                            DesignatorParsDerived2(
+                                                            ) [DesignatorParsDerived2]
+                                                          ) [FactorDerived1]
+                                                        ) [TermDerived2]
+                                                      ) [ExprDerived1]
+                                                    ) [DesignatorActionDerived1]
+                                                  ) [DesignatorStatementDerived1]
+                                                ) [StatementDerived1]
+                                              ) [StatementListDerived1]
+                                              StatementDerived9(
+                                                ExprDerived1(
+                                                  TermDerived1(
+                                                    FactorDerived1(
+                                                      Designator(
+                                                        DesignatorName(
+                                                         bodovi
+                                                        ) [DesignatorName]
+                                                        DesignatorOptListDerived3(
+                                                        ) [DesignatorOptListDerived3]
+                                                      ) [Designator]
+                                                      DesignatorParsDerived2(
+                                                      ) [DesignatorParsDerived2]
+                                                    ) [FactorDerived1]
+                                                  ) [TermDerived1]
+                                                ) [ExprDerived1]
+                                                PrintParamDerived2(
+                                                ) [PrintParamDerived2]
+                                              ) [StatementDerived9]
+                                            ) [StatementListDerived1]
+                                            StatementDerived9(
+                                              ExprDerived1(
+                                                TermDerived1(
+                                                  FactorDerived1(
+                                                    Designator(
+                                                      DesignatorName(
+                                                       niz
+                                                      ) [DesignatorName]
+                                                      DesignatorOptListDerived2(
+                                                        ExprDerived1(
+                                                          TermDerived1(
+                                                            FactorDerived2(
+                                                             2
+                                                            ) [FactorDerived2]
+                                                          ) [TermDerived1]
+                                                        ) [ExprDerived1]
+                                                      ) [DesignatorOptListDerived2]
+                                                    ) [Designator]
+                                                    DesignatorParsDerived2(
+                                                    ) [DesignatorParsDerived2]
+                                                  ) [FactorDerived1]
+                                                ) [TermDerived1]
+                                              ) [ExprDerived1]
+                                              PrintParamDerived2(
+                                              ) [PrintParamDerived2]
+                                            ) [StatementDerived9]
+                                          ) [StatementListDerived1]
+                                          StatementDerived1(
+                                            DesignatorStatementDerived2(
+                                              DesignatorParDerived1(
+                                                Designator(
+                                                  DesignatorName(
+                                                   a
+                                                  ) [DesignatorName]
+                                                  DesignatorOptListDerived3(
+                                                  ) [DesignatorOptListDerived3]
+                                                ) [Designator]
+                                              ) [DesignatorParDerived1]
+                                              DesignatorParListDerived1(
+                                                DesignatorParListDerived2(
+                                                ) [DesignatorParListDerived2]
+                                                DesignatorParDerived1(
+                                                  Designator(
+                                                    DesignatorName(
+                                                     b
+                                                    ) [DesignatorName]
+                                                    DesignatorOptListDerived3(
+                                                    ) [DesignatorOptListDerived3]
+                                                  ) [Designator]
+                                                ) [DesignatorParDerived1]
+                                              ) [DesignatorParListDerived1]
+                                              Designator(
+                                                DesignatorName(
+                                                 niz
+                                                ) [DesignatorName]
+                                                DesignatorOptListDerived3(
+                                                ) [DesignatorOptListDerived3]
+                                              ) [Designator]
+                                            ) [DesignatorStatementDerived2]
+                                          ) [StatementDerived1]
+                                        ) [StatementListDerived1]
+                                        StatementDerived9(
+                                          ExprDerived1(
+                                            TermDerived1(
+                                              FactorDerived1(
+                                                Designator(
+                                                  DesignatorName(
+                                                   a
+                                                  ) [DesignatorName]
+                                                  DesignatorOptListDerived3(
+                                                  ) [DesignatorOptListDerived3]
+                                                ) [Designator]
+                                                DesignatorParsDerived2(
+                                                ) [DesignatorParsDerived2]
+                                              ) [FactorDerived1]
+                                            ) [TermDerived1]
+                                          ) [ExprDerived1]
+                                          PrintParamDerived2(
+                                          ) [PrintParamDerived2]
+                                        ) [StatementDerived9]
+                                      ) [StatementListDerived1]
+                                      StatementDerived9(
+                                        ExprDerived1(
+                                          TermDerived1(
+                                            FactorDerived1(
+                                              Designator(
+                                                DesignatorName(
+                                                 b
+                                                ) [DesignatorName]
+                                                DesignatorOptListDerived3(
+                                                ) [DesignatorOptListDerived3]
+                                              ) [Designator]
+                                              DesignatorParsDerived2(
+                                              ) [DesignatorParsDerived2]
+                                            ) [FactorDerived1]
+                                          ) [TermDerived1]
+                                        ) [ExprDerived1]
+                                        PrintParamDerived2(
+                                        ) [PrintParamDerived2]
+                                      ) [StatementDerived9]
+                                    ) [StatementListDerived1]
+                                    StatementDerived1(
+                                      DesignatorStatementDerived2(
+                                        DesignatorParDerived2(
+                                        ) [DesignatorParDerived2]
+                                        DesignatorParListDerived1(
+                                          DesignatorParListDerived1(
+                                            DesignatorParListDerived2(
+                                            ) [DesignatorParListDerived2]
+                                            DesignatorParDerived1(
+                                              Designator(
+                                                DesignatorName(
+                                                 a
+                                                ) [DesignatorName]
+                                                DesignatorOptListDerived3(
+                                                ) [DesignatorOptListDerived3]
+                                              ) [Designator]
+                                            ) [DesignatorParDerived1]
+                                          ) [DesignatorParListDerived1]
+                                          DesignatorParDerived2(
+                                          ) [DesignatorParDerived2]
+                                        ) [DesignatorParListDerived1]
+                                        Designator(
+                                          DesignatorName(
+                                           niz
+                                          ) [DesignatorName]
+                                          DesignatorOptListDerived3(
+                                          ) [DesignatorOptListDerived3]
+                                        ) [Designator]
+                                      ) [DesignatorStatementDerived2]
+                                    ) [StatementDerived1]
+                                  ) [StatementListDerived1]
+                                  StatementDerived9(
+                                    ExprDerived1(
+                                      TermDerived1(
+                                        FactorDerived1(
+                                          Designator(
+                                            DesignatorName(
+                                             a
+                                            ) [DesignatorName]
+                                            DesignatorOptListDerived3(
+                                            ) [DesignatorOptListDerived3]
+                                          ) [Designator]
+                                          DesignatorParsDerived2(
+                                          ) [DesignatorParsDerived2]
+                                        ) [FactorDerived1]
+                                      ) [TermDerived1]
+                                    ) [ExprDerived1]
+                                    PrintParamDerived2(
+                                    ) [PrintParamDerived2]
+                                  ) [StatementDerived9]
+                                ) [StatementListDerived1]
+                                StatementDerived1(
+                                  DesignatorStatementDerived1(
+                                    Designator(
+                                      DesignatorName(
+                                       niz2
+                                      ) [DesignatorName]
+                                      DesignatorOptListDerived3(
+                                      ) [DesignatorOptListDerived3]
+                                    ) [Designator]
+                                    DesignatorActionDerived1(
+                                      AssignopDerived1(
+                                      ) [AssignopDerived1]
+                                      ExprDerived1(
+                                        TermDerived1(
+                                          FactorDerived5(
+                                            Type(
+                                             int
+                                            ) [Type]
+                                            NewTypeOptDerived1(
+                                              ExprDerived1(
+                                                TermDerived1(
+                                                  FactorDerived2(
+                                                   2
+                                                  ) [FactorDerived2]
+                                                ) [TermDerived1]
+                                              ) [ExprDerived1]
+                                            ) [NewTypeOptDerived1]
+                                          ) [FactorDerived5]
+                                        ) [TermDerived1]
+                                      ) [ExprDerived1]
+                                    ) [DesignatorActionDerived1]
+                                  ) [DesignatorStatementDerived1]
+                                ) [StatementDerived1]
+                              ) [StatementListDerived1]
+                              StatementDerived1(
+                                DesignatorStatementDerived2(
+                                  DesignatorParDerived1(
+                                    Designator(
+                                      DesignatorName(
+                                       niz2
+                                      ) [DesignatorName]
+                                      DesignatorOptListDerived2(
+                                        ExprDerived1(
+                                          TermDerived1(
+                                            FactorDerived2(
+                                             0
+                                            ) [FactorDerived2]
+                                          ) [TermDerived1]
+                                        ) [ExprDerived1]
+                                      ) [DesignatorOptListDerived2]
+                                    ) [Designator]
+                                  ) [DesignatorParDerived1]
+                                  DesignatorParListDerived1(
+                                    DesignatorParListDerived1(
+                                      DesignatorParListDerived2(
+                                      ) [DesignatorParListDerived2]
+                                      DesignatorParDerived2(
+                                      ) [DesignatorParDerived2]
+                                    ) [DesignatorParListDerived1]
+                                    DesignatorParDerived1(
+                                      Designator(
+                                        DesignatorName(
+                                         niz2
+                                        ) [DesignatorName]
+                                        DesignatorOptListDerived2(
+                                          ExprDerived1(
+                                            TermDerived1(
+                                              FactorDerived1(
+                                                Designator(
+                                                  DesignatorName(
+                                                   niz
+                                                  ) [DesignatorName]
+                                                  DesignatorOptListDerived2(
+                                                    ExprDerived1(
+                                                      TermDerived1(
+                                                        FactorDerived1(
+                                                          Designator(
+                                                            DesignatorName(
+                                                             nula
+                                                            ) [DesignatorName]
+                                                            DesignatorOptListDerived3(
+                                                            ) [DesignatorOptListDerived3]
+                                                          ) [Designator]
+                                                          DesignatorParsDerived2(
+                                                          ) [DesignatorParsDerived2]
+                                                        ) [FactorDerived1]
+                                                      ) [TermDerived1]
+                                                    ) [ExprDerived1]
+                                                  ) [DesignatorOptListDerived2]
+                                                ) [Designator]
+                                                DesignatorParsDerived2(
+                                                ) [DesignatorParsDerived2]
+                                              ) [FactorDerived1]
+                                            ) [TermDerived1]
+                                          ) [ExprDerived1]
+                                        ) [DesignatorOptListDerived2]
+                                      ) [Designator]
+                                    ) [DesignatorParDerived1]
+                                  ) [DesignatorParListDerived1]
+                                  Designator(
+                                    DesignatorName(
+                                     niz
+                                    ) [DesignatorName]
+                                    DesignatorOptListDerived3(
+                                    ) [DesignatorOptListDerived3]
+                                  ) [Designator]
+                                ) [DesignatorStatementDerived2]
+                              ) [StatementDerived1]
+                            ) [StatementListDerived1]
+                            StatementDerived9(
+                              ExprDerived1(
+                                TermDerived1(
+                                  FactorDerived1(
+                                    Designator(
+                                      DesignatorName(
+                                       niz2
+                                      ) [DesignatorName]
+                                      DesignatorOptListDerived2(
+                                        ExprDerived1(
+                                          TermDerived1(
+                                            FactorDerived2(
+                                             0
+                                            ) [FactorDerived2]
+                                          ) [TermDerived1]
+                                        ) [ExprDerived1]
+                                      ) [DesignatorOptListDerived2]
+                                    ) [Designator]
+                                    DesignatorParsDerived2(
+                                    ) [DesignatorParsDerived2]
+                                  ) [FactorDerived1]
+                                ) [TermDerived1]
+                              ) [ExprDerived1]
+                              PrintParamDerived2(
+                              ) [PrintParamDerived2]
+                            ) [StatementDerived9]
+                          ) [StatementListDerived1]
+                          StatementDerived9(
+                            ExprDerived1(
+                              TermDerived1(
+                                FactorDerived1(
+                                  Designator(
+                                    DesignatorName(
+                                     niz2
+                                    ) [DesignatorName]
+                                    DesignatorOptListDerived2(
+                                      ExprDerived1(
+                                        TermDerived1(
+                                          FactorDerived2(
+                                           1
+                                          ) [FactorDerived2]
+                                        ) [TermDerived1]
+                                      ) [ExprDerived1]
+                                    ) [DesignatorOptListDerived2]
+                                  ) [Designator]
+                                  DesignatorParsDerived2(
+                                  ) [DesignatorParsDerived2]
+                                ) [FactorDerived1]
+                              ) [TermDerived1]
+                            ) [ExprDerived1]
+                            PrintParamDerived2(
+                            ) [PrintParamDerived2]
+                          ) [StatementDerived9]
+                        ) [StatementListDerived1]
+                        StatementDerived1(
+                          DesignatorStatementDerived1(
+                            Designator(
+                              DesignatorName(
+                               nizch
+                              ) [DesignatorName]
+                              DesignatorOptListDerived3(
+                              ) [DesignatorOptListDerived3]
+                            ) [Designator]
+                            DesignatorActionDerived1(
+                              AssignopDerived1(
+                              ) [AssignopDerived1]
+                              ExprDerived1(
+                                TermDerived1(
+                                  FactorDerived5(
+                                    Type(
+                                     char
+                                    ) [Type]
+                                    NewTypeOptDerived1(
+                                      ExprDerived1(
+                                        TermDerived1(
+                                          FactorDerived2(
+                                           3
+                                          ) [FactorDerived2]
+                                        ) [TermDerived1]
+                                      ) [ExprDerived1]
+                                    ) [NewTypeOptDerived1]
+                                  ) [FactorDerived5]
+                                ) [TermDerived1]
+                              ) [ExprDerived1]
+                            ) [DesignatorActionDerived1]
+                          ) [DesignatorStatementDerived1]
+                        ) [StatementDerived1]
+                      ) [StatementListDerived1]
+                      StatementDerived1(
+                        DesignatorStatementDerived1(
+                          Designator(
+                            DesignatorName(
+                             nizch
+                            ) [DesignatorName]
+                            DesignatorOptListDerived2(
+                              ExprDerived1(
+                                TermDerived1(
+                                  FactorDerived2(
+                                   0
+                                  ) [FactorDerived2]
+                                ) [TermDerived1]
+                              ) [ExprDerived1]
+                            ) [DesignatorOptListDerived2]
+                          ) [Designator]
+                          DesignatorActionDerived1(
+                            AssignopDerived1(
+                            ) [AssignopDerived1]
+                            ExprDerived1(
+                              TermDerived1(
+                                FactorDerived3(
+                                 a
+                                ) [FactorDerived3]
+                              ) [TermDerived1]
+                            ) [ExprDerived1]
+                          ) [DesignatorActionDerived1]
+                        ) [DesignatorStatementDerived1]
+                      ) [StatementDerived1]
+                    ) [StatementListDerived1]
+                    StatementDerived1(
+                      DesignatorStatementDerived1(
+                        Designator(
+                          DesignatorName(
+                           nizch
+                          ) [DesignatorName]
+                          DesignatorOptListDerived2(
+                            ExprDerived1(
+                              TermDerived1(
+                                FactorDerived1(
+                                  Designator(
+                                    DesignatorName(
+                                     jedan
+                                    ) [DesignatorName]
+                                    DesignatorOptListDerived3(
+                                    ) [DesignatorOptListDerived3]
+                                  ) [Designator]
+                                  DesignatorParsDerived2(
+                                  ) [DesignatorParsDerived2]
+                                ) [FactorDerived1]
+                              ) [TermDerived1]
+                            ) [ExprDerived1]
+                          ) [DesignatorOptListDerived2]
+                        ) [Designator]
+                        DesignatorActionDerived1(
+                          AssignopDerived1(
+                          ) [AssignopDerived1]
+                          ExprDerived1(
+                            TermDerived1(
+                              FactorDerived3(
+                               b
+                              ) [FactorDerived3]
+                            ) [TermDerived1]
+                          ) [ExprDerived1]
+                        ) [DesignatorActionDerived1]
+                      ) [DesignatorStatementDerived1]
+                    ) [StatementDerived1]
+                  ) [StatementListDerived1]
+                  StatementDerived1(
+                    DesignatorStatementDerived1(
+                      Designator(
+                        DesignatorName(
+                         nizch
+                        ) [DesignatorName]
+                        DesignatorOptListDerived2(
+                          ExprDerived3(
+                            ExprDerived1(
+                              TermDerived1(
+                                FactorDerived1(
+                                  Designator(
+                                    DesignatorName(
+                                     pet
+                                    ) [DesignatorName]
+                                    DesignatorOptListDerived3(
+                                    ) [DesignatorOptListDerived3]
+                                  ) [Designator]
+                                  DesignatorParsDerived2(
+                                  ) [DesignatorParsDerived2]
+                                ) [FactorDerived1]
+                              ) [TermDerived1]
+                            ) [ExprDerived1]
+                            AddopDerived2(
+                            ) [AddopDerived2]
+                            TermDerived1(
+                              FactorDerived2(
+                               3
+                              ) [FactorDerived2]
+                            ) [TermDerived1]
+                          ) [ExprDerived3]
+                        ) [DesignatorOptListDerived2]
+                      ) [Designator]
+                      DesignatorActionDerived1(
+                        AssignopDerived1(
+                        ) [AssignopDerived1]
+                        ExprDerived1(
+                          TermDerived1(
+                            FactorDerived3(
+                             c
+                            ) [FactorDerived3]
+                          ) [TermDerived1]
+                        ) [ExprDerived1]
+                      ) [DesignatorActionDerived1]
+                    ) [DesignatorStatementDerived1]
+                  ) [StatementDerived1]
+                ) [StatementListDerived1]
+                StatementDerived9(
+                  ExprDerived1(
+                    TermDerived1(
+                      FactorDerived1(
+                        Designator(
+                          DesignatorName(
+                           nizch
+                          ) [DesignatorName]
+                          DesignatorOptListDerived2(
+                            ExprDerived1(
+                              TermDerived1(
+                                FactorDerived2(
+                                 1
+                                ) [FactorDerived2]
+                              ) [TermDerived1]
+                            ) [ExprDerived1]
+                          ) [DesignatorOptListDerived2]
+                        ) [Designator]
+                        DesignatorParsDerived2(
+                        ) [DesignatorParsDerived2]
+                      ) [FactorDerived1]
+                    ) [TermDerived1]
+                  ) [ExprDerived1]
+                  PrintParamDerived2(
+                  ) [PrintParamDerived2]
+                ) [StatementDerived9]
+              ) [StatementListDerived1]
+              StatementDerived9(
+                ExprDerived1(
+                  TermDerived1(
+                    FactorDerived1(
+                      Designator(
+                        DesignatorName(
+                         nizch
+                        ) [DesignatorName]
+                        DesignatorOptListDerived2(
+                          ExprDerived1(
+                            TermDerived2(
+                              TermDerived1(
+                                FactorDerived1(
+                                  Designator(
+                                    DesignatorName(
+                                     jedan
+                                    ) [DesignatorName]
+                                    DesignatorOptListDerived3(
+                                    ) [DesignatorOptListDerived3]
+                                  ) [Designator]
+                                  DesignatorParsDerived2(
+                                  ) [DesignatorParsDerived2]
+                                ) [FactorDerived1]
+                              ) [TermDerived1]
+                              MulopDerived1(
+                              ) [MulopDerived1]
+                              FactorDerived2(
+                               2
+                              ) [FactorDerived2]
+                            ) [TermDerived2]
+                          ) [ExprDerived1]
+                        ) [DesignatorOptListDerived2]
+                      ) [Designator]
+                      DesignatorParsDerived2(
+                      ) [DesignatorParsDerived2]
+                    ) [FactorDerived1]
+                  ) [TermDerived1]
+                ) [ExprDerived1]
+                PrintParamDerived2(
+                ) [PrintParamDerived2]
+              ) [StatementDerived9]
+            ) [StatementListDerived1]
+            StatementDerived8(
+              Designator(
+                DesignatorName(
+                 bodovi
+                ) [DesignatorName]
+                DesignatorOptListDerived3(
+                ) [DesignatorOptListDerived3]
+              ) [Designator]
+            ) [StatementDerived8]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            DesignatorStatementDerived1(
+              Designator(
+                DesignatorName(
+                 bodovi
+                ) [DesignatorName]
+                DesignatorOptListDerived3(
+                ) [DesignatorOptListDerived3]
+              ) [Designator]
+              DesignatorActionDerived1(
+                AssignopDerived1(
+                ) [AssignopDerived1]
+                ExprDerived3(
+                  ExprDerived3(
+                    ExprDerived2(
+                      TermDerived1(
+                        FactorDerived1(
+                          Designator(
+                            DesignatorName(
+                             bodovi
+                            ) [DesignatorName]
+                            DesignatorOptListDerived3(
+                            ) [DesignatorOptListDerived3]
+                          ) [Designator]
+                          DesignatorParsDerived2(
+                          ) [DesignatorParsDerived2]
+                        ) [FactorDerived1]
+                      ) [TermDerived1]
+                    ) [ExprDerived2]
+                    AddopDerived1(
+                    ) [AddopDerived1]
+                    TermDerived2(
+                      TermDerived1(
+                        FactorDerived6(
+                          ExprDerived3(
+                            ExprDerived1(
+                              TermDerived2(
+                                TermDerived2(
+                                  TermDerived1(
+                                    FactorDerived1(
+                                      Designator(
+                                        DesignatorName(
+                                         pet
+                                        ) [DesignatorName]
+                                        DesignatorOptListDerived3(
+                                        ) [DesignatorOptListDerived3]
+                                      ) [Designator]
+                                      DesignatorParsDerived2(
+                                      ) [DesignatorParsDerived2]
+                                    ) [FactorDerived1]
+                                  ) [TermDerived1]
+                                  MulopDerived1(
+                                  ) [MulopDerived1]
+                                  FactorDerived1(
+                                    Designator(
+                                      DesignatorName(
+                                       a
+                                      ) [DesignatorName]
+                                      DesignatorOptListDerived3(
+                                      ) [DesignatorOptListDerived3]
+                                    ) [Designator]
+                                    DesignatorParsDerived2(
+                                    ) [DesignatorParsDerived2]
+                                  ) [FactorDerived1]
+                                ) [TermDerived2]
+                                MulopDerived2(
+                                ) [MulopDerived2]
+                                FactorDerived2(
+                                 2
+                                ) [FactorDerived2]
+                              ) [TermDerived2]
+                            ) [ExprDerived1]
+                            AddopDerived2(
+                            ) [AddopDerived2]
+                            TermDerived1(
+                              FactorDerived1(
+                                Designator(
+                                  DesignatorName(
+                                   jedan
+                                  ) [DesignatorName]
+                                  DesignatorOptListDerived3(
+                                  ) [DesignatorOptListDerived3]
+                                ) [Designator]
+                                DesignatorParsDerived2(
+                                ) [DesignatorParsDerived2]
+                              ) [FactorDerived1]
+                            ) [TermDerived1]
+                          ) [ExprDerived3]
+                        ) [FactorDerived6]
+                      ) [TermDerived1]
+                      MulopDerived1(
+                      ) [MulopDerived1]
+                      FactorDerived1(
+                        Designator(
+                          DesignatorName(
+                           bodovi
+                          ) [DesignatorName]
+                          DesignatorOptListDerived3(
+                          ) [DesignatorOptListDerived3]
+                        ) [Designator]
+                        DesignatorParsDerived2(
+                        ) [DesignatorParsDerived2]
+                      ) [FactorDerived1]
+                    ) [TermDerived2]
+                  ) [ExprDerived3]
+                  AddopDerived2(
+                  ) [AddopDerived2]
+                  TermDerived1(
+                    FactorDerived6(
+                      ExprDerived3(
+                        ExprDerived3(
+                          ExprDerived1(
+                            TermDerived2(
+                              TermDerived1(
+                                FactorDerived2(
+                                 3
+                                ) [FactorDerived2]
+                              ) [TermDerived1]
+                              MulopDerived3(
+                              ) [MulopDerived3]
+                              FactorDerived2(
+                               2
+                              ) [FactorDerived2]
+                            ) [TermDerived2]
+                          ) [ExprDerived1]
+                          AddopDerived1(
+                          ) [AddopDerived1]
+                          TermDerived2(
+                            TermDerived1(
+                              FactorDerived2(
+                               3
+                              ) [FactorDerived2]
+                            ) [TermDerived1]
+                            MulopDerived1(
+                            ) [MulopDerived1]
+                            FactorDerived2(
+                             2
+                            ) [FactorDerived2]
+                          ) [TermDerived2]
+                        ) [ExprDerived3]
+                        AddopDerived2(
+                        ) [AddopDerived2]
+                        TermDerived1(
+                          FactorDerived2(
+                           3
+                          ) [FactorDerived2]
+                        ) [TermDerived1]
+                      ) [ExprDerived3]
+                    ) [FactorDerived6]
+                  ) [TermDerived1]
+                ) [ExprDerived3]
+              ) [DesignatorActionDerived1]
+            ) [DesignatorStatementDerived1]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived9(
+          ExprDerived1(
+            TermDerived1(
+              FactorDerived1(
+                Designator(
+                  DesignatorName(
+                   bodovi
+                  ) [DesignatorName]
+                  DesignatorOptListDerived3(
+                  ) [DesignatorOptListDerived3]
+                ) [Designator]
+                DesignatorParsDerived2(
+                ) [DesignatorParsDerived2]
+              ) [FactorDerived1]
+            ) [TermDerived1]
+          ) [ExprDerived1]
+          PrintParamDerived2(
+          ) [PrintParamDerived2]
+        ) [StatementDerived9]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  13:08:23,536 - ===================================
+INFO  13:08:23,538 - Deklarisana simbolicka konstanta 'nula' na liniji 5
+INFO  13:08:23,538 - Deklarisana simbolicka konstanta 'jedan' na liniji 6
+INFO  13:08:23,538 - Deklarisana simbolicka konstanta 'pet' na liniji 7
+INFO  13:08:23,538 - Deklarisana globalna promenljiva 'niz' na liniji 9
+INFO  13:08:23,538 - Deklarisana globalna promenljiva 'niz2' na liniji 9
+INFO  13:08:23,538 - Deklarisana globalna promenljiva 'a' na liniji 9
+INFO  13:08:23,538 - Deklarisana globalna promenljiva 'b' na liniji 9
+INFO  13:08:23,538 - Deklarisana globalna promenljiva 'nizch' na liniji 10
+INFO  13:08:23,538 - Deklarisana lokalna promenljiva 'bodovi' na liniji 14
+INFO  13:08:23,538 - Deklarisana lokalna promenljiva 'bt' na liniji 15
+INFO  13:08:23,538 - Detektovano koriscenje promenljive bodovi  na liniji 17
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive bodovi  na liniji 18
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive bodovi  na liniji 19
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive bodovi  na liniji 19
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive jedan  na liniji 19
+Izgled objektnog cvora: Con jedan: int, 1, 0 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive bodovi  na liniji 20
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive bodovi  na liniji 20
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive pet  na liniji 20
+Izgled objektnog cvora: Con pet: int, 5, 0 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive bodovi  na liniji 21
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive bodovi  na liniji 22
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive niz  na liniji 25
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive niz  na liniji 26
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive nula  na liniji 26
+Izgled objektnog cvora: Con nula: int, 0, 0 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive jedan  na liniji 26
+Izgled objektnog cvora: Con jedan: int, 1, 0 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive niz  na liniji 27
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive niz  na liniji 28
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,538 - Detektovano koriscenje promenljive niz  na liniji 28
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive jedan  na liniji 28
+Izgled objektnog cvora: Con jedan: int, 1, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz  na liniji 28
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz  na liniji 28
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive bodovi  na liniji 29
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz  na liniji 29
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz  na liniji 29
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive bodovi  na liniji 30
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz  na liniji 31
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive a  na liniji 34
+Izgled objektnog cvora: Var a: int, 2, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive b  na liniji 34
+Izgled objektnog cvora: Var b: int, 3, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz  na liniji 34
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive a  na liniji 35
+Izgled objektnog cvora: Var a: int, 2, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive b  na liniji 36
+Izgled objektnog cvora: Var b: int, 3, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive a  na liniji 39
+Izgled objektnog cvora: Var a: int, 2, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz  na liniji 39
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive a  na liniji 40
+Izgled objektnog cvora: Var a: int, 2, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz2  na liniji 42
+Izgled objektnog cvora: Var niz2: Arr of int, 1, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz2  na liniji 43
+Izgled objektnog cvora: Var niz2: Arr of int, 1, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz2  na liniji 43
+Izgled objektnog cvora: Var niz2: Arr of int, 1, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz  na liniji 43
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive nula  na liniji 43
+Izgled objektnog cvora: Con nula: int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz  na liniji 43
+Izgled objektnog cvora: Var niz: Arr of int, 0, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz2  na liniji 45
+Izgled objektnog cvora: Var niz2: Arr of int, 1, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive niz2  na liniji 46
+Izgled objektnog cvora: Var niz2: Arr of int, 1, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive nizch  na liniji 50
+Izgled objektnog cvora: Var nizch: Arr of char, 4, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive nizch  na liniji 51
+Izgled objektnog cvora: Var nizch: Arr of char, 4, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive nizch  na liniji 52
+Izgled objektnog cvora: Var nizch: Arr of char, 4, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive jedan  na liniji 52
+Izgled objektnog cvora: Con jedan: int, 1, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive nizch  na liniji 53
+Izgled objektnog cvora: Var nizch: Arr of char, 4, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive pet  na liniji 53
+Izgled objektnog cvora: Con pet: int, 5, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive nizch  na liniji 54
+Izgled objektnog cvora: Var nizch: Arr of char, 4, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive nizch  na liniji 55
+Izgled objektnog cvora: Var nizch: Arr of char, 4, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive jedan  na liniji 55
+Izgled objektnog cvora: Con jedan: int, 1, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive bodovi  na liniji 58
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive bodovi  na liniji 59
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive bodovi  na liniji 59
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive pet  na liniji 59
+Izgled objektnog cvora: Con pet: int, 5, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive a  na liniji 59
+Izgled objektnog cvora: Var a: int, 2, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive jedan  na liniji 59
+Izgled objektnog cvora: Con jedan: int, 1, 0 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive bodovi  na liniji 59
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+
+INFO  13:08:23,539 - Detektovano koriscenje promenljive bodovi  na liniji 60
+Izgled objektnog cvora: Var bodovi: int, 0, 1 
+

@@ -1,0 +1,133 @@
+INFO  13:34:47,819 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  13:34:47,825 - #2 program
+INFO  13:34:47,825 - #19 mojProgram
+INFO  13:34:47,826 - #19 int
+INFO  13:34:47,826 - #19 x
+INFO  13:34:47,826 - #41 ,
+INFO  13:34:47,827 - #19 y
+INFO  13:34:47,827 - #45 [
+INFO  13:34:47,827 - #46 ]
+INFO  13:34:47,827 - #41 ,
+INFO  13:34:47,828 - #19 z
+INFO  13:34:47,828 - #39 ;
+INFO  13:34:47,828 - #7 const
+INFO  13:34:47,828 - #19 int
+INFO  13:34:47,828 - #19 test1
+INFO  13:34:47,828 - #36 =
+INFO  13:34:47,828 - #20 1
+INFO  13:34:47,828 - #41 ,
+INFO  13:34:47,829 - #19 test2
+INFO  13:34:47,829 - #36 =
+INFO  13:34:47,829 - #20 5
+INFO  13:34:47,829 - #39 ;
+INFO  13:34:47,829 - #7 const
+INFO  13:34:47,831 - #19 char
+INFO  13:34:47,831 - #19 test3
+INFO  13:34:47,831 - #36 =
+INFO  13:34:47,831 - #21 a
+INFO  13:34:47,831 - #41 ,
+INFO  13:34:47,832 - #19 test4
+INFO  13:34:47,832 - #36 =
+INFO  13:34:47,832 - #21 b
+INFO  13:34:47,832 - #41 ,
+INFO  13:34:47,832 - #19 test5
+INFO  13:34:47,832 - #36 =
+INFO  13:34:47,832 - #21 c
+INFO  13:34:47,832 - #39 ;
+INFO  13:34:47,832 - #7 const
+INFO  13:34:47,832 - #19 bool
+INFO  13:34:47,832 - #19 test6
+INFO  13:34:47,832 - #36 =
+INFO  13:34:47,832 - #22 true
+INFO  13:34:47,832 - #41 ,
+INFO  13:34:47,832 - #19 test7
+INFO  13:34:47,833 - #36 =
+INFO  13:34:47,833 - #22 false
+INFO  13:34:47,833 - #39 ;
+INFO  13:34:47,833 - #47 {
+INFO  13:34:47,833 - #50 void
+INFO  13:34:47,833 - #19 main
+INFO  13:34:47,833 - #43 (
+INFO  13:34:47,833 - #44 )
+INFO  13:34:47,833 - #47 {
+INFO  13:34:47,833 - #48 }
+INFO  13:34:47,834 - #48 }
+INFO  13:34:47,835 - Program(
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived1(
+        GlobalDeclListDerived2(
+          GlobalDeclListDerived3(
+          ) [GlobalDeclListDerived3]
+          VarDeclDerived1(
+            TypeDerived1(
+            ) [TypeDerived1]
+            ArrayDeclDerived2(
+            ) [ArrayDeclDerived2]
+            VarDeclListDerived1(
+              VarDeclListDerived1(
+                VarDeclListDerived2(
+                ) [VarDeclListDerived2]
+                ArrayDeclDerived1(
+                ) [ArrayDeclDerived1]
+              ) [VarDeclListDerived1]
+              ArrayDeclDerived2(
+              ) [ArrayDeclDerived2]
+            ) [VarDeclListDerived1]
+          ) [VarDeclDerived1]
+        ) [GlobalDeclListDerived2]
+        ConstDeclDerived1(
+          TypeDerived1(
+          ) [TypeDerived1]
+          ConstListDerived1(
+          ) [ConstListDerived1]
+          ConstDeclListDerived1(
+            ConstDeclListDerived2(
+            ) [ConstDeclListDerived2]
+            ConstListDerived1(
+            ) [ConstListDerived1]
+          ) [ConstDeclListDerived1]
+        ) [ConstDeclDerived1]
+      ) [GlobalDeclListDerived1]
+      ConstDeclDerived1(
+        TypeDerived1(
+        ) [TypeDerived1]
+        ConstListDerived2(
+        ) [ConstListDerived2]
+        ConstDeclListDerived1(
+          ConstDeclListDerived1(
+            ConstDeclListDerived2(
+            ) [ConstDeclListDerived2]
+            ConstListDerived2(
+            ) [ConstListDerived2]
+          ) [ConstDeclListDerived1]
+          ConstListDerived2(
+          ) [ConstListDerived2]
+        ) [ConstDeclListDerived1]
+      ) [ConstDeclDerived1]
+    ) [GlobalDeclListDerived1]
+    ConstDeclDerived1(
+      TypeDerived1(
+      ) [TypeDerived1]
+      ConstListDerived3(
+      ) [ConstListDerived3]
+      ConstDeclListDerived1(
+        ConstDeclListDerived2(
+        ) [ConstDeclListDerived2]
+        ConstListDerived3(
+        ) [ConstListDerived3]
+      ) [ConstDeclListDerived1]
+    ) [ConstDeclDerived1]
+  ) [GlobalDeclListDerived1]
+  MethodDeclDerived1(
+    MethodRetTypeDerived2(
+    ) [MethodRetTypeDerived2]
+    FormParsListDerived2(
+    ) [FormParsListDerived2]
+    VarDeclListDerived2(
+    ) [VarDeclListDerived2]
+    StatementListDerived1(
+    ) [StatementListDerived1]
+  ) [MethodDeclDerived1]
+) [Program]
+INFO  13:34:47,835 - ===================================

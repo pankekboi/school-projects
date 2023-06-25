@@ -1,0 +1,41 @@
+INFO  17:10:48,264 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\analyzerTest.mj
+INFO  17:10:48,293 - #2 program
+INFO  17:10:48,293 - #47 analyzerTest
+INFO  17:10:48,293 - #7 const
+INFO  17:10:48,294 - #47 int
+INFO  17:10:48,294 - #47 test
+INFO  17:10:48,295 - #32 =
+INFO  17:10:48,295 - #48 5
+INFO  17:10:48,295 - #35 ;
+INFO  17:10:48,295 - #43 {
+INFO  17:10:48,296 - #44 }
+INFO  17:10:48,299 - Program(
+  ProgName(
+   analyzerTest
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived1(
+      ConstDeclDerived1(
+        ConstType(
+          Type(
+           int
+          ) [Type]
+        ) [ConstType]
+        Const(
+         test
+          ConstNum(
+           5
+          ) [ConstNum]
+        ) [Const]
+        ConstDeclListDerived2(
+        ) [ConstDeclListDerived2]
+      ) [ConstDeclDerived1]
+    ) [DeclDerived1]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  17:10:48,302 - ===================================
+INFO  17:12:48,749 - Deklarisana simbolicka konstanta test na liniji 2

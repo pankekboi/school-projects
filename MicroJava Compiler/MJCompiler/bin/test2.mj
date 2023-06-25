@@ -1,0 +1,9 @@
+program Test2
+{
+	void main()
+	int x;
+	{
+		x = + x;
+		x = x + , * 1;
+	}
+}

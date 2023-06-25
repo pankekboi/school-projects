@@ -1,0 +1,52 @@
+INFO  16:45:02,435 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  16:45:02,454 - #2 program
+INFO  16:45:02,454 - #19 mojProgram
+INFO  16:45:02,454 - #19 int
+INFO  16:45:02,454 - #19 x
+INFO  16:45:02,455 - #41 ,
+INFO  16:45:02,455 - #19 y
+INFO  16:45:02,455 - #45 [
+INFO  16:45:02,455 - #46 ]
+INFO  16:45:02,455 - #41 ,
+INFO  16:45:02,455 - #19 z
+INFO  16:45:02,456 - #39 ;
+INFO  16:45:02,456 - #7 const
+INFO  16:45:02,456 - #19 int
+INFO  16:45:02,456 - #19 test1
+INFO  16:45:02,456 - #36 =
+INFO  16:45:02,456 - #20 1
+INFO  16:45:02,456 - #41 ,
+INFO  16:45:02,457 - #19 test2
+INFO  16:45:02,457 - #36 =
+INFO  16:45:02,457 - #20 5
+INFO  16:45:02,457 - #39 ;
+INFO  16:45:02,457 - #7 const
+INFO  16:45:02,458 - #19 char
+INFO  16:45:02,458 - #19 test3
+INFO  16:45:02,459 - #36 =
+INFO  16:45:02,459 - #21 a
+INFO  16:45:02,459 - #41 ,
+INFO  16:45:02,459 - #19 test4
+INFO  16:45:02,459 - #36 =
+INFO  16:45:02,459 - #21 b
+INFO  16:45:02,459 - #41 ,
+INFO  16:45:02,459 - #19 test5
+INFO  16:45:02,459 - #36 =
+INFO  16:45:02,459 - #21 c
+INFO  16:45:02,459 - #39 ;
+INFO  16:45:02,459 - #7 const
+INFO  16:45:02,459 - #19 bool
+INFO  16:45:02,459 - #19 test6
+INFO  16:45:02,459 - #36 =
+INFO  16:45:02,460 - #22 true
+INFO  16:45:02,460 - #41 ,
+INFO  16:45:02,460 - #19 test7
+INFO  16:45:02,460 - #36 =
+INFO  16:45:02,460 - #22 false
+INFO  16:45:02,460 - #39 ;
+INFO  16:45:02,460 - #4 class
+INFO  16:45:02,460 - #19 A
+INFO  16:45:02,460 - #39 ;
+ERROR 16:45:02,460 - 
+Sintaksna greska kod simbola ';' na liniji 7
+ERROR 16:45:02,460 - Fatalna greska, parsiranje se ne moze nastaviti kod simbola ';' na liniji 7

@@ -1,0 +1,356 @@
+INFO  15:41:05,271 - #2 program
+INFO  15:41:05,271 - #47 Test7
+INFO  15:41:05,271 - #47 int
+INFO  15:41:05,271 - #47 x
+INFO  15:41:05,272 - #37 ,
+INFO  15:41:05,272 - #47 y
+INFO  15:41:05,272 - #37 ,
+INFO  15:41:05,272 - #47 z
+INFO  15:41:05,272 - #35 ;
+INFO  15:41:05,273 - #47 int
+INFO  15:41:05,273 - #47 niz
+INFO  15:41:05,273 - #41 [
+INFO  15:41:05,274 - #42 ]
+INFO  15:41:05,274 - #35 ;
+INFO  15:41:05,275 - #43 {
+INFO  15:41:05,275 - #46 void
+INFO  15:41:05,276 - #47 main
+INFO  15:41:05,276 - #39 (
+INFO  15:41:05,276 - #40 )
+INFO  15:41:05,277 - #47 char
+INFO  15:41:05,277 - #47 c
+INFO  15:41:05,277 - #35 ;
+INFO  15:41:05,277 - #43 {
+INFO  15:41:05,278 - #47 x
+INFO  15:41:05,278 - #32 =
+INFO  15:41:05,278 - #47 x
+INFO  15:41:05,278 - #19 +
+INFO  15:41:05,278 - #49 a
+INFO  15:41:05,279 - #21 *
+INFO  15:41:05,279 - #39 (
+INFO  15:41:05,279 - #50 true
+INFO  15:41:05,279 - #19 +
+INFO  15:41:05,279 - #48 20
+INFO  15:41:05,279 - #40 )
+INFO  15:41:05,279 - #35 ;
+INFO  15:41:05,280 - #47 niz
+INFO  15:41:05,280 - #33 ++
+INFO  15:41:05,280 - #35 ;
+INFO  15:41:05,280 - #47 niz
+INFO  15:41:05,280 - #34 --
+INFO  15:41:05,280 - #35 ;
+INFO  15:41:05,280 - #47 niz
+INFO  15:41:05,280 - #32 =
+INFO  15:41:05,280 - #11 new
+INFO  15:41:05,280 - #47 int
+INFO  15:41:05,281 - #41 [
+INFO  15:41:05,281 - #50 false
+INFO  15:41:05,281 - #42 ]
+INFO  15:41:05,282 - #35 ;
+INFO  15:41:05,282 - #47 niz
+INFO  15:41:05,282 - #41 [
+INFO  15:41:05,282 - #49 b
+INFO  15:41:05,282 - #42 ]
+INFO  15:41:05,282 - #32 =
+INFO  15:41:05,282 - #48 1
+INFO  15:41:05,282 - #35 ;
+INFO  15:41:05,282 - #41 [
+INFO  15:41:05,282 - #47 x
+INFO  15:41:05,282 - #37 ,
+INFO  15:41:05,283 - #47 y
+INFO  15:41:05,283 - #37 ,
+INFO  15:41:05,283 - #47 c
+INFO  15:41:05,283 - #42 ]
+INFO  15:41:05,283 - #32 =
+INFO  15:41:05,283 - #47 niz
+INFO  15:41:05,283 - #41 [
+INFO  15:41:05,283 - #48 0
+INFO  15:41:05,283 - #42 ]
+INFO  15:41:05,283 - #35 ;
+INFO  15:41:05,283 - #44 }
+INFO  15:41:05,283 - #44 }
+INFO  15:41:05,290 - Program(
+  ProgName(
+   Test7
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived2(
+      ) [GlobalDeclListDerived2]
+      DeclDerived2(
+        VarDeclType(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          MultiVarDecl(
+            RegVar(
+             x
+            ) [RegVar]
+            MultiVarDecl(
+              RegVar(
+               y
+              ) [RegVar]
+              SingleVarDecl(
+                RegVar(
+                 z
+                ) [RegVar]
+              ) [SingleVarDecl]
+            ) [MultiVarDecl]
+          ) [MultiVarDecl]
+        ) [VarDeclType]
+      ) [DeclDerived2]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        SingleVarDecl(
+          ArrVar(
+           niz
+          ) [ArrVar]
+        ) [SingleVarDecl]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived1(
+        VarMethDeclListDerived2(
+        ) [VarMethDeclListDerived2]
+        VarDeclMeth(
+          VarTypeMeth(
+            Type(
+             char
+            ) [Type]
+          ) [VarTypeMeth]
+          VarDeclListMethDerived2(
+            RegVarMeth(
+             c
+            ) [RegVarMeth]
+          ) [VarDeclListMethDerived2]
+        ) [VarDeclMeth]
+      ) [VarMethDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived2(
+                  ) [StatementListDerived2]
+                  StatementDerived1(
+                    AssignStmt(
+                      DesignatorName(
+                       x
+                      ) [DesignatorName]
+                      AssignopDerived1(
+                      ) [AssignopDerived1]
+                      OkExpr(
+                        AddExpr(
+                          TermExpr(
+                            TermFactor(
+                              DesignatorFactor(
+                                DesignatorName(
+                                 x
+                                ) [DesignatorName]
+                              ) [DesignatorFactor]
+                            ) [TermFactor]
+                          ) [TermExpr]
+                          OpPlus(
+                          ) [OpPlus]
+                          MulTerm(
+                            TermFactor(
+                              CharFactor(
+                               a
+                              ) [CharFactor]
+                            ) [TermFactor]
+                            OpMul(
+                            ) [OpMul]
+                            DelimitedFactor(
+                              AddExpr(
+                                TermExpr(
+                                  TermFactor(
+                                    BoolFactor(
+                                     true
+                                    ) [BoolFactor]
+                                  ) [TermFactor]
+                                ) [TermExpr]
+                                OpPlus(
+                                ) [OpPlus]
+                                TermFactor(
+                                  NumFactor(
+                                   20
+                                  ) [NumFactor]
+                                ) [TermFactor]
+                              ) [AddExpr]
+                            ) [DelimitedFactor]
+                          ) [MulTerm]
+                        ) [AddExpr]
+                      ) [OkExpr]
+                    ) [AssignStmt]
+                  ) [StatementDerived1]
+                ) [StatementListDerived1]
+                StatementDerived1(
+                  DesignatorStmtInc(
+                    DesignatorName(
+                     niz
+                    ) [DesignatorName]
+                  ) [DesignatorStmtInc]
+                ) [StatementDerived1]
+              ) [StatementListDerived1]
+              StatementDerived1(
+                DesignatorStmtDec(
+                  DesignatorName(
+                   niz
+                  ) [DesignatorName]
+                ) [DesignatorStmtDec]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+            StatementDerived1(
+              AssignStmt(
+                DesignatorName(
+                 niz
+                ) [DesignatorName]
+                AssignopDerived1(
+                ) [AssignopDerived1]
+                OkExpr(
+                  TermExpr(
+                    TermFactor(
+                      NewArrayFactor(
+                        Type(
+                         int
+                        ) [Type]
+                        TermExpr(
+                          TermFactor(
+                            BoolFactor(
+                             false
+                            ) [BoolFactor]
+                          ) [TermFactor]
+                        ) [TermExpr]
+                      ) [NewArrayFactor]
+                    ) [TermFactor]
+                  ) [TermExpr]
+                ) [OkExpr]
+              ) [AssignStmt]
+            ) [StatementDerived1]
+          ) [StatementListDerived1]
+          StatementDerived1(
+            AssignStmt(
+              DesignatorArray(
+                DesignatorName(
+                 niz
+                ) [DesignatorName]
+                TermExpr(
+                  TermFactor(
+                    CharFactor(
+                     b
+                    ) [CharFactor]
+                  ) [TermFactor]
+                ) [TermExpr]
+              ) [DesignatorArray]
+              AssignopDerived1(
+              ) [AssignopDerived1]
+              OkExpr(
+                TermExpr(
+                  TermFactor(
+                    NumFactor(
+                     1
+                    ) [NumFactor]
+                  ) [TermFactor]
+                ) [TermExpr]
+              ) [OkExpr]
+            ) [AssignStmt]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          DesignatorStmtArray(
+            DesignatorParam(
+              DesignatorName(
+               x
+              ) [DesignatorName]
+            ) [DesignatorParam]
+            DesignatorParListDerived1(
+              DesignatorParListDerived1(
+                DesignatorParListDerived2(
+                ) [DesignatorParListDerived2]
+                DesignatorParam(
+                  DesignatorName(
+                   y
+                  ) [DesignatorName]
+                ) [DesignatorParam]
+              ) [DesignatorParListDerived1]
+              DesignatorParam(
+                DesignatorName(
+                 c
+                ) [DesignatorName]
+              ) [DesignatorParam]
+            ) [DesignatorParListDerived1]
+            DesignatorArray(
+              DesignatorName(
+               niz
+              ) [DesignatorName]
+              TermExpr(
+                TermFactor(
+                  NumFactor(
+                   0
+                  ) [NumFactor]
+                ) [TermFactor]
+              ) [TermExpr]
+            ) [DesignatorArray]
+          ) [DesignatorStmtArray]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  15:41:05,290 - ===================================
+INFO  15:41:05,291 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  15:41:05,292 - Deklarisana globalna promenljiva 'y' na liniji 2
+INFO  15:41:05,292 - Deklarisana globalna promenljiva 'z' na liniji 2
+INFO  15:41:05,292 - Deklarisana globalna promenljiva 'niz' na liniji 3
+INFO  15:41:05,292 - Deklarisana lokalna promenljiva 'c' na liniji 6
+INFO  15:41:05,292 - Detektovano koriscenje promenljive x na liniji 8
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  15:41:05,292 - Detektovano koriscenje promenljive x na liniji 8
+Izgled objektnog cvora: Var x: int, 0, 0 
+ERROR 15:41:05,292 - Promenljive u aritmetickom izrazu moraju biti tipa 'int'! Greska na liniji 8
+ERROR 15:41:05,292 - Promenljive u aritmetickom izrazu moraju biti tipa 'int'! Greska na liniji 8
+ERROR 15:41:05,292 - Promenljive u aritmetickom izrazu moraju biti tipa 'int'! Greska na liniji 8
+ERROR 15:41:05,293 - Tipovi podataka nisu kompatibilni pri dodeli vrednosti na liniji 8
+INFO  15:41:05,293 - Detektovano koriscenje promenljive niz na liniji 10
+Izgled objektnog cvora: Var niz: Arr of int, 3, 0 
+ERROR 15:41:05,293 - Promenljiva 'niz' mora biti tipa 'int'! Greska na liniji 10
+INFO  15:41:05,293 - Detektovano koriscenje promenljive niz na liniji 11
+Izgled objektnog cvora: Var niz: Arr of int, 3, 0 
+ERROR 15:41:05,293 - Promenljiva 'niz' mora biti tipa 'int'! Greska na liniji 11
+INFO  15:41:05,293 - Detektovano koriscenje promenljive niz na liniji 13
+Izgled objektnog cvora: Var niz: Arr of int, 3, 0 
+ERROR 15:41:05,293 - Velicina niza mora biti tipa 'int'! Greska na liniji 13
+INFO  15:41:05,293 - Detektovano koriscenje promenljive niz na liniji 14
+Izgled objektnog cvora: Var niz: Arr of int, 3, 0 
+ERROR 15:41:05,293 - Indeks mora biti tipa 'int'! Greska prilikom indeksiranja niza na liniji 14
+INFO  15:41:05,293 - Detektovano koriscenje promenljive x na liniji 16
+Izgled objektnog cvora: Var x: int, 0, 0 
+INFO  15:41:05,293 - Detektovano koriscenje promenljive y na liniji 16
+Izgled objektnog cvora: Var y: int, 1, 0 
+INFO  15:41:05,293 - Detektovano koriscenje promenljive c na liniji 16
+Izgled objektnog cvora: Var c: char, 0, 1 
+INFO  15:41:05,294 - Detektovano koriscenje promenljive niz na liniji 16
+Izgled objektnog cvora: Var niz: Arr of int, 3, 0 
+ERROR 15:41:05,294 - Promenljiva '' mora biti niz! Greska na liniji 16
+INFO  15:41:05,294 - ===================================
+INFO  15:41:05,294 - KOMPAJLIRANJE NIJE USPESNO ZAVRSENO!

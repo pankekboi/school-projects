@@ -1,0 +1,50 @@
+INFO  14:14:11,576 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  14:14:11,598 - #2 program
+INFO  14:14:11,598 - #47 errorRecovery
+INFO  14:14:11,598 - #7 const
+INFO  14:14:11,598 - #37 ,
+ERROR 14:14:11,599 - 
+Sintaksna greska na liniji 2
+INFO  14:14:11,599 - #37 ,
+INFO  14:14:11,599 - #37 ,
+INFO  14:14:11,599 - #47 y
+INFO  14:14:11,599 - #35 ;
+INFO  14:14:11,599 - #47 int
+INFO  14:14:11,599 - #47 x
+INFO  14:14:11,599 - #37 ,
+ERROR 14:14:11,599 - Izvrsen oporavak na liniji 2
+INFO  14:14:11,600 - #41 [
+ERROR 14:14:11,600 - 
+Sintaksna greska na liniji 3
+INFO  14:14:11,600 - #42 ]
+INFO  14:14:11,600 - #47 y
+INFO  14:14:11,600 - #37 ,
+INFO  14:14:11,600 - #47 z
+INFO  14:14:11,601 - #35 ;
+INFO  14:14:11,601 - #47 int
+INFO  14:14:11,602 - #47 x
+INFO  14:14:11,602 - #37 ,
+ERROR 14:14:11,602 - Izvrsen oporavak na liniji 3
+INFO  14:14:11,602 - #47 z
+INFO  14:14:11,602 - #35 ;
+INFO  14:14:11,602 - #47 int
+INFO  14:14:11,602 - #35 ;
+ERROR 14:14:11,602 - 
+Sintaksna greska na liniji 5
+INFO  14:14:11,602 - #43 {
+INFO  14:14:11,602 - #46 void
+INFO  14:14:11,602 - #47 main
+ERROR 14:14:11,602 - Izvrsen oporavak na liniji 5
+INFO  14:14:11,603 - #39 (
+INFO  14:14:11,603 - #40 )
+INFO  14:14:11,603 - #43 {
+INFO  14:14:11,603 - #47 x
+INFO  14:14:11,604 - #32 =
+INFO  14:14:11,604 - #48 1
+INFO  14:14:11,604 - #19 +
+INFO  14:14:11,604 - #35 ;
+ERROR 14:14:11,605 - 
+Sintaksna greska na liniji 8
+INFO  14:14:11,605 - #44 }
+INFO  14:14:11,605 - #44 }
+ERROR 14:14:11,605 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 10

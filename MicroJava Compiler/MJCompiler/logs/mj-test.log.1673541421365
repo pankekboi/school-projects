@@ -1,0 +1,94 @@
+INFO  17:36:37,256 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  17:36:37,278 - #2 program
+INFO  17:36:37,278 - #47 errorRecovery
+INFO  17:36:37,278 - #47 int
+INFO  17:36:37,279 - #47 x
+INFO  17:36:37,279 - #37 ,
+INFO  17:36:37,279 - #47 y
+INFO  17:36:37,279 - #35 ;
+INFO  17:36:37,280 - #43 {
+INFO  17:36:37,280 - #46 void
+INFO  17:36:37,280 - #47 main
+INFO  17:36:37,280 - #39 (
+INFO  17:36:37,281 - #40 )
+INFO  17:36:37,281 - #43 {
+INFO  17:36:37,281 - #47 x
+INFO  17:36:37,281 - #32 =
+INFO  17:36:37,282 - #19 +
+ERROR 17:36:37,282 - 
+Sintaksna greska na liniji 6
+INFO  17:36:37,282 - #47 x
+INFO  17:36:37,282 - #35 ;
+INFO  17:36:37,282 - #47 x
+INFO  17:36:37,282 - #32 =
+INFO  17:36:37,284 - #47 x
+ERROR 17:36:37,284 - Izvrsen oporavak do ; prilikom dodele na liniji 2
+INFO  17:36:37,284 - #19 +
+INFO  17:36:37,285 - #35 ;
+ERROR 17:36:37,285 - 
+Sintaksna greska na liniji 7
+INFO  17:36:37,285 - #44 }
+INFO  17:36:37,285 - #44 }
+ERROR 17:36:37,285 - Izvrsen oporavak do ; prilikom dodele na liniji 2
+INFO  17:36:37,288 - Program(
+  ProgName(
+   errorRecovery
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclType(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        MultiVarDecl(
+          RegVar(
+           x
+          ) [RegVar]
+          SingleVarDecl(
+            RegVar(
+             y
+            ) [RegVar]
+          ) [SingleVarDecl]
+        ) [MultiVarDecl]
+      ) [VarDeclType]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived2(
+          ) [StatementListDerived2]
+          StatementDerived1(
+            DesignatorStatementDerived1(
+            ) [DesignatorStatementDerived1]
+          ) [StatementDerived1]
+        ) [StatementListDerived1]
+        StatementDerived1(
+          DesignatorStatementDerived1(
+          ) [DesignatorStatementDerived1]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  17:36:37,288 - ===================================
+INFO  17:36:37,289 - Deklarisana globalna promenljiva 'x' na liniji 2
+INFO  17:36:37,290 - Deklarisana globalna promenljiva 'y' na liniji 2
+INFO  17:36:37,290 - ===================================
+INFO  17:36:37,292 - PARSIRANJE JE USPESNO ZAVRSENO!

@@ -1,0 +1,28 @@
+INFO  17:42:37,087 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  17:42:37,106 - #2 program
+INFO  17:42:37,106 - #19 errorRecovery
+INFO  17:42:37,106 - #19 int
+INFO  17:42:37,106 - #19 x
+INFO  17:42:37,106 - #41 ,
+INFO  17:42:37,107 - #45 [
+ERROR 17:42:37,107 - 
+Sintaksna greska kod simbola '[' na liniji 2
+INFO  17:42:37,107 - #46 ]
+INFO  17:42:37,107 - #19 y
+INFO  17:42:37,107 - #41 ,
+INFO  17:42:37,107 - #19 z
+INFO  17:42:37,107 - #39 ;
+INFO  17:42:37,107 - #47 {
+INFO  17:42:37,107 - #48 }
+ERROR 17:42:37,108 - Izvrsen oporavak na liniji 2
+INFO  17:42:37,108 - Program(
+  GlobalDeclListDerived2(
+    GlobalDeclListDerived4(
+    ) [GlobalDeclListDerived4]
+    VarDeclDerived2(
+    ) [VarDeclDerived2]
+  ) [GlobalDeclListDerived2]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  17:42:37,109 - ===================================

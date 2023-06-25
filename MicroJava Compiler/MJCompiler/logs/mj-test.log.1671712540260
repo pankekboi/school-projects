@@ -1,0 +1,26 @@
+INFO  13:35:25,577 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  13:35:25,600 - #2 program
+INFO  13:35:25,600 - #47 errorRecovery
+INFO  13:35:25,600 - #7 const
+INFO  13:35:25,600 - #37 ,
+ERROR 13:35:25,600 - 
+Sintaksna greska kod simbola ',' na liniji 2
+INFO  13:35:25,600 - #37 ,
+INFO  13:35:25,600 - #37 ,
+INFO  13:35:25,600 - #47 y
+INFO  13:35:25,601 - #35 ;
+INFO  13:35:25,601 - #47 int
+INFO  13:35:25,601 - #47 x
+INFO  13:35:25,601 - #37 ,
+ERROR 13:35:25,601 - Izvrsen oporavak na liniji 2
+INFO  13:35:25,601 - #41 [
+ERROR 13:35:25,602 - 
+Sintaksna greska kod simbola '[' na liniji 3
+INFO  13:35:25,602 - #42 ]
+INFO  13:35:25,602 - #47 y
+INFO  13:35:25,602 - #37 ,
+INFO  13:35:25,602 - #47 z
+INFO  13:35:25,602 - #35 ;
+INFO  13:35:25,602 - #47 int
+INFO  13:35:25,602 - #47 x
+INFO  13:35:25,602 - #37 ,

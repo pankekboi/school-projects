@@ -1,0 +1,103 @@
+INFO  17:44:47,858 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\analyzerTest.mj
+INFO  17:44:47,879 - #2 program
+INFO  17:44:47,879 - #47 analyzerTest
+INFO  17:44:47,879 - #7 const
+INFO  17:44:47,879 - #47 int
+INFO  17:44:47,880 - #47 test
+INFO  17:44:47,880 - #32 =
+INFO  17:44:47,880 - #48 5
+INFO  17:44:47,880 - #37 ,
+INFO  17:44:47,881 - #47 fail
+INFO  17:44:47,881 - #32 =
+INFO  17:44:47,881 - #49 d
+INFO  17:44:47,881 - #35 ;
+INFO  17:44:47,881 - #7 const
+INFO  17:44:47,881 - #47 char
+INFO  17:44:47,881 - #47 test2
+INFO  17:44:47,881 - #32 =
+INFO  17:44:47,881 - #49 c
+INFO  17:44:47,882 - #35 ;
+INFO  17:44:47,882 - #7 const
+INFO  17:44:47,882 - #47 bool
+INFO  17:44:47,882 - #47 test3
+INFO  17:44:47,882 - #32 =
+INFO  17:44:47,882 - #50 false
+INFO  17:44:47,882 - #35 ;
+INFO  17:44:47,882 - #43 {
+INFO  17:44:47,882 - #44 }
+INFO  17:44:47,885 - Program(
+  ProgName(
+   analyzerTest
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived1(
+        GlobalDeclListDerived2(
+        ) [GlobalDeclListDerived2]
+        DeclDerived1(
+          ConstDeclDerived1(
+            ConstType(
+              Type(
+               int
+              ) [Type]
+            ) [ConstType]
+            Const(
+             test
+              ConstNum(
+               5
+              ) [ConstNum]
+            ) [Const]
+            ConstDeclListDerived1(
+              ConstDeclListDerived2(
+              ) [ConstDeclListDerived2]
+              Const(
+               fail
+                ConstChar(
+                 d
+                ) [ConstChar]
+              ) [Const]
+            ) [ConstDeclListDerived1]
+          ) [ConstDeclDerived1]
+        ) [DeclDerived1]
+      ) [GlobalDeclListDerived1]
+      DeclDerived1(
+        ConstDeclDerived1(
+          ConstType(
+            Type(
+             char
+            ) [Type]
+          ) [ConstType]
+          Const(
+           test2
+            ConstChar(
+             c
+            ) [ConstChar]
+          ) [Const]
+          ConstDeclListDerived2(
+          ) [ConstDeclListDerived2]
+        ) [ConstDeclDerived1]
+      ) [DeclDerived1]
+    ) [GlobalDeclListDerived1]
+    DeclDerived1(
+      ConstDeclDerived1(
+        ConstType(
+          Type(
+           bool
+          ) [Type]
+        ) [ConstType]
+        Const(
+         test3
+          ConstBool(
+           false
+          ) [ConstBool]
+        ) [Const]
+        ConstDeclListDerived2(
+        ) [ConstDeclListDerived2]
+      ) [ConstDeclDerived1]
+    ) [DeclDerived1]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  17:44:47,886 - ===================================
+INFO  17:44:47,887 - Deklarisana simbolicka konstanta 'test' na liniji 2

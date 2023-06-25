@@ -1,0 +1,9 @@
+program Test6
+MojTipPodatka x, y, z;
+{
+	void main()
+	vector w1, w2;
+	{
+	
+	}
+}

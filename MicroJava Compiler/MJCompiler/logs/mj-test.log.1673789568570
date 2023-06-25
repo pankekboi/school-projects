@@ -1,0 +1,67 @@
+INFO  14:27:38,998 - Kompajliranje fajla sa izvornim kodom: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\test1.mj
+INFO  14:27:39,017 - #2 program
+INFO  14:27:39,017 - #47 test1
+INFO  14:27:39,017 - #47 int
+INFO  14:27:39,018 - #47 x
+INFO  14:27:39,018 - #47 greska
+ERROR 14:27:39,018 - 
+Sintaksna greska na liniji 3
+INFO  14:27:39,018 - #35 ;
+INFO  14:27:39,019 - #7 const
+INFO  14:27:39,019 - #47 int
+INFO  14:27:39,019 - #47 y
+ERROR 14:27:39,019 - Izvrsen oporavak na liniji 3 prilikom definisanja globalne promenljive
+INFO  14:27:39,019 - #32 =
+INFO  14:27:39,020 - #35 ;
+ERROR 14:27:39,020 - 
+Sintaksna greska na liniji 5
+INFO  14:27:39,020 - #43 {
+INFO  14:27:39,020 - #46 void
+INFO  14:27:39,020 - #47 main
+ERROR 14:27:39,021 - Izvrsen oporavak na liniji 5 prilikom definisanja globalne konstante
+INFO  14:27:39,021 - #39 (
+INFO  14:27:39,021 - #40 )
+INFO  14:27:39,022 - #43 {
+INFO  14:27:39,022 - #44 }
+INFO  14:27:39,022 - #44 }
+INFO  14:27:39,028 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived2(
+      ) [GlobalDeclListDerived2]
+      DeclDerived2(
+        VarDeclDerived1(
+        ) [VarDeclDerived1]
+      ) [DeclDerived2]
+    ) [GlobalDeclListDerived1]
+    DeclDerived1(
+      ConstDeclDerived2(
+      ) [ConstDeclDerived2]
+    ) [DeclDerived1]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:27:39,028 - ===================================
+INFO  14:27:39,029 - ===================================
+INFO  14:27:39,029 - Generisanje bajtkoda za fajl: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\test1.obj
+INFO  14:27:39,031 - ===================================
+INFO  14:27:39,031 - KOMPAJLIRANJE JE USPESNO ZAVRSENO!

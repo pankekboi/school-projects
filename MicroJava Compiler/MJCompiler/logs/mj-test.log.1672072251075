@@ -1,0 +1,384 @@
+INFO  17:28:11,068 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\analyzerTest.mj
+INFO  17:28:11,091 - #2 program
+INFO  17:28:11,091 - #47 analyzerTest
+INFO  17:28:11,091 - #7 const
+INFO  17:28:11,091 - #47 int
+INFO  17:28:11,092 - #47 test
+INFO  17:28:11,092 - #32 =
+INFO  17:28:11,092 - #48 5
+INFO  17:28:11,092 - #37 ,
+INFO  17:28:11,093 - #47 fail
+INFO  17:28:11,093 - #32 =
+INFO  17:28:11,093 - #49 d
+INFO  17:28:11,093 - #35 ;
+INFO  17:28:11,093 - #7 const
+INFO  17:28:11,093 - #47 char
+INFO  17:28:11,093 - #47 test2
+INFO  17:28:11,093 - #32 =
+INFO  17:28:11,093 - #49 c
+INFO  17:28:11,093 - #35 ;
+INFO  17:28:11,093 - #7 const
+INFO  17:28:11,094 - #47 bool
+INFO  17:28:11,094 - #47 test3
+INFO  17:28:11,095 - #32 =
+INFO  17:28:11,095 - #50 false
+INFO  17:28:11,095 - #35 ;
+INFO  17:28:11,095 - #47 int
+INFO  17:28:11,095 - #47 x
+INFO  17:28:11,096 - #37 ,
+INFO  17:28:11,096 - #47 y
+INFO  17:28:11,096 - #35 ;
+INFO  17:28:11,096 - #47 int
+INFO  17:28:11,096 - #47 z
+INFO  17:28:11,096 - #41 [
+INFO  17:28:11,096 - #42 ]
+INFO  17:28:11,096 - #35 ;
+INFO  17:28:11,096 - #47 char
+INFO  17:28:11,096 - #47 c
+INFO  17:28:11,096 - #35 ;
+INFO  17:28:11,096 - #47 bool
+INFO  17:28:11,096 - #47 radi
+INFO  17:28:11,096 - #37 ,
+INFO  17:28:11,096 - #47 neRadi
+INFO  17:28:11,096 - #35 ;
+INFO  17:28:11,097 - #4 class
+INFO  17:28:11,097 - #47 A
+INFO  17:28:11,097 - #43 {
+INFO  17:28:11,097 - #44 }
+INFO  17:28:11,098 - #4 class
+INFO  17:28:11,098 - #47 B
+INFO  17:28:11,098 - #43 {
+INFO  17:28:11,098 - #44 }
+INFO  17:28:11,098 - #4 class
+INFO  17:28:11,098 - #47 C
+INFO  17:28:11,098 - #43 {
+INFO  17:28:11,098 - #44 }
+INFO  17:28:11,098 - #43 {
+INFO  17:28:11,098 - #47 int
+INFO  17:28:11,098 - #47 main
+INFO  17:28:11,099 - #39 (
+INFO  17:28:11,099 - #40 )
+INFO  17:28:11,099 - #47 int
+INFO  17:28:11,099 - #47 x
+INFO  17:28:11,099 - #37 ,
+INFO  17:28:11,099 - #47 z
+INFO  17:28:11,100 - #41 [
+INFO  17:28:11,100 - #42 ]
+INFO  17:28:11,100 - #35 ;
+INFO  17:28:11,100 - #47 char
+INFO  17:28:11,100 - #47 y
+INFO  17:28:11,100 - #35 ;
+INFO  17:28:11,100 - #43 {
+INFO  17:28:11,100 - #47 x
+INFO  17:28:11,100 - #32 =
+INFO  17:28:11,101 - #47 y
+INFO  17:28:11,102 - #19 +
+INFO  17:28:11,102 - #48 1
+INFO  17:28:11,102 - #35 ;
+INFO  17:28:11,102 - #44 }
+INFO  17:28:11,102 - #44 }
+INFO  17:28:11,106 - Program(
+  ProgName(
+   analyzerTest
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived1(
+        GlobalDeclListDerived1(
+          GlobalDeclListDerived1(
+            GlobalDeclListDerived1(
+              GlobalDeclListDerived1(
+                GlobalDeclListDerived1(
+                  GlobalDeclListDerived1(
+                    GlobalDeclListDerived1(
+                      GlobalDeclListDerived2(
+                      ) [GlobalDeclListDerived2]
+                      DeclDerived1(
+                        ConstDeclDerived1(
+                          ConstType(
+                            Type(
+                             int
+                            ) [Type]
+                          ) [ConstType]
+                          Const(
+                           test
+                            ConstNum(
+                             5
+                            ) [ConstNum]
+                          ) [Const]
+                          ConstDeclListDerived1(
+                            NoConstDeclList(
+                            ) [NoConstDeclList]
+                            Const(
+                             fail
+                              ConstChar(
+                               d
+                              ) [ConstChar]
+                            ) [Const]
+                          ) [ConstDeclListDerived1]
+                        ) [ConstDeclDerived1]
+                      ) [DeclDerived1]
+                    ) [GlobalDeclListDerived1]
+                    DeclDerived1(
+                      ConstDeclDerived1(
+                        ConstType(
+                          Type(
+                           char
+                          ) [Type]
+                        ) [ConstType]
+                        Const(
+                         test2
+                          ConstChar(
+                           c
+                          ) [ConstChar]
+                        ) [Const]
+                        NoConstDeclList(
+                        ) [NoConstDeclList]
+                      ) [ConstDeclDerived1]
+                    ) [DeclDerived1]
+                  ) [GlobalDeclListDerived1]
+                  DeclDerived1(
+                    ConstDeclDerived1(
+                      ConstType(
+                        Type(
+                         bool
+                        ) [Type]
+                      ) [ConstType]
+                      Const(
+                       test3
+                        ConstBool(
+                         false
+                        ) [ConstBool]
+                      ) [Const]
+                      NoConstDeclList(
+                      ) [NoConstDeclList]
+                    ) [ConstDeclDerived1]
+                  ) [DeclDerived1]
+                ) [GlobalDeclListDerived1]
+                DeclDerived2(
+                  VarDeclType(
+                    VarType(
+                      Type(
+                       int
+                      ) [Type]
+                    ) [VarType]
+                    VarDeclListDerived1(
+                      VarDeclListDerived2(
+                        RegVar(
+                         x
+                        ) [RegVar]
+                      ) [VarDeclListDerived2]
+                      RegVar(
+                       y
+                      ) [RegVar]
+                    ) [VarDeclListDerived1]
+                  ) [VarDeclType]
+                ) [DeclDerived2]
+              ) [GlobalDeclListDerived1]
+              DeclDerived2(
+                VarDeclType(
+                  VarType(
+                    Type(
+                     int
+                    ) [Type]
+                  ) [VarType]
+                  VarDeclListDerived2(
+                    ArrVar(
+                     z
+                    ) [ArrVar]
+                  ) [VarDeclListDerived2]
+                ) [VarDeclType]
+              ) [DeclDerived2]
+            ) [GlobalDeclListDerived1]
+            DeclDerived2(
+              VarDeclType(
+                VarType(
+                  Type(
+                   char
+                  ) [Type]
+                ) [VarType]
+                VarDeclListDerived2(
+                  RegVar(
+                   c
+                  ) [RegVar]
+                ) [VarDeclListDerived2]
+              ) [VarDeclType]
+            ) [DeclDerived2]
+          ) [GlobalDeclListDerived1]
+          DeclDerived2(
+            VarDeclType(
+              VarType(
+                Type(
+                 bool
+                ) [Type]
+              ) [VarType]
+              VarDeclListDerived1(
+                VarDeclListDerived2(
+                  RegVar(
+                   radi
+                  ) [RegVar]
+                ) [VarDeclListDerived2]
+                RegVar(
+                 neRadi
+                ) [RegVar]
+              ) [VarDeclListDerived1]
+            ) [VarDeclType]
+          ) [DeclDerived2]
+        ) [GlobalDeclListDerived1]
+        DeclDerived3(
+          ClassDeclDerived1(
+            ClassName(
+             A
+            ) [ClassName]
+            OptExtendsDerived2(
+            ) [OptExtendsDerived2]
+            VarMethDeclListDerived2(
+            ) [VarMethDeclListDerived2]
+            OptClassInitDerived2(
+            ) [OptClassInitDerived2]
+          ) [ClassDeclDerived1]
+        ) [DeclDerived3]
+      ) [GlobalDeclListDerived1]
+      DeclDerived3(
+        ClassDeclDerived1(
+          ClassName(
+           B
+          ) [ClassName]
+          OptExtendsDerived2(
+          ) [OptExtendsDerived2]
+          VarMethDeclListDerived2(
+          ) [VarMethDeclListDerived2]
+          OptClassInitDerived2(
+          ) [OptClassInitDerived2]
+        ) [ClassDeclDerived1]
+      ) [DeclDerived3]
+    ) [GlobalDeclListDerived1]
+    DeclDerived3(
+      ClassDeclDerived1(
+        ClassName(
+         C
+        ) [ClassName]
+        OptExtendsDerived2(
+        ) [OptExtendsDerived2]
+        VarMethDeclListDerived2(
+        ) [VarMethDeclListDerived2]
+        OptClassInitDerived2(
+        ) [OptClassInitDerived2]
+      ) [ClassDeclDerived1]
+    ) [DeclDerived3]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      MethRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived1(
+        VarMethDeclListDerived1(
+          VarMethDeclListDerived2(
+          ) [VarMethDeclListDerived2]
+          VarDeclMeth(
+            VarTypeMeth(
+              Type(
+               int
+              ) [Type]
+            ) [VarTypeMeth]
+            VarDeclListMethDerived1(
+              VarDeclListMethDerived2(
+                RegVarMeth(
+                 x
+                ) [RegVarMeth]
+              ) [VarDeclListMethDerived2]
+              ArrVarMeth(
+               z
+              ) [ArrVarMeth]
+            ) [VarDeclListMethDerived1]
+          ) [VarDeclMeth]
+        ) [VarMethDeclListDerived1]
+        VarDeclMeth(
+          VarTypeMeth(
+            Type(
+             char
+            ) [Type]
+          ) [VarTypeMeth]
+          VarDeclListMethDerived2(
+            RegVarMeth(
+             y
+            ) [RegVarMeth]
+          ) [VarDeclListMethDerived2]
+        ) [VarDeclMeth]
+      ) [VarMethDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived2(
+        ) [StatementListDerived2]
+        StatementDerived1(
+          AssignStmt(
+            Designator(
+              DesignatorName(
+               x
+              ) [DesignatorName]
+              DesignatorOptListDerived3(
+              ) [DesignatorOptListDerived3]
+            ) [Designator]
+            AssignopDerived1(
+            ) [AssignopDerived1]
+            OkExpr(
+              AddExpr(
+                TermExpr(
+                  TermFactor(
+                    DesignatorFactor(
+                      Designator(
+                        DesignatorName(
+                         y
+                        ) [DesignatorName]
+                        DesignatorOptListDerived3(
+                        ) [DesignatorOptListDerived3]
+                      ) [Designator]
+                    ) [DesignatorFactor]
+                  ) [TermFactor]
+                ) [TermExpr]
+                AddopDerived1(
+                ) [AddopDerived1]
+                TermFactor(
+                  NumFactor(
+                   1
+                  ) [NumFactor]
+                ) [TermFactor]
+              ) [AddExpr]
+            ) [OkExpr]
+          ) [AssignStmt]
+        ) [StatementDerived1]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  17:28:11,106 - ===================================
+INFO  17:28:11,108 - Deklarisana simbolicka konstanta 'test' na liniji 2
+ERROR 17:28:11,108 - Nekompatibilan tip se dodeljuje simbolickoj konstanti 'fail' na liniji 2
+INFO  17:28:11,108 - Deklarisana simbolicka konstanta 'test2' na liniji 3
+INFO  17:28:11,108 - Deklarisana simbolicka konstanta 'test3' na liniji 4
+INFO  17:28:11,108 - Deklarisana globalna promenljiva 'x' na liniji 6
+INFO  17:28:11,108 - Deklarisana globalna promenljiva 'y' na liniji 6
+INFO  17:28:11,108 - Deklarisana globalna promenljiva 'z' na liniji 7
+INFO  17:28:11,108 - Deklarisana globalna promenljiva 'c' na liniji 8
+INFO  17:28:11,108 - Deklarisana globalna promenljiva 'radi' na liniji 9
+INFO  17:28:11,108 - Deklarisana globalna promenljiva 'neRadi' na liniji 9
+INFO  17:28:11,108 - Deklarisana klasa 'A' na liniji 11
+INFO  17:28:11,108 - Deklarisana klasa 'B' na liniji 12
+INFO  17:28:11,108 - Deklarisana klasa 'C' na liniji 13
+INFO  17:28:11,109 - Deklarisana lokalna promenljiva 'x' na liniji 16
+INFO  17:28:11,109 - Deklarisana lokalna promenljiva 'z' na liniji 16
+INFO  17:28:11,109 - Deklarisana lokalna promenljiva 'y' na liniji 17
+INFO  17:28:11,109 - Detektovano koriscenje promenljive x na liniji 19
+Izgled objektnog cvora: Var x: int, 0, 1 
+INFO  17:28:11,109 - Detektovano koriscenje promenljive y na liniji 19
+Izgled objektnog cvora: Var y: char, 2, 1 
+ERROR 17:28:11,109 - Promenljive u aritmetickom izrazu moraju biti tipa 'int' na liniji 19

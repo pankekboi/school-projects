@@ -1,0 +1,44 @@
+INFO  13:06:57,112 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  13:06:57,117 - #2 program
+INFO  13:06:57,117 - #19 mojProgram
+INFO  13:06:57,117 - #19 int
+INFO  13:06:57,118 - #19 x
+INFO  13:06:57,118 - #41 ,
+INFO  13:06:57,119 - #19 y
+INFO  13:06:57,119 - #45 [
+INFO  13:06:57,119 - #46 ]
+INFO  13:06:57,119 - #41 ,
+INFO  13:06:57,119 - #19 z
+INFO  13:06:57,119 - #39 ;
+INFO  13:06:57,119 - #7 const
+INFO  13:06:57,119 - #19 int
+INFO  13:06:57,119 - #19 test1
+INFO  13:06:57,119 - #36 =
+INFO  13:06:57,119 - #20 1
+INFO  13:06:57,120 - #41 ,
+INFO  13:06:57,120 - #19 test2
+INFO  13:06:57,120 - #36 =
+INFO  13:06:57,120 - #20 5
+INFO  13:06:57,120 - #39 ;
+INFO  13:06:57,120 - #7 const
+INFO  13:06:57,121 - #19 char
+INFO  13:06:57,121 - #19 test3
+INFO  13:06:57,121 - #36 =
+INFO  13:06:57,121 - #21 a
+INFO  13:06:57,121 - #41 ,
+INFO  13:06:57,121 - #19 test4
+INFO  13:06:57,121 - #36 =
+INFO  13:06:57,122 - #21 b
+INFO  13:06:57,122 - #41 ,
+INFO  13:06:57,122 - #19 test5
+INFO  13:06:57,122 - #36 =
+INFO  13:06:57,122 - #21 c
+INFO  13:06:57,122 - #39 ;
+INFO  13:06:57,122 - #7 const
+INFO  13:06:57,122 - #19 bool
+INFO  13:06:57,122 - #19 test6
+INFO  13:06:57,122 - #36 =
+INFO  13:06:57,122 - #19 false
+ERROR 13:06:57,122 - 
+Sintaksna greska na liniji 5
+ERROR 13:06:57,122 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

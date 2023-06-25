@@ -1,0 +1,33 @@
+INFO  12:34:47,981 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  12:34:47,986 - #2 program
+INFO  12:34:47,986 - #19 mojProgram
+INFO  12:34:47,986 - #19 int
+INFO  12:34:47,986 - #19 x
+INFO  12:34:47,986 - #41 ,
+INFO  12:34:47,987 - #19 y
+INFO  12:34:47,987 - #41 ,
+INFO  12:34:47,987 - #19 z
+INFO  12:34:47,987 - #39 ;
+INFO  12:34:47,987 - Program(
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    VarDeclDerived1(
+      TypeDerived1(
+      ) [TypeDerived1]
+      ArrayDeclDerived2(
+      ) [ArrayDeclDerived2]
+      VarDeclListDerived1(
+        VarDeclListDerived1(
+          VarDeclListDerived2(
+          ) [VarDeclListDerived2]
+          ArrayDeclDerived2(
+          ) [ArrayDeclDerived2]
+        ) [VarDeclListDerived1]
+        ArrayDeclDerived2(
+        ) [ArrayDeclDerived2]
+      ) [VarDeclListDerived1]
+    ) [VarDeclDerived1]
+  ) [GlobalDeclListDerived1]
+) [Program]
+INFO  12:34:47,988 - ===================================

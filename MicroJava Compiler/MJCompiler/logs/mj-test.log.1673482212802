@@ -1,0 +1,72 @@
+INFO  01:07:29,322 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  01:07:29,344 - #2 program
+INFO  01:07:29,344 - #47 errorRecovery
+INFO  01:07:29,344 - #7 const
+INFO  01:07:29,344 - #47 int
+INFO  01:07:29,344 - #47 y
+INFO  01:07:29,345 - #37 ,
+ERROR 01:07:29,345 - 
+Sintaksna greska na liniji 2
+INFO  01:07:29,345 - #37 ,
+INFO  01:07:29,345 - #47 z
+INFO  01:07:29,345 - #35 ;
+INFO  01:07:29,346 - #47 int
+INFO  01:07:29,346 - #47 x
+INFO  01:07:29,346 - #37 ,
+ERROR 01:07:29,346 - Izvrsen oporavak na liniji 2
+INFO  01:07:29,346 - #41 [
+ERROR 01:07:29,347 - 
+Sintaksna greska na liniji 3
+INFO  01:07:29,347 - #42 ]
+INFO  01:07:29,347 - #47 y
+INFO  01:07:29,347 - #37 ,
+INFO  01:07:29,349 - #47 z
+INFO  01:07:29,349 - #35 ;
+INFO  01:07:29,349 - #43 {
+INFO  01:07:29,349 - #46 void
+INFO  01:07:29,349 - #47 main
+ERROR 01:07:29,349 - Izvrsen oporavak na liniji 3
+INFO  01:07:29,350 - #39 (
+INFO  01:07:29,350 - #40 )
+INFO  01:07:29,350 - #43 {
+INFO  01:07:29,350 - #44 }
+INFO  01:07:29,351 - #44 }
+INFO  01:07:29,354 - Program(
+  ProgName(
+   errorRecovery
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived2(
+      ) [GlobalDeclListDerived2]
+      DeclDerived1(
+        ConstDeclDerived2(
+        ) [ConstDeclDerived2]
+      ) [DeclDerived1]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclDerived1(
+      ) [VarDeclDerived1]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  01:07:29,354 - ===================================
+INFO  01:07:29,356 - ===================================
+INFO  01:07:29,358 - PARSIRANJE JE USPESNO ZAVRSENO!

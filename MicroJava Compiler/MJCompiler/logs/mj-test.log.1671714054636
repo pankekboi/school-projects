@@ -1,0 +1,14 @@
+INFO  13:56:39,970 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  13:56:39,991 - #2 program
+INFO  13:56:39,991 - #47 errorRecovery
+INFO  13:56:39,991 - #7 const
+INFO  13:56:39,991 - #37 ,
+ERROR 13:56:39,991 - 
+Sintaksna greska kod simbola ',' na liniji 2
+INFO  13:56:39,992 - #37 ,
+INFO  13:56:39,992 - #37 ,
+INFO  13:56:39,992 - #47 y
+INFO  13:56:39,992 - #35 ;
+INFO  13:56:39,992 - #47 int
+INFO  13:56:39,992 - #47 x
+INFO  13:56:39,992 - #37 ,

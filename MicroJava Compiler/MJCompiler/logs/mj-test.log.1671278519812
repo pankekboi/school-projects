@@ -1,0 +1,7 @@
+INFO  13:01:38,027 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  13:01:38,032 - #2 program
+INFO  13:01:38,032 - #19 mojProgram
+INFO  13:01:38,032 - #19 int
+ERROR 13:01:38,032 - 
+Sintaksna greska na liniji 2
+ERROR 13:01:38,032 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2

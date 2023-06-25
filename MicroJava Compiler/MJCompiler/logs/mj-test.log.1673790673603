@@ -1,0 +1,66 @@
+INFO  14:49:03,683 - #2 program
+INFO  14:49:03,683 - #47 test1
+INFO  14:49:03,684 - #47 int
+INFO  14:49:03,684 - #47 x
+INFO  14:49:03,684 - #47 greska
+ERROR 14:49:03,684 - 
+Sintaksna greska na liniji 3
+INFO  14:49:03,684 - #35 ;
+INFO  14:49:03,684 - #7 const
+INFO  14:49:03,684 - #47 int
+INFO  14:49:03,685 - #47 y
+ERROR 14:49:03,685 - Izvrsen oporavak na liniji 3 prilikom definisanja globalne promenljive
+INFO  14:49:03,685 - #32 =
+INFO  14:49:03,685 - #35 ;
+ERROR 14:49:03,685 - 
+Sintaksna greska na liniji 5
+INFO  14:49:03,685 - #43 {
+INFO  14:49:03,685 - #46 void
+INFO  14:49:03,685 - #47 main
+ERROR 14:49:03,686 - Izvrsen oporavak na liniji 5 prilikom definisanja globalne konstante
+INFO  14:49:03,686 - #39 (
+INFO  14:49:03,688 - #40 )
+INFO  14:49:03,688 - #43 {
+INFO  14:49:03,688 - #44 }
+INFO  14:49:03,688 - #44 }
+INFO  14:49:03,694 - Program(
+  ProgName(
+   test1
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived2(
+      ) [GlobalDeclListDerived2]
+      DeclDerived2(
+        VarDeclDerived1(
+        ) [VarDeclDerived1]
+      ) [DeclDerived2]
+    ) [GlobalDeclListDerived1]
+    DeclDerived1(
+      ConstDeclDerived2(
+      ) [ConstDeclDerived2]
+    ) [DeclDerived1]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  14:49:03,694 - ===================================
+INFO  14:49:03,696 - ===================================
+INFO  14:49:03,696 - Generisanje bajtkoda za fajl: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\test1.obj
+INFO  14:49:03,698 - ===================================
+INFO  14:49:03,698 - KOMPAJLIRANJE JE USPESNO ZAVRSENO!

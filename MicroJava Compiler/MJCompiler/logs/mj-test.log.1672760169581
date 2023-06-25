@@ -1,0 +1,41 @@
+INFO  16:31:17,594 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  16:31:17,624 - #2 program
+INFO  16:31:17,624 - #47 mojProgram
+INFO  16:31:17,624 - #43 {
+INFO  16:31:17,625 - #47 int
+INFO  16:31:17,625 - #47 main
+INFO  16:31:17,625 - #39 (
+INFO  16:31:17,626 - #40 )
+INFO  16:31:17,626 - #43 {
+INFO  16:31:17,626 - #44 }
+INFO  16:31:17,626 - #44 }
+INFO  16:31:17,631 - Program(
+  ProgName(
+   mojProgram
+  ) [ProgName]
+  GlobalDeclListDerived2(
+  ) [GlobalDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      MethRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  16:31:17,632 - ===================================
+INFO  16:31:17,634 - ===================================
+INFO  16:32:14,932 - PARSIRANJE JE USPESNO ZAVRSENO!

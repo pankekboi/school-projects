@@ -1,0 +1,39 @@
+INFO  16:28:17,378 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  16:28:17,409 - #2 program
+INFO  16:28:17,409 - #47 mojProgram
+INFO  16:28:17,409 - #43 {
+INFO  16:28:17,410 - #47 int
+INFO  16:28:17,410 - #47 main
+INFO  16:28:17,410 - #39 (
+INFO  16:28:17,411 - #40 )
+INFO  16:28:17,411 - #43 {
+INFO  16:28:17,411 - #44 }
+INFO  16:28:17,412 - #44 }
+INFO  16:28:17,416 - Program(
+  ProgName(
+   mojProgram
+  ) [ProgName]
+  GlobalDeclListDerived2(
+  ) [GlobalDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      MethRetType(
+        Type(
+         int
+        ) [Type]
+      ) [MethRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  16:28:17,419 - ===================================

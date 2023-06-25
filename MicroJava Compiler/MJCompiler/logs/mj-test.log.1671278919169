@@ -1,0 +1,44 @@
+INFO  13:07:12,845 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  13:07:12,850 - #2 program
+INFO  13:07:12,850 - #19 mojProgram
+INFO  13:07:12,850 - #19 int
+INFO  13:07:12,851 - #19 x
+INFO  13:07:12,851 - #41 ,
+INFO  13:07:12,852 - #19 y
+INFO  13:07:12,852 - #45 [
+INFO  13:07:12,852 - #46 ]
+INFO  13:07:12,852 - #41 ,
+INFO  13:07:12,852 - #19 z
+INFO  13:07:12,852 - #39 ;
+INFO  13:07:12,852 - #7 const
+INFO  13:07:12,852 - #19 int
+INFO  13:07:12,852 - #19 test1
+INFO  13:07:12,852 - #36 =
+INFO  13:07:12,853 - #20 1
+INFO  13:07:12,853 - #41 ,
+INFO  13:07:12,853 - #19 test2
+INFO  13:07:12,853 - #36 =
+INFO  13:07:12,853 - #20 5
+INFO  13:07:12,853 - #39 ;
+INFO  13:07:12,854 - #7 const
+INFO  13:07:12,854 - #19 char
+INFO  13:07:12,854 - #19 test3
+INFO  13:07:12,854 - #36 =
+INFO  13:07:12,854 - #21 a
+INFO  13:07:12,854 - #41 ,
+INFO  13:07:12,855 - #19 test4
+INFO  13:07:12,855 - #36 =
+INFO  13:07:12,855 - #21 b
+INFO  13:07:12,855 - #41 ,
+INFO  13:07:12,855 - #19 test5
+INFO  13:07:12,855 - #36 =
+INFO  13:07:12,855 - #21 c
+INFO  13:07:12,855 - #39 ;
+INFO  13:07:12,855 - #7 const
+INFO  13:07:12,855 - #19 bool
+INFO  13:07:12,855 - #19 test6
+INFO  13:07:12,855 - #36 =
+INFO  13:07:12,855 - #19 true
+ERROR 13:07:12,855 - 
+Sintaksna greska na liniji 5
+ERROR 13:07:12,855 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

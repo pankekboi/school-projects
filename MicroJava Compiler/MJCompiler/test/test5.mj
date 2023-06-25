@@ -1,0 +1,7 @@
+program Test5
+const int greska = 'c';
+{
+	void main(){
+	
+	}
+}

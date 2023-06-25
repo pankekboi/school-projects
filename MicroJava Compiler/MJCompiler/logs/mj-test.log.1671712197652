@@ -1,0 +1,47 @@
+INFO  13:29:15,269 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  13:29:15,291 - #2 program
+INFO  13:29:15,291 - #47 errorRecovery
+INFO  13:29:15,291 - #7 const
+INFO  13:29:15,291 - #47 x
+INFO  13:29:15,291 - #37 ,
+ERROR 13:29:15,291 - 
+Sintaksna greska kod simbola ',' na liniji 2
+INFO  13:29:15,291 - #47 y
+INFO  13:29:15,291 - #35 ;
+INFO  13:29:15,292 - #47 int
+INFO  13:29:15,292 - #47 x
+INFO  13:29:15,292 - #37 ,
+ERROR 13:29:15,292 - Izvrsen oporavak na liniji 2
+INFO  13:29:15,292 - #41 [
+ERROR 13:29:15,293 - 
+Sintaksna greska kod simbola '[' na liniji 3
+INFO  13:29:15,293 - #42 ]
+INFO  13:29:15,293 - #47 y
+INFO  13:29:15,293 - #37 ,
+INFO  13:29:15,293 - #47 z
+INFO  13:29:15,295 - #35 ;
+INFO  13:29:15,295 - #47 int
+INFO  13:29:15,295 - #35 ;
+INFO  13:29:15,295 - #43 {
+INFO  13:29:15,295 - #44 }
+ERROR 13:29:15,295 - Izvrsen oporavak na liniji 3
+INFO  13:29:15,296 - Program(
+ errorRecovery
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived2(
+      ) [GlobalDeclListDerived2]
+      DeclDerived1(
+        ConstDeclDerived2(
+        ) [ConstDeclDerived2]
+      ) [DeclDerived1]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclDerived2(
+      ) [VarDeclDerived2]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  13:29:15,296 - ===================================

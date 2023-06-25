@@ -1,0 +1,538 @@
+INFO  13:01:15,015 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\program.mj
+INFO  13:01:15,038 - #2 program
+INFO  13:01:15,038 - #47 mojProgram
+INFO  13:01:15,038 - #43 {
+INFO  13:01:15,039 - #46 void
+INFO  13:01:15,039 - #47 main
+INFO  13:01:15,039 - #39 (
+INFO  13:01:15,040 - #40 )
+INFO  13:01:15,040 - #47 int
+INFO  13:01:15,040 - #47 niz
+INFO  13:01:15,041 - #41 [
+INFO  13:01:15,041 - #42 ]
+INFO  13:01:15,041 - #37 ,
+INFO  13:01:15,041 - #47 rez
+INFO  13:01:15,041 - #41 [
+INFO  13:01:15,041 - #42 ]
+INFO  13:01:15,041 - #35 ;
+INFO  13:01:15,041 - #47 int
+INFO  13:01:15,042 - #47 x
+INFO  13:01:15,042 - #37 ,
+INFO  13:01:15,042 - #47 y
+INFO  13:01:15,042 - #35 ;
+INFO  13:01:15,042 - #43 {
+INFO  13:01:15,043 - #47 niz
+INFO  13:01:15,044 - #32 =
+INFO  13:01:15,044 - #11 new
+INFO  13:01:15,044 - #47 int
+INFO  13:01:15,044 - #41 [
+INFO  13:01:15,044 - #48 3
+INFO  13:01:15,044 - #42 ]
+INFO  13:01:15,044 - #35 ;
+INFO  13:01:15,045 - #47 rez
+INFO  13:01:15,045 - #32 =
+INFO  13:01:15,045 - #11 new
+INFO  13:01:15,045 - #47 int
+INFO  13:01:15,045 - #41 [
+INFO  13:01:15,045 - #48 3
+INFO  13:01:15,045 - #42 ]
+INFO  13:01:15,045 - #35 ;
+INFO  13:01:15,045 - #47 niz
+INFO  13:01:15,045 - #41 [
+INFO  13:01:15,045 - #48 0
+INFO  13:01:15,045 - #42 ]
+INFO  13:01:15,045 - #32 =
+INFO  13:01:15,045 - #48 1
+INFO  13:01:15,045 - #35 ;
+INFO  13:01:15,046 - #47 niz
+INFO  13:01:15,046 - #41 [
+INFO  13:01:15,046 - #48 1
+INFO  13:01:15,046 - #42 ]
+INFO  13:01:15,046 - #32 =
+INFO  13:01:15,046 - #48 2
+INFO  13:01:15,046 - #35 ;
+INFO  13:01:15,046 - #47 niz
+INFO  13:01:15,046 - #41 [
+INFO  13:01:15,046 - #48 2
+INFO  13:01:15,046 - #42 ]
+INFO  13:01:15,046 - #32 =
+INFO  13:01:15,046 - #48 3
+INFO  13:01:15,046 - #35 ;
+INFO  13:01:15,046 - #47 rez
+INFO  13:01:15,046 - #41 [
+INFO  13:01:15,046 - #48 0
+INFO  13:01:15,046 - #42 ]
+INFO  13:01:15,046 - #32 =
+INFO  13:01:15,046 - #48 4
+INFO  13:01:15,046 - #35 ;
+INFO  13:01:15,047 - #47 rez
+INFO  13:01:15,047 - #41 [
+INFO  13:01:15,047 - #48 1
+INFO  13:01:15,047 - #42 ]
+INFO  13:01:15,047 - #32 =
+INFO  13:01:15,047 - #48 5
+INFO  13:01:15,047 - #35 ;
+INFO  13:01:15,047 - #47 rez
+INFO  13:01:15,047 - #41 [
+INFO  13:01:15,047 - #48 2
+INFO  13:01:15,047 - #42 ]
+INFO  13:01:15,047 - #32 =
+INFO  13:01:15,047 - #48 6
+INFO  13:01:15,047 - #35 ;
+INFO  13:01:15,047 - #41 [
+INFO  13:01:15,047 - #47 niz
+INFO  13:01:15,047 - #41 [
+INFO  13:01:15,047 - #48 0
+INFO  13:01:15,047 - #42 ]
+INFO  13:01:15,047 - #37 ,
+INFO  13:01:15,048 - #47 x
+INFO  13:01:15,048 - #37 ,
+INFO  13:01:15,048 - #47 y
+INFO  13:01:15,048 - #42 ]
+INFO  13:01:15,048 - #32 =
+INFO  13:01:15,048 - #47 rez
+INFO  13:01:15,048 - #35 ;
+INFO  13:01:15,048 - #12 print
+INFO  13:01:15,048 - #39 (
+INFO  13:01:15,048 - #47 niz
+INFO  13:01:15,048 - #41 [
+INFO  13:01:15,048 - #48 0
+INFO  13:01:15,048 - #42 ]
+INFO  13:01:15,048 - #40 )
+INFO  13:01:15,049 - #35 ;
+INFO  13:01:15,049 - #12 print
+INFO  13:01:15,049 - #39 (
+INFO  13:01:15,049 - #47 x
+INFO  13:01:15,049 - #40 )
+INFO  13:01:15,049 - #35 ;
+INFO  13:01:15,049 - #12 print
+INFO  13:01:15,049 - #39 (
+INFO  13:01:15,049 - #47 y
+INFO  13:01:15,049 - #40 )
+INFO  13:01:15,049 - #35 ;
+INFO  13:01:15,049 - #44 }
+INFO  13:01:15,049 - #44 }
+INFO  13:01:15,054 - Program(
+  ProgName(
+   mojProgram
+  ) [ProgName]
+  GlobalDeclListDerived2(
+  ) [GlobalDeclListDerived2]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived1(
+        VarMethDeclListDerived1(
+          VarMethDeclListDerived2(
+          ) [VarMethDeclListDerived2]
+          VarDeclMeth(
+            VarTypeMeth(
+              Type(
+               int
+              ) [Type]
+            ) [VarTypeMeth]
+            VarDeclListMethDerived1(
+              VarDeclListMethDerived2(
+                ArrVarMeth(
+                 niz
+                ) [ArrVarMeth]
+              ) [VarDeclListMethDerived2]
+              ArrVarMeth(
+               rez
+              ) [ArrVarMeth]
+            ) [VarDeclListMethDerived1]
+          ) [VarDeclMeth]
+        ) [VarMethDeclListDerived1]
+        VarDeclMeth(
+          VarTypeMeth(
+            Type(
+             int
+            ) [Type]
+          ) [VarTypeMeth]
+          VarDeclListMethDerived1(
+            VarDeclListMethDerived2(
+              RegVarMeth(
+               x
+              ) [RegVarMeth]
+            ) [VarDeclListMethDerived2]
+            RegVarMeth(
+             y
+            ) [RegVarMeth]
+          ) [VarDeclListMethDerived1]
+        ) [VarDeclMeth]
+      ) [VarMethDeclListDerived1]
+      StatementListDerived1(
+        StatementListDerived1(
+          StatementListDerived1(
+            StatementListDerived1(
+              StatementListDerived1(
+                StatementListDerived1(
+                  StatementListDerived1(
+                    StatementListDerived1(
+                      StatementListDerived1(
+                        StatementListDerived1(
+                          StatementListDerived1(
+                            StatementListDerived1(
+                              StatementListDerived2(
+                              ) [StatementListDerived2]
+                              StatementDerived1(
+                                AssignStmt(
+                                  DesignatorName(
+                                   niz
+                                  ) [DesignatorName]
+                                  AssignopDerived1(
+                                  ) [AssignopDerived1]
+                                  OkExpr(
+                                    TermExpr(
+                                      TermFactor(
+                                        NewArrayFactor(
+                                          Type(
+                                           int
+                                          ) [Type]
+                                          TermExpr(
+                                            TermFactor(
+                                              NumFactor(
+                                               3
+                                              ) [NumFactor]
+                                            ) [TermFactor]
+                                          ) [TermExpr]
+                                        ) [NewArrayFactor]
+                                      ) [TermFactor]
+                                    ) [TermExpr]
+                                  ) [OkExpr]
+                                ) [AssignStmt]
+                              ) [StatementDerived1]
+                            ) [StatementListDerived1]
+                            StatementDerived1(
+                              AssignStmt(
+                                DesignatorName(
+                                 rez
+                                ) [DesignatorName]
+                                AssignopDerived1(
+                                ) [AssignopDerived1]
+                                OkExpr(
+                                  TermExpr(
+                                    TermFactor(
+                                      NewArrayFactor(
+                                        Type(
+                                         int
+                                        ) [Type]
+                                        TermExpr(
+                                          TermFactor(
+                                            NumFactor(
+                                             3
+                                            ) [NumFactor]
+                                          ) [TermFactor]
+                                        ) [TermExpr]
+                                      ) [NewArrayFactor]
+                                    ) [TermFactor]
+                                  ) [TermExpr]
+                                ) [OkExpr]
+                              ) [AssignStmt]
+                            ) [StatementDerived1]
+                          ) [StatementListDerived1]
+                          StatementDerived1(
+                            AssignStmt(
+                              DesignatorArray(
+                                DesignatorName(
+                                 niz
+                                ) [DesignatorName]
+                                TermExpr(
+                                  TermFactor(
+                                    NumFactor(
+                                     0
+                                    ) [NumFactor]
+                                  ) [TermFactor]
+                                ) [TermExpr]
+                              ) [DesignatorArray]
+                              AssignopDerived1(
+                              ) [AssignopDerived1]
+                              OkExpr(
+                                TermExpr(
+                                  TermFactor(
+                                    NumFactor(
+                                     1
+                                    ) [NumFactor]
+                                  ) [TermFactor]
+                                ) [TermExpr]
+                              ) [OkExpr]
+                            ) [AssignStmt]
+                          ) [StatementDerived1]
+                        ) [StatementListDerived1]
+                        StatementDerived1(
+                          AssignStmt(
+                            DesignatorArray(
+                              DesignatorName(
+                               niz
+                              ) [DesignatorName]
+                              TermExpr(
+                                TermFactor(
+                                  NumFactor(
+                                   1
+                                  ) [NumFactor]
+                                ) [TermFactor]
+                              ) [TermExpr]
+                            ) [DesignatorArray]
+                            AssignopDerived1(
+                            ) [AssignopDerived1]
+                            OkExpr(
+                              TermExpr(
+                                TermFactor(
+                                  NumFactor(
+                                   2
+                                  ) [NumFactor]
+                                ) [TermFactor]
+                              ) [TermExpr]
+                            ) [OkExpr]
+                          ) [AssignStmt]
+                        ) [StatementDerived1]
+                      ) [StatementListDerived1]
+                      StatementDerived1(
+                        AssignStmt(
+                          DesignatorArray(
+                            DesignatorName(
+                             niz
+                            ) [DesignatorName]
+                            TermExpr(
+                              TermFactor(
+                                NumFactor(
+                                 2
+                                ) [NumFactor]
+                              ) [TermFactor]
+                            ) [TermExpr]
+                          ) [DesignatorArray]
+                          AssignopDerived1(
+                          ) [AssignopDerived1]
+                          OkExpr(
+                            TermExpr(
+                              TermFactor(
+                                NumFactor(
+                                 3
+                                ) [NumFactor]
+                              ) [TermFactor]
+                            ) [TermExpr]
+                          ) [OkExpr]
+                        ) [AssignStmt]
+                      ) [StatementDerived1]
+                    ) [StatementListDerived1]
+                    StatementDerived1(
+                      AssignStmt(
+                        DesignatorArray(
+                          DesignatorName(
+                           rez
+                          ) [DesignatorName]
+                          TermExpr(
+                            TermFactor(
+                              NumFactor(
+                               0
+                              ) [NumFactor]
+                            ) [TermFactor]
+                          ) [TermExpr]
+                        ) [DesignatorArray]
+                        AssignopDerived1(
+                        ) [AssignopDerived1]
+                        OkExpr(
+                          TermExpr(
+                            TermFactor(
+                              NumFactor(
+                               4
+                              ) [NumFactor]
+                            ) [TermFactor]
+                          ) [TermExpr]
+                        ) [OkExpr]
+                      ) [AssignStmt]
+                    ) [StatementDerived1]
+                  ) [StatementListDerived1]
+                  StatementDerived1(
+                    AssignStmt(
+                      DesignatorArray(
+                        DesignatorName(
+                         rez
+                        ) [DesignatorName]
+                        TermExpr(
+                          TermFactor(
+                            NumFactor(
+                             1
+                            ) [NumFactor]
+                          ) [TermFactor]
+                        ) [TermExpr]
+                      ) [DesignatorArray]
+                      AssignopDerived1(
+                      ) [AssignopDerived1]
+                      OkExpr(
+                        TermExpr(
+                          TermFactor(
+                            NumFactor(
+                             5
+                            ) [NumFactor]
+                          ) [TermFactor]
+                        ) [TermExpr]
+                      ) [OkExpr]
+                    ) [AssignStmt]
+                  ) [StatementDerived1]
+                ) [StatementListDerived1]
+                StatementDerived1(
+                  AssignStmt(
+                    DesignatorArray(
+                      DesignatorName(
+                       rez
+                      ) [DesignatorName]
+                      TermExpr(
+                        TermFactor(
+                          NumFactor(
+                           2
+                          ) [NumFactor]
+                        ) [TermFactor]
+                      ) [TermExpr]
+                    ) [DesignatorArray]
+                    AssignopDerived1(
+                    ) [AssignopDerived1]
+                    OkExpr(
+                      TermExpr(
+                        TermFactor(
+                          NumFactor(
+                           6
+                          ) [NumFactor]
+                        ) [TermFactor]
+                      ) [TermExpr]
+                    ) [OkExpr]
+                  ) [AssignStmt]
+                ) [StatementDerived1]
+              ) [StatementListDerived1]
+              StatementDerived1(
+                DesignatorStmtArray(
+                  DesignatorParam(
+                    DesignatorArray(
+                      DesignatorName(
+                       niz
+                      ) [DesignatorName]
+                      TermExpr(
+                        TermFactor(
+                          NumFactor(
+                           0
+                          ) [NumFactor]
+                        ) [TermFactor]
+                      ) [TermExpr]
+                    ) [DesignatorArray]
+                  ) [DesignatorParam]
+                  DesignatorParListDerived1(
+                    DesignatorParListDerived1(
+                      DesignatorParListDerived2(
+                      ) [DesignatorParListDerived2]
+                      DesignatorParam(
+                        DesignatorName(
+                         x
+                        ) [DesignatorName]
+                      ) [DesignatorParam]
+                    ) [DesignatorParListDerived1]
+                    DesignatorParam(
+                      DesignatorName(
+                       y
+                      ) [DesignatorName]
+                    ) [DesignatorParam]
+                  ) [DesignatorParListDerived1]
+                  DesignatorName(
+                   rez
+                  ) [DesignatorName]
+                ) [DesignatorStmtArray]
+              ) [StatementDerived1]
+            ) [StatementListDerived1]
+            PrintStmt(
+              TermExpr(
+                TermFactor(
+                  DesignatorFactor(
+                    DesignatorArray(
+                      DesignatorName(
+                       niz
+                      ) [DesignatorName]
+                      TermExpr(
+                        TermFactor(
+                          NumFactor(
+                           0
+                          ) [NumFactor]
+                        ) [TermFactor]
+                      ) [TermExpr]
+                    ) [DesignatorArray]
+                  ) [DesignatorFactor]
+                ) [TermFactor]
+              ) [TermExpr]
+              PrintParamDerived2(
+              ) [PrintParamDerived2]
+            ) [PrintStmt]
+          ) [StatementListDerived1]
+          PrintStmt(
+            TermExpr(
+              TermFactor(
+                DesignatorFactor(
+                  DesignatorName(
+                   x
+                  ) [DesignatorName]
+                ) [DesignatorFactor]
+              ) [TermFactor]
+            ) [TermExpr]
+            PrintParamDerived2(
+            ) [PrintParamDerived2]
+          ) [PrintStmt]
+        ) [StatementListDerived1]
+        PrintStmt(
+          TermExpr(
+            TermFactor(
+              DesignatorFactor(
+                DesignatorName(
+                 y
+                ) [DesignatorName]
+              ) [DesignatorFactor]
+            ) [TermFactor]
+          ) [TermExpr]
+          PrintParamDerived2(
+          ) [PrintParamDerived2]
+        ) [PrintStmt]
+      ) [StatementListDerived1]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  13:01:15,054 - ===================================
+INFO  13:01:15,056 - Deklarisana lokalna promenljiva 'niz' na liniji 11
+INFO  13:01:15,056 - Deklarisana lokalna promenljiva 'rez' na liniji 11
+INFO  13:01:15,056 - Deklarisana lokalna promenljiva 'x' na liniji 12
+INFO  13:01:15,056 - Deklarisana lokalna promenljiva 'y' na liniji 12
+INFO  13:01:15,056 - Detektovano koriscenje promenljive niz na liniji 14
+Izgled objektnog cvora: Var niz: Arr of int, 0, 1 
+INFO  13:01:15,056 - Detektovano koriscenje promenljive rez na liniji 15
+Izgled objektnog cvora: Var rez: Arr of int, 1, 1 
+INFO  13:01:15,056 - Detektovano koriscenje promenljive niz na liniji 17
+Izgled objektnog cvora: Var niz: Arr of int, 0, 1 
+INFO  13:01:15,056 - Detektovano koriscenje promenljive niz na liniji 18
+Izgled objektnog cvora: Var niz: Arr of int, 0, 1 
+INFO  13:01:15,056 - Detektovano koriscenje promenljive niz na liniji 19
+Izgled objektnog cvora: Var niz: Arr of int, 0, 1 
+INFO  13:01:15,056 - Detektovano koriscenje promenljive rez na liniji 21
+Izgled objektnog cvora: Var rez: Arr of int, 1, 1 
+INFO  13:01:15,056 - Detektovano koriscenje promenljive rez na liniji 22
+Izgled objektnog cvora: Var rez: Arr of int, 1, 1 
+INFO  13:01:15,056 - Detektovano koriscenje promenljive rez na liniji 23
+Izgled objektnog cvora: Var rez: Arr of int, 1, 1 
+INFO  13:01:15,056 - Detektovano koriscenje promenljive niz na liniji 25
+Izgled objektnog cvora: Var niz: Arr of int, 0, 1 
+INFO  13:01:15,057 - Detektovano koriscenje promenljive x na liniji 25
+Izgled objektnog cvora: Var x: int, 2, 1 
+INFO  13:01:15,057 - Detektovano koriscenje promenljive y na liniji 25
+Izgled objektnog cvora: Var y: int, 3, 1 
+INFO  13:01:15,057 - Detektovano koriscenje promenljive rez na liniji 25
+Izgled objektnog cvora: Var rez: Arr of int, 1, 1 
+INFO  13:01:15,057 - Detektovano koriscenje promenljive niz na liniji 27
+Izgled objektnog cvora: Var niz: Arr of int, 0, 1 
+INFO  13:01:15,057 - Detektovano koriscenje promenljive x na liniji 28
+Izgled objektnog cvora: Var x: int, 2, 1 
+INFO  13:01:15,057 - Detektovano koriscenje promenljive y na liniji 29
+Izgled objektnog cvora: Var y: int, 3, 1 
+INFO  13:01:15,057 - ===================================
+INFO  13:01:15,059 - PARSIRANJE JE USPESNO ZAVRSENO!

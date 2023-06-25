@@ -1,0 +1,40 @@
+INFO  16:51:53,722 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\analyzerTest.mj
+INFO  16:51:53,750 - #2 program
+INFO  16:51:53,750 - #47 analyzerTest
+INFO  16:51:53,751 - #7 const
+INFO  16:51:53,751 - #47 int
+INFO  16:51:53,751 - #47 test
+INFO  16:51:53,752 - #32 =
+INFO  16:51:53,752 - #48 5
+INFO  16:51:53,752 - #35 ;
+INFO  16:51:53,752 - #43 {
+INFO  16:51:53,753 - #44 }
+INFO  16:51:53,756 - Program(
+  ProgName(
+   analyzerTest
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived1(
+      ConstDeclDerived1(
+        ConstType(
+          Type(
+           int
+          ) [Type]
+        ) [ConstType]
+        Const(
+         test
+          ConstNum(
+           5
+          ) [ConstNum]
+        ) [Const]
+        ConstDeclListDerived2(
+        ) [ConstDeclListDerived2]
+      ) [ConstDeclDerived1]
+    ) [DeclDerived1]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived2(
+  ) [MethodDeclListDerived2]
+) [Program]
+INFO  16:51:53,757 - ===================================

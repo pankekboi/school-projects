@@ -1,0 +1,53 @@
+INFO  17:29:58,856 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  17:29:58,878 - #2 program
+INFO  17:29:58,878 - #47 errorRecovery
+INFO  17:29:58,878 - #47 int
+INFO  17:29:58,879 - #47 x
+INFO  17:29:58,879 - #37 ,
+INFO  17:29:58,879 - #37 ,
+ERROR 17:29:58,879 - 
+Sintaksna greska na liniji 2
+INFO  17:29:58,880 - #47 y
+INFO  17:29:58,880 - #35 ;
+INFO  17:29:58,880 - #43 {
+INFO  17:29:58,880 - #46 void
+INFO  17:29:58,880 - #47 main
+ERROR 17:29:58,880 - Izvrsen oporavak do ; na liniji 2
+INFO  17:29:58,881 - #39 (
+INFO  17:29:58,881 - #40 )
+INFO  17:29:58,881 - #43 {
+INFO  17:29:58,882 - #44 }
+INFO  17:29:58,882 - #44 }
+INFO  17:29:58,885 - Program(
+  ProgName(
+   errorRecovery
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived2(
+    ) [GlobalDeclListDerived2]
+    DeclDerived2(
+      VarDeclDerived1(
+      ) [VarDeclDerived1]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  17:29:58,885 - ===================================
+INFO  17:29:58,886 - ===================================
+INFO  17:29:58,888 - PARSIRANJE JE USPESNO ZAVRSENO!

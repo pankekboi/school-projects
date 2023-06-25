@@ -1,0 +1,16 @@
+INFO  17:51:57,933 - Compiling source file: E:\PP1\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  17:51:57,936 - #1 program
+INFO  17:51:57,936 - #4 MJProgram
+INFO  17:51:57,936 - #4 int
+INFO  17:51:57,936 - #4 x
+INFO  17:51:57,936 - #8 ,
+INFO  17:51:57,936 - #4 y
+INFO  17:51:57,936 - #9 ;
+INFO  17:51:57,936 - #12 {
+INFO  17:51:57,936 - #15 void
+INFO  17:51:57,936 - #4 main
+INFO  17:51:57,936 - #10 (
+INFO  17:51:57,936 - #11 )
+INFO  17:51:57,937 - #12 {
+INFO  17:51:57,937 - #13 }
+INFO  17:51:57,937 - #13 }

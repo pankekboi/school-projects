@@ -1,0 +1,69 @@
+INFO  01:03:57,835 - Compiling source file: E:\PP1\DOMACI ZADATAK 2022\workspace\MJCompiler\test\errorRecovery.mj
+INFO  01:03:57,858 - #2 program
+INFO  01:03:57,858 - #47 errorRecovery
+INFO  01:03:57,858 - #7 const
+INFO  01:03:57,858 - #47 y
+INFO  01:03:57,858 - #35 ;
+ERROR 01:03:57,858 - 
+Sintaksna greska na liniji 2
+INFO  01:03:57,858 - #47 int
+INFO  01:03:57,858 - #47 x
+INFO  01:03:57,859 - #37 ,
+ERROR 01:03:57,859 - Izvrsen oporavak na liniji 2
+INFO  01:03:57,860 - #37 ,
+ERROR 01:03:57,860 - 
+Sintaksna greska na liniji 3
+INFO  01:03:57,860 - #41 [
+INFO  01:03:57,860 - #42 ]
+INFO  01:03:57,860 - #47 y
+INFO  01:03:57,860 - #37 ,
+INFO  01:03:57,860 - #47 z
+INFO  01:03:57,860 - #35 ;
+INFO  01:03:57,860 - #43 {
+INFO  01:03:57,862 - #46 void
+INFO  01:03:57,862 - #47 main
+ERROR 01:03:57,862 - Izvrsen oporavak na liniji 3
+INFO  01:03:57,863 - #39 (
+INFO  01:03:57,863 - #40 )
+INFO  01:03:57,863 - #43 {
+INFO  01:03:57,864 - #44 }
+INFO  01:03:57,864 - #44 }
+INFO  01:03:57,871 - Program(
+  ProgName(
+   errorRecovery
+  ) [ProgName]
+  GlobalDeclListDerived1(
+    GlobalDeclListDerived1(
+      GlobalDeclListDerived2(
+      ) [GlobalDeclListDerived2]
+      DeclDerived1(
+        ConstDeclDerived2(
+        ) [ConstDeclDerived2]
+      ) [DeclDerived1]
+    ) [GlobalDeclListDerived1]
+    DeclDerived2(
+      VarDeclDerived1(
+      ) [VarDeclDerived1]
+    ) [DeclDerived2]
+  ) [GlobalDeclListDerived1]
+  MethodDeclListDerived1(
+    MethodDeclListDerived2(
+    ) [MethodDeclListDerived2]
+    MethodDecl(
+      VoidRetType(
+      ) [VoidRetType]
+      MethName(
+       main
+      ) [MethName]
+      FormParsListDerived2(
+      ) [FormParsListDerived2]
+      VarMethDeclListDerived2(
+      ) [VarMethDeclListDerived2]
+      StatementListDerived2(
+      ) [StatementListDerived2]
+    ) [MethodDecl]
+  ) [MethodDeclListDerived1]
+) [Program]
+INFO  01:03:57,871 - ===================================
+INFO  01:03:57,873 - ===================================
+INFO  01:03:57,875 - PARSIRANJE JE USPESNO ZAVRSENO!
